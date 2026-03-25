@@ -1626,33 +1626,132 @@ nav {
 /* ── RESPONSIVE ── */
 @media (max-width: 1024px) {
   .hero { grid-template-columns: 1fr; }
-  .hero-right { min-height: 400px; }
+  .hero-right { min-height: 350px; }
   .hero-left { padding: 60px 40px; }
   nav { padding: 0 24px; }
   .section-pad { padding: 72px 24px; }
   .products-grid { grid-template-columns: repeat(2, 1fr); }
-  .why-grid { grid-template-columns: 1fr; max-width: 400px; }
+  .why-grid { grid-template-columns: 1fr; max-width: 400px; margin: 0 auto; }
   .science-grid { grid-template-columns: 1fr; }
   .testi-grid { grid-template-columns: 1fr; max-width: 400px; margin: 0 auto; }
   .proof-stats { gap: 32px; flex-wrap: wrap; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
   .insta-grid { grid-template-columns: repeat(4, 1fr); }
-  .trust-ribbon { gap: 24px; flex-wrap: wrap; justify-content: center; }
+  .trust-ribbon { gap: 16px; flex-wrap: wrap; justify-content: center; padding: 20px 24px; }
   .concerns-grid { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (max-width: 640px) {
-  .hero-left { padding: 40px 24px; }
-  .hero-ctas { flex-direction: column; }
-  .hero-trust { flex-direction: column; gap: 16px; }
-  .products-grid { grid-template-columns: 1fr; max-width: 360px; margin: 0 auto; }
+  /* ── NAV ── */
+  nav { padding: 0 16px; height: 64px; }
+  .nav-logo img { height: 40px; }
   .nav-links { display: none; }
   .mobile-menu-btn { display: flex; }
+  .nav-icon { width: 36px; height: 36px; }
+  .nav-icon svg { width: 18px; height: 18px; }
+  .nav-right { gap: 6px; }
+  .cart-count { width: 14px; height: 14px; font-size: 8px; top: 1px; right: 1px; }
+
+  /* ── ANNOUNCEMENT BAR ── */
+  .announce-bar { font-size: 11px; padding: 8px 12px; gap: 6px; }
+  .announce-bar span { font-size: 9px; padding: 2px 6px; }
+
+  /* ── HERO ── */
+  .hero-left { padding: 32px 20px; }
+  .hero h1 { font-size: 32px; margin-bottom: 14px; }
+  .hero h1 .jp-text { font-size: 13px; }
+  .hero-tag { font-size: 11px; margin-bottom: 16px; }
+  .hero-desc { font-size: 14px; margin-bottom: 28px; }
+  .hero-ctas { flex-direction: column; gap: 10px; margin-bottom: 32px; }
+  .btn-primary, .btn-secondary { padding: 13px 24px; font-size: 14px; justify-content: center; }
+  .hero-trust { flex-direction: column; gap: 10px; }
+  .trust-item { padding: 8px 14px 8px 10px; }
+  .trust-icon { width: 32px; height: 32px; }
+  .trust-icon svg { width: 16px; height: 16px; }
+  .trust-text { font-size: 12px; }
+  .trust-text small { font-size: 10px; }
+  .hero-right { min-height: 280px; }
+  .hero-product-img { max-height: 240px; }
   .hero-floating-badge { display: none; }
-  .footer-grid { grid-template-columns: 1fr; }
+  .cloud, .mochi-shape { display: none; }
+
+  /* ── SECTIONS ── */
+  .section-pad { padding: 56px 20px; }
+  .section-header { margin-bottom: 36px; }
+  .section-header h2 { font-size: 26px; }
+  .section-header p { font-size: 14px; }
+  .sh-tag { font-size: 10px; }
+
+  /* ── TRUST RIBBON ── */
+  .trust-ribbon { gap: 12px; padding: 16px 16px; flex-wrap: wrap; justify-content: center; }
+  .ribbon-item { font-size: 11px; gap: 6px; }
+  .ribbon-item .ri-icon { font-size: 16px; }
+
+  /* ── PRODUCTS ── */
+  .products-grid { grid-template-columns: repeat(2, 1fr); gap: 14px; max-width: 100%; }
+  .product-img { height: 200px; }
+  .product-img-bg { padding: 12px; }
+  .product-img-bg img { max-height: 160px; }
+  .product-info { padding: 14px; }
+  .product-info h3 { font-size: 15px; }
+  .product-info .p-category { font-size: 10px; }
+  .product-info .p-desc { font-size: 12px; margin-bottom: 10px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+  .product-price .current { font-size: 15px; }
+  .product-price .original { font-size: 11px; }
+  .product-rating { font-size: 11px; }
+  .product-card-badge { font-size: 9px; padding: 3px 8px; top: 10px; left: 10px; }
+  .product-card-badge.disc { font-size: 10px; padding: 3px 7px; top: 10px; right: 10px; }
+  .product-quick-add { display: none; }
+  .products-more { margin-top: 32px; }
+
+  /* ── WHY SECTION ── */
+  .why-grid { grid-template-columns: 1fr; max-width: 100%; gap: 16px; }
+  .why-card { padding: 32px 24px; }
+  .why-icon { width: 56px; height: 56px; }
+  .why-icon svg { width: 26px; height: 26px; }
+  .why-card h3 { font-size: 19px; }
+  .why-card p { font-size: 13px; }
+
+  /* ── PROOF / TESTIMONIALS ── */
+  .proof-stats { gap: 20px; justify-content: center; }
+  .proof-stat-num { font-size: 32px; }
+  .proof-stat-label { font-size: 11px; }
+  .testi-grid { grid-template-columns: 1fr; max-width: 100%; }
+  .testi-card { padding: 24px; }
+  .testi-card blockquote { font-size: 13px; }
+
+  /* ── SCIENCE ── */
+  .science-grid { grid-template-columns: 1fr; gap: 32px; }
+  .science-visual { padding: 40px 24px; min-height: 280px; }
+  .science-content h2 { font-size: 26px; }
+
+  /* ── CONCERNS ── */
+  .concerns-grid { grid-template-columns: 1fr; max-width: 100%; gap: 14px; }
+  .concern-card { padding: 24px 20px; }
+
+  /* ── CTA BANNER ── */
+  .cta-banner { padding: 48px 20px; }
+  .cta-banner h2 { font-size: 24px; }
+  .cta-banner p { font-size: 14px; }
+
+  /* ── INSTAGRAM ── */
+  .insta-grid { grid-template-columns: repeat(2, 1fr); gap: 4px; }
+  .insta-follow-bar { margin-top: 24px; }
+
+  /* ── FOOTER ── */
+  .site-footer { padding: 48px 20px 32px; }
+  .footer-grid { grid-template-columns: 1fr; gap: 32px; }
+  .footer-brand p { max-width: 100%; }
+  .footer-col h4 { margin-bottom: 14px; }
+  .footer-col ul { gap: 10px; }
   .footer-bottom { flex-direction: column; gap: 16px; text-align: center; }
-  .cta-banner { padding: 60px 24px; }
-  .insta-grid { grid-template-columns: repeat(3, 1fr); }
-  .hero-product-img { max-height: 300px; }
-  .concerns-grid { grid-template-columns: 1fr; max-width: 360px; margin: 0 auto; }
+  .footer-badges { flex-wrap: wrap; justify-content: center; }
+}
+
+/* ── EXTRA SMALL (< 380px) ── */
+@media (max-width: 380px) {
+  .hero h1 { font-size: 28px; }
+  .products-grid { grid-template-columns: 1fr; }
+  .proof-stats { flex-direction: column; gap: 16px; }
+  .trust-ribbon { flex-direction: column; align-items: center; }
 }
