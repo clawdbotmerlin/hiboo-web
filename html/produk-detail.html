@@ -396,28 +396,49 @@
 /* ── TRUST BADGES (PDP) ── */
 .pdp-trust {
   display: flex;
-  gap: 10px;
+  gap: 12px;
   flex-wrap: wrap;
-  margin-bottom: 24px;
+  margin-top: 28px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(0,0,0,0.06);
 }
 
 .pdp-trust .trust-item {
-  padding: 8px 16px 8px 10px;
-  font-size: 12px;
+  padding: 14px 22px 14px 16px;
+  border-radius: 16px;
+  flex: 1;
+  min-width: 130px;
+  justify-content: center;
 }
 
 .pdp-trust .trust-icon {
-  width: 30px;
-  height: 30px;
-  font-size: 15px;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
 }
 
 .pdp-trust .trust-text {
-  font-size: 12px;
+  font-size: 14px;
+  font-weight: 700;
 }
 
 .pdp-trust .trust-text small {
-  font-size: 10px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/* ── PDP MARKETPLACE BUTTONS ── */
+.pdp-info .marketplace-btns .mp-btn {
+  padding: 16px 28px;
+  font-size: 15px;
+  font-weight: 700;
+  border-radius: 14px;
+  justify-content: center;
+}
+
+.pdp-info .marketplace-btns .mp-btn svg {
+  width: 20px;
+  height: 20px;
 }
 
 /* ── MARKETPLACE LINKS ── */
@@ -799,7 +820,18 @@
   }
 
   .pdp-trust .trust-item {
-    padding: 6px 12px 6px 8px;
+    padding: 12px 16px 12px 12px;
+    min-width: 100px;
+  }
+
+  .pdp-trust .trust-icon {
+    width: 36px;
+    height: 36px;
+    font-size: 18px;
+  }
+
+  .pdp-trust .trust-text {
+    font-size: 13px;
   }
 
   .pdp-tabs-nav {
@@ -903,7 +935,7 @@
       </p>
 
       <!-- Marketplace Buttons -->
-      <div class="marketplace-btns" style="flex-direction:column;">
+      <div class="marketplace-btns" style="flex-direction:column; gap:12px; margin-top:28px;">
         <a href="https://shopee.co.id/hiboobaby" target="_blank" rel="noopener" class="mp-btn mp-btn-shopee">
           <svg viewBox="0 0 24 24" fill="white"><path d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007Z"/></svg>
           Beli di Shopee
