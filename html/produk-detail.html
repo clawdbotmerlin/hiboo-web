@@ -108,9 +108,11 @@
 
 .pdp-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 520px 1fr;
   gap: 48px;
   align-items: start;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
 /* ── GALLERY ── */
@@ -395,35 +397,38 @@
 
 /* ── TRUST BADGES (PDP) ── */
 .pdp-trust {
-  display: flex;
-  gap: 12px;
-  flex-wrap: wrap;
-  margin-top: 28px;
-  padding-top: 24px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 24px;
+  padding-top: 20px;
   border-top: 1px solid rgba(0,0,0,0.06);
 }
 
 .pdp-trust .trust-item {
-  padding: 14px 22px 14px 16px;
-  border-radius: 16px;
-  flex: 1;
-  min-width: 130px;
+  padding: 12px 10px;
+  border-radius: 14px;
   justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  gap: 6px;
 }
 
 .pdp-trust .trust-icon {
-  width: 40px;
-  height: 40px;
-  font-size: 20px;
+  width: 36px;
+  height: 36px;
+  font-size: 18px;
 }
 
 .pdp-trust .trust-text {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 700;
 }
 
 .pdp-trust .trust-text small {
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 500;
 }
 
@@ -816,22 +821,22 @@
   }
 
   .pdp-trust {
+    grid-template-columns: repeat(3, 1fr);
     gap: 8px;
   }
 
   .pdp-trust .trust-item {
-    padding: 12px 16px 12px 12px;
-    min-width: 100px;
+    padding: 10px 8px;
   }
 
   .pdp-trust .trust-icon {
-    width: 36px;
-    height: 36px;
-    font-size: 18px;
+    width: 32px;
+    height: 32px;
+    font-size: 16px;
   }
 
   .pdp-trust .trust-text {
-    font-size: 13px;
+    font-size: 12px;
   }
 
   .pdp-tabs-nav {
