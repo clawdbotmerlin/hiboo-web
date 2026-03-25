@@ -1152,7 +1152,7 @@
     </div>
     <div class="related-grid">
       <!-- Baby Balm 15g -->
-      <div class="product-card">
+      <div class="product-card" data-href="produk-detail.html">
         <span class="product-card-badge hot">Bestseller</span>
         <span class="product-card-badge disc">-69%</span>
         <div class="product-img">
@@ -1178,7 +1178,7 @@
         </div>
       </div>
       <!-- Zzz Cream -->
-      <div class="product-card">
+      <div class="product-card" data-href="produk-detail.html">
         <span class="product-card-badge new">10RB+ sold</span>
         <span class="product-card-badge disc">-61%</span>
         <div class="product-img">
@@ -1204,7 +1204,7 @@
         </div>
       </div>
       <!-- Sunscreen -->
-      <div class="product-card">
+      <div class="product-card" data-href="produk-detail.html">
         <span class="product-card-badge new">New</span>
         <span class="product-card-badge disc">-67%</span>
         <div class="product-img">
@@ -1351,6 +1351,16 @@ document.querySelectorAll('.product-card, .review-card, .usage-step').forEach((e
   el.style.transform = 'translateY(30px)';
   el.style.transition = `all 0.6s ${i * 0.1}s ease`;
   observer.observe(el);
+});
+
+// Make product cards clickable while allowing inner links
+document.querySelectorAll('.product-card[data-href]').forEach(card => {
+  card.style.cursor = 'pointer';
+  card.addEventListener('click', function(e) {
+    // Don't navigate if clicking on the quick links
+    if (e.target.closest('.product-quick-links')) return;
+    window.location.href = this.dataset.href;
+  });
 });
 </script>
 

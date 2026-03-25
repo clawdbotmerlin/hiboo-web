@@ -332,7 +332,7 @@ a.product-card {
   <div class="products-grid">
 
     <!-- 1. All Purpose Baby Balm 15g -->
-    <a href="produk-detail.html" class="product-card" data-category="balm" data-price="54500" data-sold="10000" data-date="2024-01">
+    <div class="product-card" data-href="produk-detail.html" data-category="balm" data-price="54500" data-sold="10000" data-date="2024-01">
       <span class="product-card-badge hot">Bestseller</span>
       <span class="product-card-badge disc">-69%</span>
       <div class="product-img">
@@ -356,10 +356,10 @@ a.product-card {
           <div class="product-rating">&#9733; 4.9 <span>(10RB+)</span></div>
         </div>
       </div>
-    </a>
+    </div>
 
     <!-- 2. Mochi Glow Body Serum 100ml -->
-    <a href="produk-detail.html" class="product-card" data-category="serum" data-price="64400" data-sold="8000" data-date="2024-02">
+    <div class="product-card" data-href="produk-detail.html" data-category="serum" data-price="64400" data-sold="8000" data-date="2024-02">
       <span class="product-card-badge disc">-44%</span>
       <div class="product-img">
         <div class="product-img-bg pc-blue">
@@ -382,10 +382,10 @@ a.product-card {
           <div class="product-rating">&#9733; 4.9 <span>(8RB+)</span></div>
         </div>
       </div>
-    </a>
+    </div>
 
     <!-- 3. Zzz Deep Sleep Baby Cream 15g -->
-    <a href="produk-detail.html" class="product-card" data-category="calming" data-price="43500" data-sold="10000" data-date="2024-03">
+    <div class="product-card" data-href="produk-detail.html" data-category="calming" data-price="43500" data-sold="10000" data-date="2024-03">
       <span class="product-card-badge disc">-61%</span>
       <div class="product-img">
         <div class="product-img-bg pc-lavender">
@@ -408,10 +408,10 @@ a.product-card {
           <div class="product-rating">&#9733; 4.8 <span>(10RB+)</span></div>
         </div>
       </div>
-    </a>
+    </div>
 
     <!-- 4. Double Protection Sunscreen 30ml -->
-    <a href="produk-detail.html" class="product-card" data-category="sunscreen" data-price="74500" data-sold="789" data-date="2025-10">
+    <div class="product-card" data-href="produk-detail.html" data-category="sunscreen" data-price="74500" data-sold="789" data-date="2025-10">
       <span class="product-card-badge new">New</span>
       <span class="product-card-badge disc">-67%</span>
       <div class="product-img">
@@ -435,10 +435,10 @@ a.product-card {
           <div class="product-rating">&#9733; 4.9 <span>(789)</span></div>
         </div>
       </div>
-    </a>
+    </div>
 
     <!-- 5. Baby Balm Mini 5g -->
-    <a href="produk-detail.html" class="product-card" data-category="balm" data-price="31500" data-sold="10000" data-date="2024-01">
+    <div class="product-card" data-href="produk-detail.html" data-category="balm" data-price="31500" data-sold="10000" data-date="2024-01">
       <span class="product-card-badge disc">-69%</span>
       <div class="product-img">
         <div class="product-img-bg pc-peach">
@@ -461,10 +461,10 @@ a.product-card {
           <div class="product-rating">&#9733; 4.9 <span>(10RB+)</span></div>
         </div>
       </div>
-    </a>
+    </div>
 
     <!-- 6. Protection Combo (Sunscreen + Balm) -->
-    <a href="produk-detail.html" class="product-card" data-category="bundle" data-price="74500" data-sold="185" data-date="2025-11">
+    <div class="product-card" data-href="produk-detail.html" data-category="bundle" data-price="74500" data-sold="185" data-date="2025-11">
       <span class="product-card-badge hot">Combo</span>
       <span class="product-card-badge disc">-67%</span>
       <div class="product-img">
@@ -488,10 +488,10 @@ a.product-card {
           <div class="product-rating">&#9733; 4.9 <span>(185)</span></div>
         </div>
       </div>
-    </a>
+    </div>
 
     <!-- 7. Bye Ruam Combo (2x Balm 15g) -->
-    <a href="produk-detail.html" class="product-card" data-category="bundle" data-price="89500" data-sold="10000" data-date="2024-06">
+    <div class="product-card" data-href="produk-detail.html" data-category="bundle" data-price="89500" data-sold="10000" data-date="2024-06">
       <span class="product-card-badge hot">Bundle</span>
       <span class="product-card-badge disc">-72%</span>
       <div class="product-img">
@@ -515,10 +515,10 @@ a.product-card {
           <div class="product-rating">&#9733; 4.9 <span>(10RB+)</span></div>
         </div>
       </div>
-    </a>
+    </div>
 
     <!-- 8. Mochi Glow Serum 50ml -->
-    <a href="produk-detail.html" class="product-card" data-category="serum" data-price="95900" data-sold="893" data-date="2025-09">
+    <div class="product-card" data-href="produk-detail.html" data-category="serum" data-price="95900" data-sold="893" data-date="2025-09">
       <span class="product-card-badge new">BUY 1 GET 1</span>
       <span class="product-card-badge disc">-47%</span>
       <div class="product-img">
@@ -542,7 +542,7 @@ a.product-card {
           <div class="product-rating">&#9733; 4.9 <span>(893)</span></div>
         </div>
       </div>
-    </a>
+    </div>
 
   </div>
 </section>
@@ -675,6 +675,16 @@ document.querySelectorAll('.sort-pill').forEach(pill => {
       }
     });
     cards.forEach(card => grid.appendChild(card));
+  });
+});
+
+// Make product cards clickable while allowing inner links
+document.querySelectorAll('.product-card[data-href]').forEach(card => {
+  card.style.cursor = 'pointer';
+  card.addEventListener('click', function(e) {
+    // Don't navigate if clicking on the quick links
+    if (e.target.closest('.product-quick-links')) return;
+    window.location.href = this.dataset.href;
   });
 });
 </script>

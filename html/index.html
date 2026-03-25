@@ -273,7 +273,7 @@
   </div>
   <div class="products-grid">
     <!-- All Purpose Baby Balm 15g -->
-    <div class="product-card" onclick="window.location='produk-detail.html'" style="cursor:pointer">
+    <div class="product-card" data-href="produk-detail.html">
       <span class="product-card-badge hot">Bestseller</span>
       <span class="product-card-badge disc">-69%</span>
       <div class="product-img">
@@ -299,7 +299,7 @@
       </div>
     </div>
     <!-- Mochi Glow Body Serum 100ml -->
-    <div class="product-card" onclick="window.location='produk-detail.html'" style="cursor:pointer">
+    <div class="product-card" data-href="produk-detail.html">
       <span class="product-card-badge">10RB+ sold</span>
       <span class="product-card-badge disc">-44%</span>
       <div class="product-img">
@@ -325,7 +325,7 @@
       </div>
     </div>
     <!-- Zzz Deep Sleep Baby Cream 15g -->
-    <div class="product-card" onclick="window.location='produk-detail.html'" style="cursor:pointer">
+    <div class="product-card" data-href="produk-detail.html">
       <span class="product-card-badge new">10RB+ sold</span>
       <span class="product-card-badge disc">-61%</span>
       <div class="product-img">
@@ -351,7 +351,7 @@
       </div>
     </div>
     <!-- Mochi Physical Sunscreen 30ml -->
-    <div class="product-card" onclick="window.location='produk-detail.html'" style="cursor:pointer">
+    <div class="product-card" data-href="produk-detail.html">
       <span class="product-card-badge new">New</span>
       <span class="product-card-badge disc">-67%</span>
       <div class="product-img">
@@ -377,7 +377,7 @@
       </div>
     </div>
     <!-- Baby Balm 5g -->
-    <div class="product-card" onclick="window.location='produk-detail.html'" style="cursor:pointer">
+    <div class="product-card" data-href="produk-detail.html">
       <span class="product-card-badge disc">-69%</span>
       <div class="product-img">
         <div class="product-img-bg pc-peach">
@@ -402,7 +402,7 @@
       </div>
     </div>
     <!-- Protection Combo -->
-    <div class="product-card" onclick="window.location='produk-detail.html'" style="cursor:pointer">
+    <div class="product-card" data-href="produk-detail.html">
       <span class="product-card-badge hot">Combo</span>
       <span class="product-card-badge disc">-67%</span>
       <div class="product-img">
@@ -874,6 +874,16 @@ document.querySelectorAll('.product-card, .why-card, .testi-card, .concern-card,
   var instaSection = document.querySelector('.insta-section');
   if (instaSection) feedObserver.observe(instaSection);
 })();
+
+// Make product cards clickable while allowing inner links
+document.querySelectorAll('.product-card[data-href]').forEach(card => {
+  card.style.cursor = 'pointer';
+  card.addEventListener('click', function(e) {
+    // Don't navigate if clicking on the quick links
+    if (e.target.closest('.product-quick-links')) return;
+    window.location.href = this.dataset.href;
+  });
+});
 </script>
 
 </body>
