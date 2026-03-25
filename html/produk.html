@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- SEO Meta Tags -->
+<title>Produk Skincare Bayi Hiboo | Balm, Serum, Sunscreen Bayi Indonesia</title>
+<meta name="description" content="Belanja produk skincare bayi Hiboo. Baby Balm, Mochi Glow Serum, Zzz Calming Cream, Sunscreen bayi. BPOM certified, Halal MUI. Aman newborn 0+ bulan. Gratis ongkir se-Indonesia.">
+<meta name="keywords" content="produk skincare bayi, baby balm, serum bayi, sunscreen bayi, krim bayi, hiboo, skincare bayi Indonesia, BPOM baby skincare, halal baby care, mochi skin">
+<meta name="author" content="PT Hiboo Indonesia">
+<meta name="robots" content="index, follow">
+<meta name="language" content="Indonesian">
+<meta name="geo.region" content="ID">
+<meta name="geo.country" content="ID">
+
+<!-- Open Graph / Social -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Produk Skincare Bayi Hiboo | Balm, Serum, Sunscreen Bayi Indonesia">
+<meta property="og:description" content="Belanja produk skincare bayi Hiboo. BPOM certified, Halal MUI. Aman newborn 0+ bulan.">
+<meta property="og:image" content="assets/images/products/all-products.png">
+<meta property="og:url" content="https://hiboo.co.id/produk">
+<meta property="og:locale" content="id_ID">
+<meta property="og:site_name" content="Hiboo Baby Skincare">
+
+<!-- Canonical -->
+<link rel="canonical" href="https://hiboo.co.id/produk">
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="assets/images/logo/hiboo-logo-color.png">
+
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+
+<!-- Shared CSS -->
+<link rel="stylesheet" href="assets/css/style.css">
+
+<!-- JSON-LD Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "Semua Produk Hiboo",
+  "description": "Koleksi lengkap produk skincare bayi Hiboo. Baby Balm, Serum, Calming Cream, Sunscreen.",
+  "url": "https://hiboo.co.id/produk",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Hiboo Baby Skincare",
+    "url": "https://hiboo.co.id"
+  }
+}
+</script>
+
+<style>
+/* ── PAGE HERO ── */
+.page-hero {
+  background: var(--hb-white);
+  padding: 48px 48px 56px;
+  text-align: center;
+  border-bottom: 1px solid rgba(0,0,0,0.04);
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--hb-muted);
+  margin-bottom: 20px;
+}
+
+.breadcrumb a {
+  color: var(--hb-muted);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.breadcrumb a:hover {
+  color: var(--hb-deep);
+}
+
+.breadcrumb svg {
+  width: 14px;
+  height: 14px;
+  stroke: var(--hb-light);
+}
+
+.page-hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(28px, 3.5vw, 42px);
+  font-weight: 600;
+  color: var(--hb-text);
+  margin-bottom: 10px;
+  line-height: 1.2;
+}
+
+.page-hero p {
+  font-size: 15px;
+  color: var(--hb-muted);
+  max-width: 520px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* ── FILTER & SORT BAR ── */
+.filter-sort-section {
+  padding: 32px 48px 0;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.filter-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.filter-pill {
+  background: var(--hb-white);
+  border: 1.5px solid rgba(0,0,0,0.08);
+  border-radius: 100px;
+  padding: 10px 24px;
+  font-family: 'Outfit', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--hb-text);
+  cursor: pointer;
+  transition: all 0.25s ease;
+  white-space: nowrap;
+}
+
+.filter-pill:hover,
+.filter-pill.active {
+  background: var(--hb-deep);
+  color: white;
+  border-color: var(--hb-deep);
+}
+
+.sort-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+}
+
+.sort-label {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--hb-muted);
+  margin-right: 4px;
+}
+
+.sort-pill {
+  background: transparent;
+  border: 1px solid rgba(0,0,0,0.06);
+  border-radius: 100px;
+  padding: 7px 18px;
+  font-family: 'Outfit', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--hb-muted);
+  cursor: pointer;
+  transition: all 0.25s ease;
+  white-space: nowrap;
+}
+
+.sort-pill:hover,
+.sort-pill.active {
+  background: var(--hb-navy);
+  color: white;
+  border-color: var(--hb-navy);
+}
+
+/* ── PRODUCTS LISTING ── */
+.products-listing {
+  padding: 40px 48px 100px;
+}
+
+.products-listing .products-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+a.product-card {
+  text-decoration: none;
+  color: inherit;
+}
+
+.products-listing .product-card {
+  background: var(--hb-white);
+}
+
+.products-listing .product-sold {
+  font-size: 11.5px;
+  color: var(--hb-muted);
+  font-weight: 500;
+  margin-top: 4px;
+}
+
+.products-listing .product-rating {
+  font-size: 12.5px;
+}
+
+/* ── RESULT COUNT ── */
+.result-count {
+  text-align: center;
+  font-size: 13px;
+  color: var(--hb-muted);
+  margin-bottom: 28px;
+}
+
+.result-count strong {
+  color: var(--hb-text);
+  font-weight: 600;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 1024px) {
+  .products-listing .products-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .page-hero {
+    padding: 32px 24px 40px;
+  }
+  .filter-sort-section {
+    padding: 24px 24px 0;
+  }
+  .products-listing {
+    padding: 32px 24px 80px;
+  }
+  .products-listing .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+  .filter-pill {
+    padding: 8px 18px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .products-listing .products-grid {
+    grid-template-columns: 1fr;
+    max-width: 360px;
+    margin: 0 auto;
+  }
+}
+
+/* ── NAV ACTIVE STATE ── */
+.nav-links a.active {
+  color: var(--hb-deep);
+}
+
+.nav-links a.active::after {
+  width: 100%;
+}
+</style>
+</head>
+<body>
+
+<!-- ANNOUNCEMENT BAR -->
+<div class="announce-bar">
+  <span>PROMO</span>
+  Gratis Ongkir se-Indonesia &nbsp;|&nbsp; Beli 2 Hemat 20% &mdash; Pakai kode <strong>MOCHISKIN</strong>
+</div>
+
+<!-- NAV -->
+<nav>
+  <a href="index.html" class="nav-logo">
+    <img src="assets/images/logo/hiboo-logo-color.png" alt="Hiboo Baby Skincare" width="160" height="52">
+  </a>
+  <ul class="nav-links">
+    <li><a href="produk.html" class="active">Produk</a></li>
+    <li><a href="tentang-kami.html">Tentang Kami</a></li>
+    <li><a href="bahan-kami.html">Bahan Kami</a></li>
+    <li><a href="panduan-kulit.html">Panduan Kulit</a></li>
+    <li><a href="blog.html">Blog</a></li>
+  </ul>
+  <div class="nav-right">
+    <button class="nav-icon" title="Cari" aria-label="Cari produk">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"/></svg>
+    </button>
+    <button class="nav-icon" title="Akun" aria-label="Akun saya">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"/></svg>
+    </button>
+    <button class="nav-icon cart-btn" title="Keranjang" aria-label="Keranjang belanja">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"/></svg>
+      <span class="cart-count">0</span>
+    </button>
+    <button class="mobile-menu-btn" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="breadcrumb">
+    <a href="index.html">Home</a>
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"/></svg>
+    <span>Produk</span>
+  </div>
+  <h1 class="playfair">Semua Produk Hiboo</h1>
+  <p>Skincare bayi selembut mochi. Diformulasikan oleh Pediatrician & Dermatologist, aman untuk newborn 0+ bulan.</p>
+</section>
+
+<!-- FILTER & SORT -->
+<div class="filter-sort-section">
+  <!-- Category Filter -->
+  <div class="filter-bar">
+    <button class="filter-pill active" data-filter="all">Semua</button>
+    <button class="filter-pill" data-filter="balm">Baby Balm</button>
+    <button class="filter-pill" data-filter="serum">Serum & Moisturizer</button>
+    <button class="filter-pill" data-filter="calming">Calming Cream</button>
+    <button class="filter-pill" data-filter="sunscreen">Sunscreen</button>
+    <button class="filter-pill" data-filter="bundle">Bundle/Combo</button>
+  </div>
+  <!-- Sort -->
+  <div class="sort-bar">
+    <span class="sort-label">Urutkan:</span>
+    <button class="sort-pill active" data-sort="popular">Terlaris</button>
+    <button class="sort-pill" data-sort="newest">Terbaru</button>
+    <button class="sort-pill" data-sort="price-low">Harga Terendah</button>
+    <button class="sort-pill" data-sort="price-high">Harga Tertinggi</button>
+  </div>
+</div>
+
+<!-- PRODUCTS GRID -->
+<section class="products-listing">
+  <div class="result-count">Menampilkan <strong>8</strong> produk</div>
+
+  <div class="products-grid">
+
+    <!-- 1. All Purpose Baby Balm 15g -->
+    <a href="produk-detail.html" class="product-card" data-category="balm" data-price="54500" data-sold="10000" data-date="2024-01">
+      <span class="product-card-badge hot">Bestseller</span>
+      <span class="product-card-badge disc">-69%</span>
+      <div class="product-img">
+        <div class="product-img-bg pc-peach">
+          <img src="assets/images/products/balm-15g.png" alt="Hiboo All Purpose Baby Balm 15g" width="200" height="260" loading="lazy">
+        </div>
+        <button class="product-quick-add">+ Tambah ke Keranjang</button>
+      </div>
+      <div class="product-info">
+        <div class="p-category">Balm &middot; 15g</div>
+        <h3>All Purpose Baby Balm</h3>
+        <p class="p-desc">10% Coconut Oil + Vitamin E + Beeswax. Atasi eczema, ruam popok, & gigitan serangga.</p>
+        <div class="product-footer">
+          <div class="product-price">
+            <span class="original">Rp175.000</span>
+            <span class="current">Rp54.500</span>
+          </div>
+          <div class="product-rating">&#9733; 4.9 <span>(10RB+)</span></div>
+        </div>
+      </div>
+    </a>
+
+    <!-- 2. Mochi Glow Body Serum 100ml -->
+    <a href="produk-detail.html" class="product-card" data-category="serum" data-price="64400" data-sold="8000" data-date="2024-02">
+      <span class="product-card-badge disc">-44%</span>
+      <div class="product-img">
+        <div class="product-img-bg pc-blue">
+          <img src="assets/images/products/mochi-serum-100ml.png" alt="Hiboo Mochi Glow Body Serum 100ml" width="200" height="260" loading="lazy">
+        </div>
+        <button class="product-quick-add">+ Tambah ke Keranjang</button>
+      </div>
+      <div class="product-info">
+        <div class="p-category">Serum &middot; 100ml</div>
+        <h3>Mochi Glow Body Serum</h3>
+        <p class="p-desc">Japanese White Tomato + 7x Hyaluronic Acid + Ceramide untuk kulit glowing selembut mochi.</p>
+        <div class="product-footer">
+          <div class="product-price">
+            <span class="original">Rp115.000</span>
+            <span class="current">Rp64.400</span>
+          </div>
+          <div class="product-rating">&#9733; 4.9 <span>(8RB+)</span></div>
+        </div>
+      </div>
+    </a>
+
+    <!-- 3. Zzz Deep Sleep Baby Cream 15g -->
+    <a href="produk-detail.html" class="product-card" data-category="calming" data-price="43500" data-sold="10000" data-date="2024-03">
+      <span class="product-card-badge disc">-61%</span>
+      <div class="product-img">
+        <div class="product-img-bg pc-lavender">
+          <img src="assets/images/products/zzz-cream-30g.png" alt="Hiboo Zzz Deep Sleep Baby Cream 15g" width="200" height="260" loading="lazy">
+        </div>
+        <button class="product-quick-add">+ Tambah ke Keranjang</button>
+      </div>
+      <div class="product-info">
+        <div class="p-category">Calming Cream &middot; 15g</div>
+        <h3>Zzz Deep Sleep Baby Cream</h3>
+        <p class="p-desc">7x Essential Oils + Shea Butter + Aloe Vera untuk tidur nyenyak bayi.</p>
+        <div class="product-footer">
+          <div class="product-price">
+            <span class="original">Rp112.500</span>
+            <span class="current">Rp43.500</span>
+          </div>
+          <div class="product-rating">&#9733; 4.8 <span>(10RB+)</span></div>
+        </div>
+      </div>
+    </a>
+
+    <!-- 4. Double Protection Sunscreen 30ml -->
+    <a href="produk-detail.html" class="product-card" data-category="sunscreen" data-price="74500" data-sold="789" data-date="2025-10">
+      <span class="product-card-badge new">New</span>
+      <span class="product-card-badge disc">-67%</span>
+      <div class="product-img">
+        <div class="product-img-bg pc-blue">
+          <img src="assets/images/products/mochi-sunscreen-30ml.png" alt="Hiboo Double Protection Sunscreen 30ml" width="200" height="260" loading="lazy">
+        </div>
+        <button class="product-quick-add">+ Tambah ke Keranjang</button>
+      </div>
+      <div class="product-info">
+        <div class="p-category">Sunscreen &middot; 30ml</div>
+        <h3>Double Protection Sunscreen</h3>
+        <p class="p-desc">SPF 50+ PA++++ Physical sunscreen dengan Citronella + Lavender Oil. Water Resistant.</p>
+        <div class="product-footer">
+          <div class="product-price">
+            <span class="original">Rp225.000</span>
+            <span class="current">Rp74.500</span>
+          </div>
+          <div class="product-rating">&#9733; 4.9 <span>(789)</span></div>
+        </div>
+      </div>
+    </a>
+
+    <!-- 5. Baby Balm Mini 5g -->
+    <a href="produk-detail.html" class="product-card" data-category="balm" data-price="31500" data-sold="10000" data-date="2024-01">
+      <span class="product-card-badge disc">-69%</span>
+      <div class="product-img">
+        <div class="product-img-bg pc-peach">
+          <img src="assets/images/products/balm-5g.png" alt="Hiboo All Purpose Baby Balm Mini 5g" width="200" height="260" loading="lazy">
+        </div>
+        <button class="product-quick-add">+ Tambah ke Keranjang</button>
+      </div>
+      <div class="product-info">
+        <div class="p-category">Balm &middot; 5g</div>
+        <h3>Baby Balm Mini</h3>
+        <p class="p-desc">Ukuran travel untuk tas bayi. Solusi cepat eczema & ruam kapan saja di mana saja.</p>
+        <div class="product-footer">
+          <div class="product-price">
+            <span class="original">Rp100.000</span>
+            <span class="current">Rp31.500</span>
+          </div>
+          <div class="product-rating">&#9733; 4.9 <span>(10RB+)</span></div>
+        </div>
+      </div>
+    </a>
+
+    <!-- 6. Protection Combo (Sunscreen + Balm) -->
+    <a href="produk-detail.html" class="product-card" data-category="bundle" data-price="74500" data-sold="185" data-date="2025-11">
+      <span class="product-card-badge hot">Combo</span>
+      <span class="product-card-badge disc">-67%</span>
+      <div class="product-img">
+        <div class="product-img-bg pc-blue">
+          <img src="assets/images/products/mochi-face-15ml.png" alt="Hiboo Protection Combo - Sunscreen + Balm" width="200" height="260" loading="lazy">
+        </div>
+        <button class="product-quick-add">+ Tambah ke Keranjang</button>
+      </div>
+      <div class="product-info">
+        <div class="p-category">Combo &middot; Sunscreen + Balm</div>
+        <h3>Protection Combo</h3>
+        <p class="p-desc">Paket perlindungan lengkap: Double Protection Sunscreen + All Purpose Baby Balm.</p>
+        <div class="product-footer">
+          <div class="product-price">
+            <span class="original">Rp225.000</span>
+            <span class="current">Rp74.500</span>
+          </div>
+          <div class="product-rating">&#9733; 4.9 <span>(185)</span></div>
+        </div>
+      </div>
+    </a>
+
+    <!-- 7. Bye Ruam Combo (2x Balm 15g) -->
+    <a href="produk-detail.html" class="product-card" data-category="bundle" data-price="89500" data-sold="10000" data-date="2024-06">
+      <span class="product-card-badge hot">Bundle</span>
+      <span class="product-card-badge disc">-72%</span>
+      <div class="product-img">
+        <div class="product-img-bg pc-peach">
+          <img src="assets/images/products/balm-box-15g.png" alt="Hiboo Bye Ruam Combo - 2x Baby Balm 15g" width="200" height="260" loading="lazy">
+        </div>
+        <button class="product-quick-add">+ Tambah ke Keranjang</button>
+      </div>
+      <div class="product-info">
+        <div class="p-category">Bundle &middot; 2x Balm 15g</div>
+        <h3>Bye Ruam Combo</h3>
+        <p class="p-desc">Hemat lebih banyak! 2x All Purpose Baby Balm 15g untuk stok di rumah dan bepergian.</p>
+        <div class="product-footer">
+          <div class="product-price">
+            <span class="original">Rp325.000</span>
+            <span class="current">Rp89.500</span>
+          </div>
+          <div class="product-rating">&#9733; 4.9 <span>(10RB+)</span></div>
+        </div>
+      </div>
+    </a>
+
+    <!-- 8. Mochi Glow Serum 50ml -->
+    <a href="produk-detail.html" class="product-card" data-category="serum" data-price="95900" data-sold="893" data-date="2025-09">
+      <span class="product-card-badge new">BUY 1 GET 1</span>
+      <span class="product-card-badge disc">-47%</span>
+      <div class="product-img">
+        <div class="product-img-bg pc-blue">
+          <img src="assets/images/products/mochi-serum-50ml.png" alt="Hiboo Mochi Glow Serum 50ml" width="200" height="260" loading="lazy">
+        </div>
+        <button class="product-quick-add">+ Tambah ke Keranjang</button>
+      </div>
+      <div class="product-info">
+        <div class="p-category">Serum &middot; 50ml</div>
+        <h3>Mochi Glow Serum</h3>
+        <p class="p-desc">Japanese White Tomato + 7x Hyaluronic Acid + Ceramide. Ukuran travel-friendly.</p>
+        <div class="product-footer">
+          <div class="product-price">
+            <span class="original">Rp180.000</span>
+            <span class="current">Rp95.900</span>
+          </div>
+          <div class="product-rating">&#9733; 4.9 <span>(893)</span></div>
+        </div>
+      </div>
+    </a>
+
+  </div>
+</section>
+
+<!-- WHATSAPP FLOATING BUTTON -->
+<div class="wa-float">
+  <span class="wa-float-label">Chat dengan Kami</span>
+  <a href="https://wa.me/6281234567890?text=Halo%20Hiboo%2C%20saya%20ingin%20bertanya%20tentang%20produk%20skincare%20bayi" target="_blank" rel="noopener" class="wa-float-btn" aria-label="Chat WhatsApp Hiboo">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+  </a>
+</div>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="fb-logo">
+        <img src="assets/images/logo/hiboo-logo-white.png" alt="Hiboo" width="130" height="44" loading="lazy">
+      </div>
+      <p>Skincare bayi selembut mochi. Diformulasikan oleh Pediatrician & Dermatologist. Hypoallergenic, Natural, Gentle.</p>
+      <div class="footer-socials">
+        <a href="https://www.instagram.com/hiboo.baby/" class="footer-social" title="Instagram" rel="noopener" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069ZM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0Zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324ZM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8Zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881Z"/></svg>
+        </a>
+        <a href="#" class="footer-social" title="TikTok" rel="noopener">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 0 0-.79-.05A6.34 6.34 0 0 0 3.15 15.2a6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.34-6.34V8.73a8.19 8.19 0 0 0 4.77 1.52V6.8a4.84 4.84 0 0 1-1.01-.11Z"/></svg>
+        </a>
+        <a href="#" class="footer-social" title="Shopee" rel="noopener">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007Z"/></svg>
+        </a>
+        <a href="#" class="footer-social" title="Tokopedia" rel="noopener">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M13.976 9.15c-2.172-.806-3.356-1.426-3.356-2.409 0-.831.683-1.305 1.901-1.305 2.227 0 4.515.858 6.09 1.631l.89-5.494C18.252.975 15.697 0 12.165 0 9.667 0 7.589.654 6.104 1.872 4.56 3.147 3.757 4.918 3.757 7.039c0 3.478 2.578 5.132 5.75 6.313 2.164.831 3.214 1.517 3.214 2.507 0 .832-.71 1.397-2.07 1.397-1.894 0-4.886-.948-6.83-2.206L2.93 20.639C4.978 21.977 8.025 23 11.02 23c2.614 0 4.752-.632 6.29-1.819 1.653-1.273 2.515-3.073 2.515-5.347 0-3.594-2.61-5.208-5.849-6.684Z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Produk</h4>
+      <ul>
+        <li><a href="#">Mochi Skin Serum</a></li>
+        <li><a href="#">All Purpose Baby Balm</a></li>
+        <li><a href="#">Zzz Calming Cream</a></li>
+        <li><a href="#">Mochi Sunscreen</a></li>
+        <li><a href="#">Starter Kit</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Info</h4>
+      <ul>
+        <li><a href="#">Tentang Hiboo</a></li>
+        <li><a href="bahan-kami.html">Bahan Kami</a></li>
+        <li><a href="#">Panduan Kulit Bayi</a></li>
+        <li><a href="#">Blog & Tips</a></li>
+        <li><a href="#">Brand Ambassador</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Bantuan</h4>
+      <ul>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Pengiriman</a></li>
+        <li><a href="#">Kebijakan Pengembalian</a></li>
+        <li><a href="#">Hubungi Kami</a></li>
+        <li><a href="#">WhatsApp CS</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 Hiboo. All rights reserved. PT Hiboo Indonesia.</p>
+    <div class="footer-badges">
+      <span class="footer-badge">BPOM Certified</span>
+      <span class="footer-badge">Halal MUI</span>
+      <span class="footer-badge">Derma-Tested</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* ── Scroll animations ── */
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.style.opacity = '1';
+      entry.target.style.transform = 'translateY(0)';
+    }
+  });
+}, { threshold: 0.08 });
+
+document.querySelectorAll('.product-card').forEach((el, i) => {
+  el.style.opacity = '0';
+  el.style.transform = 'translateY(20px)';
+  el.style.transition = `opacity 0.6s ease ${i * 0.06}s, transform 0.6s ease ${i * 0.06}s`;
+  observer.observe(el);
+});
+
+/* ── Filter pills ── */
+document.querySelectorAll('.filter-pill').forEach(pill => {
+  pill.addEventListener('click', () => {
+    document.querySelectorAll('.filter-pill').forEach(p => p.classList.remove('active'));
+    pill.classList.add('active');
+    const filter = pill.dataset.filter;
+    const cards = document.querySelectorAll('.product-card');
+    let visible = 0;
+    cards.forEach(card => {
+      if (filter === 'all' || card.dataset.category === filter) {
+        card.style.display = '';
+        visible++;
+      } else {
+        card.style.display = 'none';
+      }
+    });
+    document.querySelector('.result-count strong').textContent = visible;
+  });
+});
+
+/* ── Sort pills ── */
+document.querySelectorAll('.sort-pill').forEach(pill => {
+  pill.addEventListener('click', () => {
+    document.querySelectorAll('.sort-pill').forEach(p => p.classList.remove('active'));
+    pill.classList.add('active');
+    const sort = pill.dataset.sort;
+    const grid = document.querySelector('.products-grid');
+    const cards = [...grid.querySelectorAll('.product-card')];
+    cards.sort((a, b) => {
+      switch (sort) {
+        case 'popular': return parseInt(b.dataset.sold) - parseInt(a.dataset.sold);
+        case 'newest': return b.dataset.date.localeCompare(a.dataset.date);
+        case 'price-low': return parseInt(a.dataset.price) - parseInt(b.dataset.price);
+        case 'price-high': return parseInt(b.dataset.price) - parseInt(a.dataset.price);
+        default: return 0;
+      }
+    });
+    cards.forEach(card => grid.appendChild(card));
+  });
+});
+</script>
+
+</body>
+</html>
