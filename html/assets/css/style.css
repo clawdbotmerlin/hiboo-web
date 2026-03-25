@@ -1751,7 +1751,6 @@ nav {
 /* ── EXTRA SMALL (< 380px) ── */
 @media (max-width: 380px) {
   .hero h1 { font-size: 28px; }
-  .products-grid { grid-template-columns: 1fr; }
   .proof-stats { flex-direction: column; gap: 16px; }
   .trust-ribbon { flex-direction: column; align-items: center; }
 }
