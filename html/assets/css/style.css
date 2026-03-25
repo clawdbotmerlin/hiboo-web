@@ -755,6 +755,57 @@ nav {
   object-fit: contain;
 }
 
+.product-quick-links {
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%) translateY(20px);
+  opacity: 0;
+  display: flex;
+  gap: 8px;
+  transition: all 0.35s ease;
+  white-space: nowrap;
+  z-index: 3;
+}
+
+.product-quick-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 100px;
+  font-family: 'Outfit', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.2s ease;
+}
+
+.product-quick-links a:hover { transform: scale(1.05); }
+
+.product-quick-links a svg {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+}
+
+.product-quick-links .pql-shopee {
+  background: #EE4D2D;
+}
+
+.product-quick-links .pql-tiktok {
+  background: var(--hb-text);
+}
+
+.product-card:hover .product-quick-links {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+/* Legacy single button fallback */
 .product-quick-add {
   position: absolute;
   bottom: 16px;
@@ -772,6 +823,7 @@ nav {
   cursor: pointer;
   transition: all 0.35s ease;
   white-space: nowrap;
+  text-decoration: none;
 }
 
 .product-card:hover .product-quick-add {
