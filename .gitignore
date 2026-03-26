@@ -2,3 +2,7 @@
 *.zip
 *.ai
 Asset/
+BrandAsset/
+node_modules/
+wp-config.php
+.env
