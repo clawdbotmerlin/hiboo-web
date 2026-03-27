@@ -49,7 +49,7 @@ $catalogue = array(
     ),
     'sizes' => array(
       array( 'label' => '5g Travel', 'shopee' => 'https://shopee.co.id/Hiboo-All-Purpose-Baby-Balm-5g-Travel-Size-with-10-Coconut-Oil-Vit-E-Beeswax-Natural-Nourishing-Moisturizer-Salep-Anak-Ruam-Popok-i.731537794.21093135682', 'tiktok' => 'https://www.tiktok.com/view/product/1729736568807458217' ),
-      array( 'label' => '15g',       'shopee' => 'https://shopee.co.id/Hiboo-Bye-Ruam-Combo-Mix-Size-All-Purpose-Baby-Balm-Set-15g-5g-10-Coconut-Oil-Vit-E-Beeswax-Natural-Nourishing-Calming-Moisturizer-Balsem-Salep-Anak-Bayi-Ruam-Popok-Skincare-A55-i.731537794.20393740811', 'tiktok' => 'https://www.tiktok.com/view/product/1730467194891502767' ),
+      array( 'label' => '15g',       'shopee' => 'https://shopee.co.id/Hiboo-All-Purpose-Baby-Balm-15g-with-10-Coconut-Oil-Vit-E-Beeswax-Japan-Natural-Nourishing-Moisturizer-Salep-Anak-Bayi-Newborn-Ruam-Popok-Beruntusan-i.731537794.23654877732', 'tiktok' => 'https://www.tiktok.com/view/product/1730467194891502767' ),
     ),
     'benefits' => array(
       array( 'icon' => '🌴', 'title' => 'Atasi Eczema & Eksim',        'desc' => '10% Coconut Oil bekerja aktif meredakan kemerahan, gatal, dan kulit kering akibat eczema.' ),
@@ -102,7 +102,7 @@ $catalogue = array(
     ),
     'sizes' => array(
       array( 'label' => '15ml Face', 'shopee' => 'https://shopee.co.id/-DAPAT-COIN-PURSE-Hiboo-Mochi-Face-Serum-with-Japanese-White-Tomato-2-in-1-Face-Cream-Bayi-Lotion-Bayi-15-ml-Skincare-Bayi-Whitening-Glowing-C00-i.731537794.42957155057', 'tiktok' => 'https://www.tiktok.com/view/product/1730227434899997893' ),
-      array( 'label' => '50ml',      'shopee' => 'https://shopee.co.id/Hiboo-Mochi-Skin-Serum-with-Japanese-White-Tomato-for-Baby-Face-Body-50-ml-C22-i.731537794.29763475776', 'tiktok' => 'https://www.tiktok.com/view/product/1730227434899997893' ),
+      array( 'label' => '50ml',      'shopee' => 'https://shopee.co.id/Hiboo-Mochi-Skin-Serum-with-Japanese-White-Tomato-for-Baby-Face-Body-50-ml-C22-i.731537794.29763475776', 'tiktok' => 'https://www.tiktok.com/view/product/1729669411949020357' ),
       array( 'label' => '100ml',     'shopee' => 'https://shopee.co.id/Hiboo-Mochi-Glow-Body-Serum-with-Japanese-White-Tomato-2-in-1-Face-Cream-Bayi-Body-Lotion-Bayi-100-ml-Skincare-Newborn-Cream-C11-i.731537794.28813480562', 'tiktok' => 'https://www.tiktok.com/view/product/1729669411949020357' ),
     ),
     'benefits' => array(
@@ -258,7 +258,7 @@ $catalogue = array(
     ),
     'sizes' => array(
       array( 'label' => '5g Travel', 'shopee' => 'https://shopee.co.id/Hiboo-All-Purpose-Baby-Balm-5g-Travel-Size-with-10-Coconut-Oil-Vit-E-Beeswax-Natural-Nourishing-Moisturizer-Salep-Anak-Ruam-Popok-i.731537794.21093135682', 'tiktok' => 'https://www.tiktok.com/view/product/1729736568807458217' ),
-      array( 'label' => '15g Full',  'shopee' => 'https://shopee.co.id/Hiboo-Bye-Ruam-Combo-Mix-Size-All-Purpose-Baby-Balm-Set-15g-5g-10-Coconut-Oil-Vit-E-Beeswax-Natural-Nourishing-Calming-Moisturizer-Balsem-Salep-Anak-Bayi-Ruam-Popok-Skincare-A55-i.731537794.20393740811', 'tiktok' => 'https://www.tiktok.com/view/product/1730467194891502767' ),
+      array( 'label' => '15g Full',  'shopee' => 'https://shopee.co.id/Hiboo-All-Purpose-Baby-Balm-15g-with-10-Coconut-Oil-Vit-E-Beeswax-Japan-Natural-Nourishing-Moisturizer-Salep-Anak-Bayi-Newborn-Ruam-Popok-Beruntusan-i.731537794.23654877732', 'tiktok' => 'https://www.tiktok.com/view/product/1730467194891502767' ),
     ),
     'benefits' => array(
       array( 'icon' => '👜', 'title' => 'Muat di Semua Tas Bayi',    'desc' => '5g super compact — masuk ke diaper bag, clutch mama, atau bahkan saku celana.' ),
@@ -571,7 +571,7 @@ $size_count     = count( $product['sizes'] );
 <!-- RELATED PRODUCTS -->
 <?php
 $related_products = array(
-  'all-purpose-baby-balm'     => array( 'img' => 'balm-15g.png',           'bg' => 'pc-peach',    'badge' => 'Bestseller', 'bc' => 'hot', 'disc' => '-69%', 'cat' => 'Balm &middot; 15g',     'name' => 'All Purpose Baby Balm',    'orig' => 'Rp175.000', 'price' => 'Rp54.500', 'rate' => '4.9', 'rev' => '18.2K', 'shopee' => 'https://shopee.co.id/Hiboo-Bye-Ruam-Combo-Mix-Size-All-Purpose-Baby-Balm-Set-15g-5g-10-Coconut-Oil-Vit-E-Beeswax-Natural-Nourishing-Calming-Moisturizer-Balsem-Salep-Anak-Bayi-Ruam-Popok-Skincare-A55-i.731537794.20393740811', 'tiktok' => 'https://www.tiktok.com/view/product/1730467194891502767' ),
+  'all-purpose-baby-balm'     => array( 'img' => 'balm-15g.png',           'bg' => 'pc-peach',    'badge' => 'Bestseller', 'bc' => 'hot', 'disc' => '-69%', 'cat' => 'Balm &middot; 15g',     'name' => 'All Purpose Baby Balm',    'orig' => 'Rp175.000', 'price' => 'Rp54.500', 'rate' => '4.9', 'rev' => '18.2K', 'shopee' => 'https://shopee.co.id/Hiboo-All-Purpose-Baby-Balm-15g-with-10-Coconut-Oil-Vit-E-Beeswax-Japan-Natural-Nourishing-Moisturizer-Salep-Anak-Bayi-Newborn-Ruam-Popok-Beruntusan-i.731537794.23654877732', 'tiktok' => 'https://www.tiktok.com/view/product/1730467194891502767' ),
   'mochi-glow-body-serum'     => array( 'img' => 'mochi-serum-100ml.png',   'bg' => 'pc-blue',     'badge' => '',           'bc' => '',    'disc' => '-44%', 'cat' => 'Serum &middot; 100ml',   'name' => 'Mochi Glow Body Serum',    'orig' => 'Rp115.000', 'price' => 'Rp64.400', 'rate' => '4.9', 'rev' => '8RB+',  'shopee' => 'https://shopee.co.id/Hiboo-Mochi-Glow-Body-Serum-with-Japanese-White-Tomato-2-in-1-Face-Cream-Bayi-Body-Lotion-Bayi-100-ml-Skincare-Newborn-Cream-C11-i.731537794.28813480562', 'tiktok' => 'https://www.tiktok.com/view/product/1729669411949020357' ),
   'zzz-deep-sleep-baby-cream' => array( 'img' => 'zzz-cream-30g.png',       'bg' => 'pc-lavender', 'badge' => '',           'bc' => '',    'disc' => '-61%', 'cat' => 'Calming &middot; 15g',   'name' => 'Zzz Deep Sleep Cream',     'orig' => 'Rp112.500', 'price' => 'Rp43.500', 'rate' => '4.8', 'rev' => '10RB+', 'shopee' => 'https://shopee.co.id/hiboo-Zzz-Deep-Sleep-Baby-Cream-15-gr-7X-Essential-Tidur-Kolik-%E2%80%93-Calming-Baby-Cream-Skincare-Anak-Bayi-Newborn-Body-Lotion-Mama%E2%80%99s-Cream-i.731537794.24421851945', 'tiktok' => 'https://www.tiktok.com/view/product/1730471352733959343' ),
   'double-protection-sunscreen'=> array( 'img' => 'mochi-sunscreen-30ml.png','bg' => 'pc-gold',     'badge' => 'New',        'bc' => 'new', 'disc' => '-67%', 'cat' => 'Sunscreen &middot; 30ml', 'name' => 'Double Protection Sunscreen','orig' => 'Rp225.000', 'price' => 'Rp74.500', 'rate' => '4.9', 'rev' => '789',   'shopee' => 'https://shopee.co.id/Hiboo-Physical-Mochi-Sunscreen-Anak-30-ml-SPF-50-PA-Double-Protection-Skincare-Bayi-Anti-Nyamuk-Perlindungan-UVA-UVB-S11-i.731537794.56101681763', 'tiktok' => 'https://www.tiktok.com/view/product/1730856220718367941' ),
