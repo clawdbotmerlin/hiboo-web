@@ -4581,6 +4581,35 @@ a.product-card {
   font-weight: 500;
 }
 
+/* ── PDP TAGLINE & MARKETPLACE BUTTONS ── */
+.pdp-tagline {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--hb-muted);
+  letter-spacing: 0.04em;
+  margin-bottom: 16px;
+}
+
+.pdp-marketplace-btns {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 28px;
+}
+
+.pdp-marketplace-btns .mp-btn {
+  padding: 16px 28px;
+  font-size: 15px;
+  font-weight: 700;
+  border-radius: 14px;
+  justify-content: center;
+}
+
+.pdp-marketplace-btns .mp-btn svg {
+  width: 20px;
+  height: 20px;
+}
+
 /* ── PDP GRID ── */
 .pdp-section {
   max-width: 1100px;
