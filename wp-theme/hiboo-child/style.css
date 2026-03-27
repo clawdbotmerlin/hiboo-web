@@ -4995,9 +4995,11 @@ a.product-card {
 
 .tab-btn {
   padding: 14px 28px;
-  background: none;
+  background: transparent !important;
   border: none;
-  font-family: 'Outfit', sans-serif;
+  border-radius: 0;
+  box-shadow: none !important;
+  font-family: 'Nunito', sans-serif;
   font-size: 14px;
   font-weight: 600;
   color: var(--hb-muted);
@@ -5005,13 +5007,23 @@ a.product-card {
   position: relative;
   white-space: nowrap;
   transition: color 0.25s ease;
+  outline: none;
+  -webkit-appearance: none;
+  appearance: none;
 }
 
-.tab-btn:hover {
+.tab-btn:hover,
+.tab-btn:focus,
+.tab-btn:active,
+.tab-btn:focus-visible {
+  background: transparent !important;
+  box-shadow: none !important;
+  outline: none;
   color: var(--hb-text);
 }
 
 .tab-btn.active {
+  background: transparent !important;
   color: var(--hb-deep);
 }
 
