@@ -1518,6 +1518,90 @@ nav {
   to { transform: rotate(360deg); }
 }
 
+/* ── Smash Balloon (@instagram-feed) layout overrides ── */
+.insta-sbi-wrap { width: 100%; }
+
+/* Reset plugin container */
+.insta-sbi-wrap .sbi,
+.insta-sbi-wrap .sbi_no_js_check { padding: 0 !important; background: transparent !important; }
+
+/* Grid layout */
+.insta-sbi-wrap #sbi_images {
+  display: grid !important;
+  grid-template-columns: repeat(5, 1fr) !important;
+  gap: 6px !important;
+  float: none !important;
+  width: 100% !important;
+}
+
+/* Each tile */
+.insta-sbi-wrap .sbi_item {
+  aspect-ratio: 1 !important;
+  border-radius: 8px !important;
+  overflow: hidden !important;
+  float: none !important;
+  width: auto !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  background: var(--hb-snow) !important;
+  position: relative !important;
+}
+
+/* Photo wrapper fills tile */
+.insta-sbi-wrap .sbi_photo_wrap {
+  height: 100% !important;
+  display: block !important;
+}
+
+/* Link fills tile */
+.insta-sbi-wrap a.sbi_photo {
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  background-size: cover !important;
+  background-position: center !important;
+}
+
+/* Background-image based tiles need a pseudo element for aspect-ratio */
+.insta-sbi-wrap .sbi_photo_img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  display: block !important;
+  transition: transform 0.5s ease !important;
+}
+
+.insta-sbi-wrap .sbi_item:hover .sbi_photo_img,
+.insta-sbi-wrap .sbi_item:hover a.sbi_photo { transform: scale(1.05) !important; }
+
+/* Hide Smash Balloon built-in chrome we don't need */
+.insta-sbi-wrap .sbi_follow_btn,
+.insta-sbi-wrap .sbi_header,
+.insta-sbi-wrap .sbi_powered_by,
+.insta-sbi-wrap .sbi_lb_close,
+.insta-sbi-wrap .sbi_load_btn_wrap { display: none !important; }
+
+/* Hover overlay on real feed tiles */
+.insta-sbi-wrap .sbi_item::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(27,77,110,0.45);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 8px;
+  pointer-events: none;
+}
+.insta-sbi-wrap .sbi_item:hover::after { opacity: 1; }
+
+/* Responsive overrides */
+@media (max-width: 900px) {
+  .insta-sbi-wrap #sbi_images { grid-template-columns: repeat(4, 1fr) !important; }
+}
+@media (max-width: 600px) {
+  .insta-sbi-wrap #sbi_images { grid-template-columns: repeat(2, 1fr) !important; gap: 4px !important; }
+}
+
 .insta-follow-bar {
   text-align: center;
   margin-top: 32px;
@@ -1769,7 +1853,7 @@ nav {
   .testi-grid { grid-template-columns: 1fr; max-width: 400px; margin: 0 auto; }
   .proof-stats { gap: 32px; flex-wrap: wrap; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
-  .insta-grid { grid-template-columns: repeat(4, 1fr); }
+  /* .insta-grid replaced by Smash Balloon overrides above */
   .trust-ribbon { gap: 16px; flex-wrap: wrap; justify-content: center; padding: 20px 24px; }
   .concerns-grid { grid-template-columns: repeat(2, 1fr); }
 }
@@ -1867,8 +1951,6 @@ nav {
   .cta-banner h2 { font-size: 24px; }
   .cta-banner p { font-size: 14px; }
 
-  /* ── INSTAGRAM ── */
-  .insta-grid { grid-template-columns: repeat(2, 1fr); gap: 4px; }
   .insta-follow-bar { margin-top: 24px; }
 
   /* ── FOOTER ── */

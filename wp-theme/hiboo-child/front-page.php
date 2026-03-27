@@ -295,36 +295,8 @@ $img = get_stylesheet_directory_uri() . '/assets/images';
     <p>40K+ Moms sudah bergabung. Follow kami di <a href="https://www.instagram.com/hiboo.baby/" target="_blank" rel="noopener">Instagram</a></p>
   </div>
   <div class="insta-feed">
-    <div class="insta-grid" id="instaGrid">
-      <?php
-      $insta_posts = array(
-        array( 'img' => 'balm-15g.png',            'caption' => 'Baby Balm untuk ruam popok & eczema si kecil ✨ #hiboomochiskin #babybalm', 'likes' => '2.847', 'comments' => '143' ),
-        array( 'img' => 'mochi-serum-100ml.png',    'caption' => 'Kulit bayi glowing selembut mochi dengan Mochi Glow Body Serum 🌸 #mochihada #babyserum', 'likes' => '3.129', 'comments' => '98' ),
-        array( 'img' => 'zzz-cream-30g.png',        'caption' => 'Tidur nyenyak dengan Zzz Deep Sleep Baby Cream 🌙 7 essential oils yang menenangkan #zzzcream', 'likes' => '4.512', 'comments' => '267' ),
-        array( 'img' => 'mochi-sunscreen-30ml.png', 'caption' => 'Double Protection Sunscreen SPF 50+ PA++++ — lindungi kulit mochi si kecil ☀️ #sunscreenbayi', 'likes' => '1.893', 'comments' => '76' ),
-        array( 'img' => 'balm-5g.png',              'caption' => 'Baby Balm mini buat di tas! Solusi cepat ruam & gigitan serangga kapan saja 💙 #hiboobabybalm', 'likes' => '2.341', 'comments' => '115' ),
-        array( 'img' => 'mochi-serum-50ml.png',     'caption' => 'Japanese White Tomato + 7x Hyaluronic Acid = kulit mochi terbaik untuk bayi Indonesia 🍡 #mochiskin', 'likes' => '5.104', 'comments' => '389' ),
-        array( 'img' => 'balm-box-15g.png',         'caption' => 'Stok Baby Balm selalu ada di rumah ✅ Bye ruam popok, bye gigitan serangga! #hiboobaby', 'likes' => '1.678', 'comments' => '82' ),
-        array( 'img' => 'zzz-cream-15g.png',        'caption' => 'Moms, si kecil susah tidur? Coba Zzz Calming Cream yang udah bantu 50K+ keluarga Indonesia 💤 #zzzbabycare', 'likes' => '6.230', 'comments' => '441' ),
-      );
-      foreach ( $insta_posts as $post ) :
-      ?>
-      <div class="insta-tile">
-        <a href="https://www.instagram.com/hiboo.baby/" target="_blank" rel="noopener" title="<?php echo esc_attr( $post['caption'] ); ?>">
-          <img src="<?php echo $img; ?>/products/<?php echo esc_attr( $post['img'] ); ?>" alt="Hiboo @hiboo.baby Instagram" loading="lazy">
-          <div class="insta-overlay">
-            <span class="insta-overlay-stat">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M11.645 20.91l-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z"/></svg>
-              <?php echo esc_html( $post['likes'] ); ?>
-            </span>
-            <span class="insta-overlay-stat">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="white"><path fill-rule="evenodd" d="M5.337 21.718a6.707 6.707 0 0 1-.533-.074.75.75 0 0 1-.44-1.223 3.73 3.73 0 0 0 .814-1.686c.023-.115-.022-.317-.254-.543C3.274 16.587 2.25 14.41 2.25 12c0-5.03 4.428-9 9.75-9s9.75 3.97 9.75 9c0 5.03-4.428 9-9.75 9-.833 0-1.643-.097-2.417-.279a6.721 6.721 0 0 1-4.246.997Z" clip-rule="evenodd"/></svg>
-              <?php echo esc_html( $post['comments'] ); ?>
-            </span>
-          </div>
-        </a>
-      </div>
-      <?php endforeach; ?>
+    <div class="insta-sbi-wrap">
+      <?php echo do_shortcode('[instagram-feed num=8 cols=5 showfollow=false showheader=false showbutton=false]'); ?>
     </div>
     <div class="insta-follow-bar">
       <a href="https://www.instagram.com/hiboo.baby/" target="_blank" rel="noopener" class="btn-secondary">
