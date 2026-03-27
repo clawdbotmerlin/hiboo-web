@@ -47,7 +47,7 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-.playfair { font-family: 'Nunito', sans-serif; }
+.playfair { font-family: 'Fredoka', sans-serif; }
 
 /* ── ANNOUNCEMENT BAR ── */
 .announce-bar {
@@ -246,7 +246,7 @@ nav {
 }
 
 .hero h1 {
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Fredoka', sans-serif;
   font-size: clamp(36px, 4.5vw, 58px);
   font-weight: 600;
   line-height: 1.12;
@@ -666,7 +666,7 @@ nav {
 }
 
 .section-header h2 {
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Fredoka', sans-serif;
   font-size: clamp(28px, 3.5vw, 42px);
   font-weight: 600;
   line-height: 1.2;
@@ -870,7 +870,7 @@ nav {
 }
 
 .product-info h3 {
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Fredoka', sans-serif;
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 6px;
@@ -1042,7 +1042,7 @@ nav {
 }
 
 .why-card h3 {
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Fredoka', sans-serif;
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 10px;
@@ -1089,7 +1089,7 @@ nav {
 .proof-stat { text-align: center; }
 
 .proof-stat-num {
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Fredoka', sans-serif;
   font-size: 42px;
   font-weight: 600;
   color: var(--hb-sky);
@@ -1254,7 +1254,7 @@ nav {
 }
 
 .science-content h2 {
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Fredoka', sans-serif;
   font-size: clamp(26px, 3vw, 36px);
   font-weight: 600;
   line-height: 1.2;
@@ -1399,7 +1399,7 @@ nav {
 }
 
 .cta-banner h2 {
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Fredoka', sans-serif;
   font-size: clamp(28px, 3.5vw, 40px);
   font-weight: 600;
   color: var(--hb-text);
@@ -2010,7 +2010,7 @@ nav {
 }
 
 .page-hero h1 {
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Fredoka', sans-serif;
   font-size: clamp(28px, 3.5vw, 42px);
   font-weight: 600;
   color: var(--hb-text);
@@ -2229,7 +2229,7 @@ a.product-card {
 }
 
 .about-hero h1 {
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Fredoka', sans-serif;
   font-size: clamp(36px, 4vw, 52px);
   font-weight: 600;
   line-height: 1.15;
@@ -2300,7 +2300,7 @@ a.product-card {
 }
 
 .story-text h3 {
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Fredoka', sans-serif;
   font-size: clamp(24px, 3vw, 34px);
   font-weight: 600;
   color: var(--hb-text);
@@ -2421,7 +2421,7 @@ a.product-card {
 }
 
 .cert-card h3 {
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Fredoka', sans-serif;
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 12px;
@@ -2498,7 +2498,7 @@ a.product-card {
 }
 
 .stat-num {
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Fredoka', sans-serif;
   font-size: clamp(32px, 3.5vw, 46px);
   font-weight: 600;
   color: var(--hb-sky);
@@ -2570,7 +2570,7 @@ a.product-card {
 }
 
 .team-card h3 {
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Fredoka', sans-serif;
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 8px;
@@ -2711,7 +2711,7 @@ a.product-card {
 }
 
 .ing-hero h1 {
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Fredoka', sans-serif;
   font-size: clamp(32px, 4vw, 50px);
   font-weight: 600;
   line-height: 1.15;
@@ -2766,7 +2766,7 @@ a.product-card {
 }
 
 .philosophy-content h2 {
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Fredoka', sans-serif;
   font-size: clamp(26px, 3vw, 38px);
   font-weight: 600;
   color: var(--hb-text);
@@ -2857,7 +2857,7 @@ a.product-card {
 }
 
 .ing-card h3 {
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Fredoka', sans-serif;
   font-size: 18px;
   font-weight: 600;
   color: var(--hb-text);
@@ -3002,7 +3002,7 @@ a.product-card {
 }
 
 .sourcing-content h2 {
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Fredoka', sans-serif;
   font-size: clamp(26px, 3vw, 38px);
   font-weight: 600;
   color: var(--hb-text);
@@ -3085,7 +3085,7 @@ a.product-card {
 }
 
 .ing-cta h2 {
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Fredoka', sans-serif;
   font-size: clamp(26px, 3vw, 38px);
   font-weight: 600;
   color: var(--hb-text);
@@ -3191,7 +3191,7 @@ a.product-card {
 }
 
 .guide-hero h1 {
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Fredoka', sans-serif;
   font-size: clamp(32px, 4vw, 52px);
   font-weight: 600;
   color: var(--hb-text);
@@ -3275,7 +3275,7 @@ a.product-card {
 .concern-icon.kering { background: linear-gradient(135deg, #FBCFE8, #FCE7F3); }
 
 .concern-header h2 {
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Fredoka', sans-serif;
   font-size: 28px;
   font-weight: 600;
   color: var(--hb-text);
@@ -3410,7 +3410,7 @@ a.product-card {
 }
 
 .doctor-section h2 {
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Fredoka', sans-serif;
   font-size: 28px;
   font-weight: 600;
   color: var(--hb-text);
@@ -3464,7 +3464,7 @@ a.product-card {
 }
 
 .faq-section h2 {
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Fredoka', sans-serif;
   font-size: 28px;
   font-weight: 600;
   color: var(--hb-text);
@@ -3543,7 +3543,7 @@ a.product-card {
 }
 
 .guide-cta h2 {
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Fredoka', sans-serif;
   font-size: 28px;
   font-weight: 600;
   color: var(--hb-text);
@@ -3646,7 +3646,7 @@ a.product-card {
 }
 
 .blog-hero h1 {
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Fredoka', sans-serif;
   font-size: clamp(32px, 4vw, 50px);
   font-weight: 600;
   line-height: 1.15;
@@ -3744,7 +3744,7 @@ a.product-card {
 }
 
 .featured-inner h2 {
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Fredoka', sans-serif;
   font-size: clamp(26px, 3vw, 38px);
   font-weight: 600;
   line-height: 1.2;
@@ -3908,7 +3908,7 @@ a.product-card {
 }
 
 .blog-card-body h3 {
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Fredoka', sans-serif;
   font-size: 18px;
   font-weight: 600;
   line-height: 1.35;
@@ -3989,7 +3989,7 @@ a.product-card {
 }
 
 .newsletter h2 {
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Fredoka', sans-serif;
   font-size: clamp(24px, 3vw, 34px);
   font-weight: 600;
   line-height: 1.2;
@@ -4233,7 +4233,7 @@ a.product-card {
 }
 
 .article-header h1 {
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Fredoka', sans-serif;
   font-size: 40px;
   font-weight: 600;
   line-height: 1.25;
@@ -4323,7 +4323,7 @@ a.product-card {
 }
 
 .article-body h2 {
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Fredoka', sans-serif;
   font-size: 28px;
   font-weight: 600;
   color: var(--hb-text);
@@ -4461,7 +4461,7 @@ a.product-card {
   font-size: 28px;
   color: white;
   font-weight: 600;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Fredoka', sans-serif;
 }
 
 .author-info h4 {
@@ -4492,7 +4492,7 @@ a.product-card {
 }
 
 .related-section h2 {
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Fredoka', sans-serif;
   font-size: 28px;
   font-weight: 600;
   text-align: center;
@@ -4574,7 +4574,7 @@ a.product-card {
 }
 
 .blog-cta-inner h2 {
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Fredoka', sans-serif;
   font-size: 30px;
   font-weight: 600;
   margin-bottom: 12px;
@@ -4801,7 +4801,7 @@ a.product-card {
 }
 
 .pdp-name {
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Fredoka', sans-serif;
   font-size: clamp(28px, 3vw, 38px);
   font-weight: 600;
   line-height: 1.2;
@@ -5081,7 +5081,7 @@ a.product-card {
   border: none;
   border-radius: 0;
   box-shadow: none !important;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Fredoka', sans-serif;
   font-size: 14px;
   font-weight: 600;
   color: var(--hb-muted);
@@ -5136,7 +5136,7 @@ a.product-card {
 
 /* ── TAB: DESKRIPSI ── */
 .tab-desc h3 {
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Fredoka', sans-serif;
   font-size: 22px;
   font-weight: 600;
   color: var(--hb-text);
@@ -5272,7 +5272,7 @@ a.product-card {
 }
 
 .reviews-big-score .score {
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Fredoka', sans-serif;
   font-size: 48px;
   font-weight: 600;
   color: var(--hb-text);
