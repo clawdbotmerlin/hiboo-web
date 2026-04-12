@@ -16,7 +16,7 @@ $img = get_stylesheet_directory_uri() . '/assets/images';
   <div class="mochi-deco mochi-deco-3"></div>
   <div class="ing-hero-content">
     <div class="sh-tag">Bahan & Ingredients</div>
-    <h1>Transparan. <em>Alami</em>.<br>Teruji Klinis.</h1>
+    <h1>Transparan. <em>Alami</em>.</h1>
     <p class="ing-hero-desc">Setiap bahan dalam produk Hiboo dipilih dengan hati-hati oleh tim dokter spesialis anak dan dermatologist. Kami percaya orang tua berhak tahu apa yang digunakan pada kulit si kecil.</p>
   </div>
 </section>
@@ -42,7 +42,7 @@ $img = get_stylesheet_directory_uri() . '/assets/images';
     $ingredients = array(
       array('name'=>'Coconut Oil','sub'=>'Cocos Nucifera Oil','desc'=>'Pelembap alami kaya asam laurat dengan sifat antibakteri & antiinflamasi. Memperkuat skin barrier bayi dan meredakan eczema secara alami.','tags'=>array('Baby Balm','Moisturizer')),
       array('name'=>'Japanese White Tomato','sub'=>'Solanum Lycopersicum Extract','desc'=>'Antioksidan premium dari Jepang yang memberikan efek brightening alami. Melindungi kulit bayi dari radikal bebas tanpa bahan kimia keras.','tags'=>array('Mochi Serum','Brightening')),
-      array('name'=>'7x Hyaluronic Acid','sub'=>'Sodium Hyaluronate Complex','desc'=>'7 ukuran molekul berbeda untuk hidrasi multi-layer. Menembus hingga lapisan terdalam kulit, memberikan kelembapan tahan lama.','tags'=>array('Mochi Serum','Deep Hydration')),
+      array('name'=>'Hyaluronic Acid','sub'=>'Sodium Hyaluronate Complex','desc'=>'Menembus hingga lapisan terdalam kulit untuk hidrasi optimal. Memberikan kelembapan tahan lama dan menjaga kulit bayi tetap lembut sepanjang hari.','tags'=>array('Mochi Serum','Deep Hydration')),
       array('name'=>'Ceramide Complex','sub'=>'Ceramide NP + AP + EOP','desc'=>'Memperkuat lapisan pelindung kulit (skin barrier) yang masih rapuh pada bayi. Mencegah kehilangan kelembapan dan melindungi dari iritasi.','tags'=>array('Mochi Serum','Barrier Repair')),
       array('name'=>'Beeswax','sub'=>'Cera Alba','desc'=>'Membentuk lapisan pelindung alami yang breathable, mengunci kelembapan tanpa menyumbat pori. Ideal untuk kulit bayi yang rentan kering.','tags'=>array('Baby Balm','Protection')),
       array('name'=>'Vitamin E','sub'=>'Tocopheryl Acetate','desc'=>'Antioksidan kuat yang mempercepat pemulihan kulit rusak. Membantu menyembuhkan ruam, luka ringan, dan bekas gigitan serangga.','tags'=>array('Baby Balm','Healing')),

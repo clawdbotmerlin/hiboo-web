@@ -11,110 +11,269 @@ $img = get_stylesheet_directory_uri() . '/assets/images';
 
 <!-- HERO -->
 <section class="guide-hero">
-  <h1>Panduan Kulit Bayi</h1>
-  <p>Kenali masalah kulit si kecil dan temukan solusi yang tepat</p>
+  <h1>Panduan Pemakaian</h1>
+  <p>Kenali masalah kulit si kecil dan temukan solusi serta cara pakai yang tepat</p>
 </section>
 
 <!-- CONCERN SECTIONS -->
 <?php
 $concerns = array(
+
   array(
-    'bg'    => 'concern-white-bg',
-    'icon'  => '&#128301;',
-    'iclass'=> 'eczema',
-    'title' => 'Eczema pada Bayi',
-    'intro' => 'Eczema (dermatitis atopik) adalah kondisi kulit kronis yang sangat umum pada bayi, ditandai dengan kulit kering, merah, gatal, dan bersisik. Sekitar 1 dari 5 bayi di Indonesia mengalami eczema.',
-    'symptoms' => array('Kulit kering dan kasar yang terasa seperti amplas','Bercak merah yang gatal, terutama di pipi dan dahi','Kulit bersisik atau mengelupas di area lipatan','Bayi sering menggaruk atau rewel karena gatal'),
-    'tips'  => array('Jaga kelembapan kulit bayi dengan rutin menggunakan pelembap setelah mandi','Gunakan sabun bayi yang lembut dan bebas pewangi sintetis','Pakaikan baju berbahan katun lembut, hindari wol atau bahan kasar','Jaga suhu ruangan tetap sejuk dan hindari keringat berlebih'),
-    'product' => 'All Purpose Baby Balm',
-    'product_img' => 'balm-15g.png',
-    'product_price' => 'Rp54.500',
+    'id'     => 'ruam',
+    'bg'     => 'concern-white-bg',
+    'iclass' => 'eczema',
+    'icon'   => '🌿',
+    'title'  => 'Ruam / Eczema / Biang Keringat',
+    'intro'  => 'Kondisi kulit yang paling umum dialami bayi di Indonesia — dipicu oleh iklim tropis yang panas dan lembab. Ruam, eksim, dan biang keringat sering muncul bersamaan dan membutuhkan penanganan yang tepat.',
+    'products' => array(
+      array(
+        'name' => 'All Purpose Baby Balm',
+        'img'  => 'balm-15g.png',
+        'price'=> 'Rp54.500',
+        'slug' => 'all-purpose-baby-balm',
+        'ingredients' => array(
+          array('name' => 'Coconut Oil',  'desc' => 'Membantu mengurangi ruam popok serta membantu memperkuat skin barrier baby.'),
+          array('name' => 'Vitamin E',    'desc' => 'Membantu memudarkan bekas kemerahan dan gigitan nyamuk/serangga.'),
+          array('name' => 'Beeswax',      'desc' => 'Membantu mengurangi kemerahan pada kulit baby.'),
+        ),
+      ),
+      array(
+        'name' => 'Zzz Baby Calming Cream',
+        'img'  => 'zzz-cream-30g.png',
+        'price'=> 'Rp43.500',
+        'slug' => 'zzz-deep-sleep-baby-cream',
+        'ingredients' => array(
+          array('name' => 'Peppermint Oil', 'desc' => 'Membantu melegakan pernapasan bayi agar terasa lebih nyaman.'),
+          array('name' => 'Fennel Oil',     'desc' => 'Membantu meredakan rasa tidak nyaman pada perut seperti kembung.'),
+          array('name' => 'Lavender Oil',   'desc' => 'Membantu memberikan efek menenangkan sebelum tidur.'),
+        ),
+      ),
+      array(
+        'name' => 'Physical Mochi Sunscreen',
+        'img'  => 'mochi-sunscreen-30ml.png',
+        'price'=> 'Rp74.500',
+        'slug' => 'double-protection-sunscreen',
+        'ingredients' => array(
+          array('name' => 'Japanese White Tomato', 'desc' => 'Membantu menjaga kulit anak agar tetap tampak sehat dan cerah.'),
+          array('name' => 'Zinc Oxide',            'desc' => 'Membantu melindungi kulit anak dari sinar UVA dan UVB.'),
+          array('name' => 'Titanium Dioxide',      'desc' => 'Membantu memantulkan sinar matahari agar tidak merusak kulit anak.'),
+        ),
+      ),
+    ),
+    'facts' => array(
+      '1 dari 3 anak Indonesia mengalami biang keringat — kamu tidak sendirian.',
+      'Indonesia adalah negara tropis yang panas dan lembab — ini faktor utama munculnya biang keringat.',
+      'Biang keringat termasuk kategori heat rash yang bisa memperburuk kondisi ruam dan eczema.',
+    ),
+    'saran' => array(
+      'Usahakan pakai baju yang tipis dan menyerap keringat.',
+      'Jangan terlalu lama bermain di luar ruangan saat cuaca panas.',
+      'Mandi dengan air sejuk, hindari air yang terlalu panas.',
+      'Keringkan kulit dengan lembut, jangan digosok-gosok dengan handuk.',
+      'Hindari bedak tabur karena bisa menyumbat pori-pori.',
+    ),
+    'cara_pakai' => array(
+      'Gunakan All Purpose Baby Balm setiap habis mandi di area yang terkena biang keringat dan area yang rawan (leher, lipatan leher, punggung, ketiak, selangkangan, area popok, siku dalam, belakang lutut, lipatan paha dan lengan).',
+      'Hindari pemakaian krim saat beraktivitas di luar ruangan — cukup Physical Mochi Sunscreen saja secara tipis.',
+      'Jika biang keringat terlalu parah sampai mengganggu tidur, tingkatkan kualitas tidur dengan Zzz Baby Calming Cream yang dioleskan tipis di dada.',
+    ),
   ),
+
   array(
-    'bg'    => 'concern-alt-bg',
-    'icon'  => '&#128696;',
-    'iclass'=> 'ruam',
-    'title' => 'Ruam Popok',
-    'intro' => 'Ruam popok terjadi ketika kulit bayi terlalu lama terpapar kelembapan dari urine dan feses. Area popok menjadi merah, iritasi, dan tidak nyaman.',
-    'symptoms' => array('Kemerahan di area yang tertutup popok','Kulit yang terlihat mengkilap atau melepuh','Bayi rewel terutama saat ganti popok','Area yang terasa hangat saat disentuh'),
-    'tips'  => array('Ganti popok sesering mungkin, minimal setiap 2-3 jam','Bersihkan area popok dengan lembut menggunakan air hangat','Biarkan kulit terbuka sebentar sebelum memakai popok baru','Gunakan balm pelindung sebagai barrier antara kulit dan popok'),
-    'product' => 'All Purpose Baby Balm',
-    'product_img' => 'balm-15g.png',
-    'product_price' => 'Rp54.500',
+    'id'     => 'kering',
+    'bg'     => 'concern-alt-bg',
+    'iclass' => 'kering',
+    'icon'   => '💧',
+    'title'  => 'Kulit Kering',
+    'intro'  => 'Kulit kering pada bayi sering terjadi karena terlalu banyak berada di ruangan ber-AC atau karena faktor genetik. Kulit kering lebih rentan iritasi dan membutuhkan perawatan ekstra.',
+    'products' => array(
+      array(
+        'name' => 'Mochi Glow Body Serum',
+        'img'  => 'mochi-serum-100ml.png',
+        'price'=> 'Rp64.400',
+        'slug' => 'mochi-glow-body-serum',
+        'ingredients' => array(
+          array('name' => 'Japanese White Tomato', 'desc' => 'Membantu menjaga kulit anak agar tetap tampak sehat dan cerah.'),
+          array('name' => 'Chamomile',             'desc' => 'Membantu menenangkan kulit anak yang sensitif.'),
+          array('name' => 'Ceramide',              'desc' => 'Membantu memperkuat skin barrier kulit anak.'),
+        ),
+      ),
+      array(
+        'name' => 'All Purpose Baby Balm',
+        'img'  => 'balm-15g.png',
+        'price'=> 'Rp54.500',
+        'slug' => 'all-purpose-baby-balm',
+        'ingredients' => array(
+          array('name' => 'Coconut Oil', 'desc' => 'Membantu mengurangi ruam popok serta membantu memperkuat skin barrier baby.'),
+          array('name' => 'Vitamin E',   'desc' => 'Membantu memudarkan bekas kemerahan dan gigitan nyamuk/serangga.'),
+          array('name' => 'Beeswax',     'desc' => 'Membantu mengurangi kemerahan pada kulit baby.'),
+        ),
+      ),
+      array(
+        'name' => 'Zzz Baby Calming Cream',
+        'img'  => 'zzz-cream-30g.png',
+        'price'=> 'Rp43.500',
+        'slug' => 'zzz-deep-sleep-baby-cream',
+        'ingredients' => array(
+          array('name' => 'Peppermint Oil', 'desc' => 'Membantu melegakan pernapasan bayi agar terasa lebih nyaman.'),
+          array('name' => 'Fennel Oil',     'desc' => 'Membantu meredakan rasa tidak nyaman pada perut seperti kembung.'),
+          array('name' => 'Lavender Oil',   'desc' => 'Membantu memberikan efek menenangkan sebelum tidur.'),
+        ),
+      ),
+      array(
+        'name' => 'Physical Mochi Sunscreen',
+        'img'  => 'mochi-sunscreen-30ml.png',
+        'price'=> 'Rp74.500',
+        'slug' => 'double-protection-sunscreen',
+        'ingredients' => array(
+          array('name' => 'Japanese White Tomato', 'desc' => 'Membantu menjaga kulit anak agar tetap tampak sehat dan cerah.'),
+          array('name' => 'Zinc Oxide',            'desc' => 'Membantu melindungi kulit anak dari sinar UVA dan UVB.'),
+          array('name' => 'Titanium Dioxide',      'desc' => 'Membantu memantulkan sinar matahari agar tidak merusak kulit anak.'),
+        ),
+      ),
+    ),
+    'facts' => array(
+      'Kulit kering sering terjadi karena terlalu banyak di ruangan ber-AC, tapi ada juga yang karena faktor genetik.',
+      'Tandanya kulit agak kasar, kadang kalau sudah parah sampai bersisik halus atau terasa gatal.',
+      'Kulit kering lebih rentan iritasi sehingga butuh perawatan ekstra.',
+    ),
+    'saran' => array(
+      'Usahakan jangan 24 jam terus-menerus di ruangan ber-AC, campurkan dengan waktu di luar atau semi-outdoor.',
+      'Perbanyak minum air agar kulit terhidrasi dari dalam.',
+      'Cek kembali skincare yang dipakai — hindari produk dengan bahan yang terlalu "keras" untuk kulit bayi.',
+    ),
+    'cara_pakai' => array(
+      'Gunakan Mochi Face Serum di wajah dan Mochi Glow Baby Serum di badan. Hypoallergenic, cocok untuk kulit yang cenderung rentan iritasi. Formulanya Japanese White Tomato dengan kadar efektif, dilengkapi Ceramide sebagai moisturizer.',
+      'Setelah Mochi Glow Baby Serum, gunakan All Purpose Baby Balm untuk mengunci kelembaban agar tetap lembap. Gunakan di area wajah dan area yang kering.',
+      'Karena disarankan untuk tidak selalu bermain di ruangan ber-AC, jangan lupa gunakan Physical Mochi Sunscreen.',
+      'Jika kulit sudah terlalu parah sampai mengganggu tidur (terutama saat tidur di ruangan ber-AC), tingkatkan kualitas tidur dengan Zzz Baby Calming Cream yang dioleskan tipis di dada.',
+    ),
   ),
+
   array(
-    'bg'    => 'concern-white-bg',
-    'icon'  => '&#9728;&#65039;',
-    'iclass'=> 'keringat',
-    'title' => 'Biang Keringat',
-    'intro' => 'Biang keringat (miliaria) sangat umum pada bayi di iklim tropis Indonesia. Terjadi ketika kelenjar keringat tersumbat dan keringat terperangkap di bawah kulit.',
-    'symptoms' => array('Bintik-bintik merah kecil di lipatan kulit','Kulit yang terasa kasar seperti amplas','Muncul di area leher, dada, punggung, dan lipatan'),
-    'tips'  => array('Pastikan ruangan sejuk dengan sirkulasi udara baik','Pakaikan baju longgar berbahan katun','Mandikan bayi dengan air suam-suam kuku','Hindari bedak tabur — justru bisa menyumbat pori'),
-    'product' => 'Mochi Glow Body Serum',
-    'product_img' => 'mochi-serum-100ml.png',
-    'product_price' => 'Rp64.400',
+    'id'     => 'kusam',
+    'bg'     => 'concern-white-bg',
+    'iclass' => 'kusam',
+    'icon'   => '✨',
+    'title'  => 'Kulit Kusam dan Tidak Sehat',
+    'intro'  => 'Kulit kusam pada bayi bukan semata-mata faktor genetik — 70–80% disebabkan oleh faktor lingkungan seperti paparan sinar matahari, kurang hidrasi, dan iklim tropis Indonesia.',
+    'products' => array(
+      array(
+        'name' => 'Mochi Glow Body Serum',
+        'img'  => 'mochi-serum-100ml.png',
+        'price'=> 'Rp64.400',
+        'slug' => 'mochi-glow-body-serum',
+        'ingredients' => array(
+          array('name' => 'Japanese White Tomato', 'desc' => 'Membantu menjaga kulit anak agar tetap tampak sehat dan cerah.'),
+          array('name' => 'Chamomile',             'desc' => 'Membantu menenangkan kulit anak yang sensitif.'),
+          array('name' => 'Ceramide',              'desc' => 'Membantu memperkuat skin barrier kulit anak.'),
+        ),
+      ),
+      array(
+        'name' => 'Physical Mochi Sunscreen',
+        'img'  => 'mochi-sunscreen-30ml.png',
+        'price'=> 'Rp74.500',
+        'slug' => 'double-protection-sunscreen',
+        'ingredients' => array(
+          array('name' => 'Japanese White Tomato', 'desc' => 'Membantu menjaga kulit anak agar tetap tampak sehat dan cerah.'),
+          array('name' => 'Zinc Oxide',            'desc' => 'Membantu melindungi kulit anak dari sinar UVA dan UVB.'),
+          array('name' => 'Titanium Dioxide',      'desc' => 'Membantu memantulkan sinar matahari agar tidak merusak kulit anak.'),
+        ),
+      ),
+    ),
+    'facts' => array(
+      '70–80% kulit cerah atau kusam bukan karena genetik, tapi dari faktor lingkungan.',
+      'Genetik hanya mempengaruhi warna dasar kulit — kusam sering terjadi karena kulit kering, kurang bersih, dan paparan matahari.',
+      'Anak dengan kulit sawo matang pun bisa terlihat glowing dan sehat dengan perawatan yang tepat.',
+      'Indonesia sebagai negara tropis membuat kulit anak lebih mudah kusam dibanding negara beriklim dingin.',
+    ),
+    'saran' => array(
+      'Hindari paparan matahari terlalu lama dan ekstrim — sering pakai topi atau bernaung di bawah pohon.',
+      'Lakukan perawatan kulit secara rutin dan tepat.',
+      'Perbanyak minum air putih agar kulit terhidrasi dari dalam.',
+    ),
+    'cara_pakai' => array(
+      'Gunakan Mochi Face Serum di wajah dan Mochi Glow Body Serum di badan setiap habis mandi. Formulanya mengandung Japanese White Tomato dengan kadar efektif — satu-satunya di Indonesia — yang terbukti dalam banyak jurnal ilmiah efektif untuk mencerahkan dan menyehatkan kulit.',
+      'Jangan lupa gunakan Physical Mochi Sunscreen dan ulangi setiap 3 jam sekali. Sunscreen mengandung SPF 50+ PA++++ sekaligus Japanese White Tomato — melindungi dari UV sekaligus mencerahkan.',
+    ),
   ),
-  array(
-    'bg'    => 'concern-alt-bg',
-    'icon'  => '&#128030;',
-    'iclass'=> 'serangga',
-    'title' => 'Gigitan Serangga',
-    'intro' => 'Gigitan nyamuk dan serangga pada bayi dapat menyebabkan reaksi yang lebih hebat dibanding orang dewasa karena sistem imun mereka belum matang.',
-    'symptoms' => array('Bentol merah yang membengkak','Area gigitan terasa panas dan gatal','Bayi menjadi rewel dan tidak nyaman'),
-    'tips'  => array('Gunakan kelambu saat tidur','Oleskan balm pelindung sebelum keluar rumah','Jangan menggaruk area gigitan','Kompres dingin untuk meredakan bengkak'),
-    'product' => 'All Purpose Baby Balm',
-    'product_img' => 'balm-5g.png',
-    'product_price' => 'Rp31.500',
-  ),
-  array(
-    'bg'    => 'concern-white-bg',
-    'icon'  => '&#127769;',
-    'iclass'=> 'tidur',
-    'title' => 'Susah Tidur',
-    'intro' => 'Gangguan tidur pada bayi dapat disebabkan oleh berbagai faktor termasuk kolik, overstimulasi, dan ketidaknyamanan kulit. Tidur berkualitas sangat penting untuk tumbuh kembang.',
-    'symptoms' => array('Sulit tertidur meski sudah lelah','Sering terbangun di malam hari','Rewel dan menangis menjelang tidur'),
-    'tips'  => array('Ciptakan rutinitas tidur yang konsisten','Redupkan lampu 30 menit sebelum tidur','Gunakan aromaterapi calming yang aman untuk bayi','Pijat lembut sebelum tidur dengan krim calming'),
-    'product' => 'Zzz Deep Sleep Baby Cream',
-    'product_img' => 'zzz-cream-30g.png',
-    'product_price' => 'Rp43.500',
-  ),
+
 );
 
-foreach ($concerns as $c) :
+foreach ($concerns as $idx => $c) :
 ?>
-<div class="concern-block <?php echo esc_attr($c['bg']); ?>">
+<div class="concern-block <?php echo esc_attr($c['bg']); ?>" id="<?php echo esc_attr($c['id']); ?>">
   <div class="concern-inner">
+
+    <!-- HEADER -->
     <div class="concern-header">
       <div class="concern-icon <?php echo esc_attr($c['iclass']); ?>"><?php echo $c['icon']; ?></div>
       <h2><?php echo esc_html($c['title']); ?></h2>
     </div>
-    <div class="concern-body">
-      <p><strong>Apa itu <?php echo strtolower(explode(' ', $c['title'])[0]); ?>?</strong> <?php echo esc_html($c['intro']); ?></p>
+    <p class="concern-intro"><?php echo esc_html($c['intro']); ?></p>
 
-      <h3>Gejala yang Perlu Diperhatikan</h3>
-      <ul>
-        <?php foreach ($c['symptoms'] as $s) : ?>
-          <li><?php echo esc_html($s); ?></li>
-        <?php endforeach; ?>
-      </ul>
-
-      <h3>Tips untuk Orang Tua</h3>
-      <ul>
-        <?php foreach ($c['tips'] as $t) : ?>
-          <li><?php echo esc_html($t); ?></li>
-        <?php endforeach; ?>
-      </ul>
-
-      <div class="reco-card">
-        <img src="<?php echo $img; ?>/products/<?php echo esc_attr($c['product_img']); ?>" alt="<?php echo esc_attr($c['product']); ?>">
-        <div class="reco-info">
-          <div class="reco-label">Produk Rekomendasi</div>
-          <div class="reco-name"><?php echo esc_html($c['product']); ?></div>
-          <div class="reco-price"><?php echo $c['product_price']; ?></div>
+    <!-- PRODUCTS ROW -->
+    <div class="concern-products-label">Produk yang Digunakan</div>
+    <div class="concern-products-row">
+      <?php foreach ($c['products'] as $prod) : ?>
+      <a href="<?php echo esc_url( home_url( '/produk/' . $prod['slug'] . '/' ) ); ?>" class="concern-prod-card">
+        <div class="concern-prod-img">
+          <img src="<?php echo $img; ?>/products/<?php echo esc_attr($prod['img']); ?>" alt="<?php echo esc_attr($prod['name']); ?>" loading="lazy">
         </div>
-        <a href="https://shopee.co.id/hiboobaby" target="_blank" rel="noopener" class="reco-link">Beli di Shopee &rarr;</a>
+        <div class="concern-prod-info">
+          <div class="concern-prod-name"><?php echo esc_html($prod['name']); ?></div>
+          <div class="concern-prod-price"><?php echo esc_html($prod['price']); ?></div>
+        </div>
+      </a>
+      <?php endforeach; ?>
+    </div>
+
+    <!-- INGREDIENTS TABLE -->
+    <div class="concern-ingredients">
+      <div class="concern-section-label">Kandungan Penting</div>
+      <?php foreach ($c['products'] as $prod) : ?>
+      <div class="concern-ing-group">
+        <div class="concern-ing-product"><?php echo esc_html($prod['name']); ?></div>
+        <ul class="concern-ing-list">
+          <?php foreach ($prod['ingredients'] as $ing) : ?>
+          <li><strong><?php echo esc_html($ing['name']); ?></strong> — <?php echo esc_html($ing['desc']); ?></li>
+          <?php endforeach; ?>
+        </ul>
+      </div>
+      <?php endforeach; ?>
+    </div>
+
+    <!-- FACTS + SARAN in 2-col -->
+    <div class="concern-two-col">
+      <div class="concern-col">
+        <div class="concern-section-label">Fakta</div>
+        <ul class="concern-facts-list">
+          <?php foreach ($c['facts'] as $fact) : ?>
+          <li><?php echo esc_html($fact); ?></li>
+          <?php endforeach; ?>
+        </ul>
+      </div>
+      <div class="concern-col">
+        <div class="concern-section-label">Saran</div>
+        <ul class="concern-saran-list">
+          <?php foreach ($c['saran'] as $s) : ?>
+          <li><?php echo esc_html($s); ?></li>
+          <?php endforeach; ?>
+        </ul>
       </div>
     </div>
+
+    <!-- CARA PAKAI -->
+    <div class="concern-usage">
+      <div class="concern-section-label">Cara Pakai</div>
+      <ol class="concern-usage-steps">
+        <?php foreach ($c['cara_pakai'] as $step) : ?>
+        <li><?php echo esc_html($step); ?></li>
+        <?php endforeach; ?>
+      </ol>
+    </div>
+
   </div>
 </div>
 <?php endforeach; ?>
@@ -126,7 +285,7 @@ foreach ($concerns as $c) :
     <?php
     $faqs = array(
       array('q'=>'Apakah produk Hiboo aman untuk newborn?','a'=>'Ya, semua produk Hiboo diformulasikan khusus untuk bayi sejak 0 bulan (newborn). Telah diuji dermatologis, hypoallergenic, dan bersertifikasi BPOM serta Halal MUI.'),
-      array('q'=>'Berapa kali sehari produk Hiboo bisa dipakai?','a'=>'Baby Balm bisa diaplikasikan 2-3 kali sehari atau sesuai kebutuhan. Mochi Glow Serum direkomendasikan 2 kali sehari setelah mandi. Zzz Deep Sleep Cream digunakan 1 kali menjelang tidur.'),
+      array('q'=>'Berapa kali sehari produk Hiboo bisa dipakai?','a'=>'Baby Balm bisa diaplikasikan 2-3 kali sehari atau sesuai kebutuhan. Mochi Glow Serum direkomendasikan 2 kali sehari setelah mandi. Zzz Baby Calming Cream digunakan 1 kali menjelang tidur.'),
       array('q'=>'Apakah produk Hiboo bisa dipakai bersamaan dengan obat dokter?','a'=>'Produk Hiboo menggunakan bahan natural yang umumnya aman digunakan bersamaan dengan obat resep dokter. Namun, kami sarankan untuk berkonsultasi dengan dokter anak Anda terlebih dahulu.'),
       array('q'=>'Bagaimana cara menyimpan produk Hiboo?','a'=>'Simpan di tempat sejuk dan kering, hindari paparan sinar matahari langsung. Tidak perlu disimpan di kulkas kecuali disebutkan di kemasan.'),
       array('q'=>'Apakah ada efek samping produk Hiboo?','a'=>'Risiko efek samping sangat minimal karena diformulasikan hypoallergenic. Untuk penggunaan pertama, lakukan patch test di area kecil kulit bayi dan tunggu 24 jam.'),

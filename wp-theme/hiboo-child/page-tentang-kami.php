@@ -28,13 +28,13 @@ $img = get_stylesheet_directory_uri() . '/assets/images';
 <section class="story-section section-pad">
   <div class="section-header">
     <div class="sh-tag">Cerita Kami</div>
-    <h2>Berawal dari Cinta Seorang Ibu</h2>
+    <h2>Berawal dari Cinta Ayah dan Ibu</h2>
   </div>
   <div class="story-grid">
     <div class="story-text">
-      <p>Hiboo lahir dari keresahan sekelompok ibu Indonesia yang kesulitan menemukan produk perawatan kulit bayi yang benar-benar lembut dan aman. Banyak produk di pasaran mengandung bahan kimia keras yang justru memperburuk kulit sensitif si kecil. Kami bertekad menciptakan sesuatu yang lebih baik.</p>
+      <p>Hiboo lahir dari keresahan seorang Ayah dan Ibu Indonesia yang kesulitan menemukan produk perawatan kulit bayi yang benar-benar lembut dan aman. Banyak produk di pasaran mengandung bahan kimia keras yang justru memperburuk kulit sensitif si kecil. Kami bertekad menciptakan sesuatu yang lebih baik.</p>
       <p>Terinspirasi dari filosofi kecantikan Jepang <em>"mochi hada"</em> (kulit selembut mochi), kami mengembangkan rangkaian produk yang menggabungkan kehalusan tradisi Jepang dengan kebutuhan spesifik iklim tropis Indonesia.</p>
-      <p>Bersama tim dokter spesialis anak dan dermatologist berpengalaman, kami memformulasikan setiap produk dengan bahan-bahan alami pilihan yang telah teruji klinis. Hasilnya: skincare bayi yang tidak hanya aman untuk newborn 0+ bulan, tetapi juga efektif merawat kulit sensitif di iklim tropis.</p>
+      <p>Bersama tim dokter spesialis anak dan dermatologist berpengalaman, kami memformulasikan setiap produk dengan bahan-bahan alami pilihan. Hasilnya: skincare bayi yang tidak hanya aman untuk newborn 0+ bulan, tetapi juga efektif merawat kulit sensitif di iklim tropis.</p>
     </div>
     <div class="story-image">
       <div class="story-image-container">
@@ -114,8 +114,8 @@ $img = get_stylesheet_directory_uri() . '/assets/images';
       <div class="team-icon">
         <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#D4845A"><path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"/></svg>
       </div>
-      <h3>Mom Founders</h3>
-      <p>Para ibu Indonesia yang memahami kebutuhan nyata perawatan kulit bayi di iklim tropis.</p>
+      <h3>Parent Founders</h3>
+      <p>Ayah dan Ibu Indonesia yang memahami kebutuhan nyata perawatan kulit bayi di iklim tropis.</p>
     </div>
   </div>
 </section>

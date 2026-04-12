@@ -635,6 +635,17 @@ nav {
   font-weight: 600;
 }
 
+.ribbon-item-award {
+  gap: 8px;
+}
+
+.ribbon-award-logo {
+  height: 28px;
+  width: auto;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
 /* ── SECTION UTILITY ── */
 .section-pad {
   padding: 100px 48px;
@@ -767,10 +778,24 @@ nav {
 .pc-gold { background: linear-gradient(160deg, #FFF8E8, #FFEFC0); }
 
 .product-img-bg img {
-  max-height: 260px;
+  max-height: 240px;
+  max-width: 160px;
   width: auto;
+  height: auto;
   filter: drop-shadow(0 10px 20px rgba(0,0,0,0.08));
   object-fit: contain;
+}
+
+/* Combo card — multiple products layout */
+.product-img-bg.combo-bg {
+  gap: 8px;
+  padding: 20px 12px;
+  align-items: flex-end;
+}
+.product-img-bg.combo-bg img {
+  max-height: 200px;
+  max-width: 110px;
+  flex-shrink: 0;
 }
 
 .product-quick-links {
@@ -1808,6 +1833,20 @@ nav {
 }
 
 .footer-col ul a:hover { color: var(--hb-sky); }
+
+.tiktok-disclaimer {
+  background: rgba(0,0,0,0.03);
+  border-top: 1px solid rgba(0,0,0,0.06);
+  text-align: center;
+  padding: 14px 24px;
+}
+
+.tiktok-disclaimer p {
+  font-size: 11px;
+  color: var(--hb-muted);
+  margin: 0;
+  line-height: 1.5;
+}
 
 .footer-bottom {
   max-width: 1100px;
@@ -3398,6 +3437,186 @@ a.product-card {
   border-color: var(--hb-deep);
 }
 
+/* ── PANDUAN KULIT — NEW CONCERN LAYOUT ── */
+.concern-icon.kusam { background: linear-gradient(135deg, #FDE68A, #FFFBEB); }
+
+.concern-intro {
+  font-size: 15.5px;
+  line-height: 1.8;
+  color: var(--hb-muted);
+  margin: 0 0 32px;
+}
+
+.concern-products-label,
+.concern-section-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--hb-primary);
+  margin-bottom: 14px;
+}
+
+.concern-products-row {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.concern-prod-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: white;
+  border: 1.5px solid rgba(0,0,0,0.07);
+  border-radius: 16px;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
+  min-width: 180px;
+}
+
+.concern-prod-card:hover {
+  border-color: var(--hb-blue);
+  box-shadow: 0 4px 16px rgba(42,122,181,0.1);
+  transform: translateY(-2px);
+}
+
+.concern-prod-img img {
+  width: 52px;
+  height: 52px;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.concern-prod-name {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--hb-text);
+  line-height: 1.3;
+  margin-bottom: 4px;
+}
+
+.concern-prod-price {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--hb-primary);
+}
+
+.concern-ingredients {
+  background: rgba(0,0,0,0.02);
+  border-radius: 16px;
+  padding: 24px 28px;
+  margin-bottom: 32px;
+}
+
+.concern-ing-group {
+  margin-bottom: 20px;
+}
+
+.concern-ing-group:last-child { margin-bottom: 0; }
+
+.concern-ing-product {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--hb-primary);
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.concern-ing-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.concern-ing-list li {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--hb-muted);
+  padding-left: 16px;
+  position: relative;
+}
+
+.concern-ing-list li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: var(--hb-primary);
+  font-weight: 700;
+}
+
+.concern-ing-list li strong {
+  color: var(--hb-text);
+  font-weight: 600;
+}
+
+.concern-two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.concern-facts-list,
+.concern-saran-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.concern-facts-list li,
+.concern-saran-list li {
+  font-size: 14px;
+  line-height: 1.65;
+  color: var(--hb-muted);
+  padding-left: 20px;
+  position: relative;
+}
+
+.concern-facts-list li::before {
+  content: '💡';
+  position: absolute;
+  left: 0;
+  font-size: 13px;
+}
+
+.concern-saran-list li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #10B981;
+  font-weight: 700;
+}
+
+.concern-usage {
+  background: linear-gradient(135deg, #EFF6FF, #F0FFF4);
+  border-radius: 16px;
+  padding: 24px 28px;
+}
+
+.concern-usage-steps {
+  padding-left: 20px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.concern-usage-steps li {
+  font-size: 14.5px;
+  line-height: 1.7;
+  color: var(--hb-text);
+}
+
 /* ── DOCTOR WARNING SECTION ── */
 .doctor-section {
   padding: 72px 48px;
@@ -3593,6 +3812,12 @@ a.product-card {
   .reco-link { margin-top: 8px; }
 
   .concern-header h2 { font-size: 22px; }
+
+  .concern-products-row { gap: 10px; }
+  .concern-prod-card { min-width: 140px; }
+  .concern-two-col { grid-template-columns: 1fr; }
+  .concern-ingredients { padding: 18px 20px; }
+  .concern-usage { padding: 18px 20px; }
 }
 
 /* ── PAGE-SPECIFIC: blog.html ── */
@@ -4669,7 +4894,37 @@ a.product-card {
   font-weight: 500;
   color: var(--hb-muted);
   letter-spacing: 0.04em;
+  margin-bottom: 10px;
+}
+
+.pdp-cert-nos {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
   margin-bottom: 16px;
+}
+
+.pdp-cert-nos .cert-no {
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--hb-muted);
+  background: rgba(0,0,0,0.04);
+  border-radius: 6px;
+  padding: 3px 8px;
+  letter-spacing: 0.03em;
+}
+
+.pdp-cert-nos .cert-no strong {
+  color: var(--hb-primary);
+  font-weight: 700;
+  margin-right: 3px;
+}
+
+.pdp-cert-nos .cert-sep {
+  color: var(--hb-muted);
+  opacity: 0.4;
+  font-size: 13px;
 }
 
 .pdp-marketplace-btns {
@@ -5461,4 +5716,200 @@ a.product-card {
   .breadcrumb {
     font-size: 12px;
   }
+}
+
+
+/* ============================================================
+   MASCOT SYSTEM — Bubu & Mumu
+   ============================================================ */
+
+/* ── Keyframe animations ── */
+@keyframes bubu-float {
+  0%,100% { transform: translateY(0) rotate(-1deg); }
+  30%     { transform: translateY(-14px) rotate(2deg); }
+  70%     { transform: translateY(-8px) rotate(-2deg); }
+}
+@keyframes bubu-bounce {
+  0%,100% { transform: translateY(0) scaleY(1) rotate(0deg); }
+  20%     { transform: translateY(-28px) scaleY(1.06) rotate(-4deg); }
+  50%     { transform: translateY(-18px) scaleY(1.03) rotate(3deg); }
+  70%     { transform: translateY(-6px) scaleY(0.97) rotate(-1deg); }
+}
+@keyframes bubu-wiggle {
+  0%,100% { transform: rotate(0deg) scale(1); }
+  15%     { transform: rotate(-12deg) scale(1.04); }
+  35%     { transform: rotate(10deg) scale(1.04); }
+  55%     { transform: rotate(-7deg) scale(1.02); }
+  75%     { transform: rotate(7deg) scale(1.02); }
+}
+@keyframes mascot-click-bounce {
+  0%,100% { transform: translateY(0) scale(1); }
+  30%     { transform: translateY(-22px) scale(1.1) rotate(-5deg); }
+  60%     { transform: translateY(-10px) scale(1.05) rotate(3deg); }
+}
+@keyframes bubble-pop {
+  0%   { opacity: 0; transform: translateX(-50%) scale(0.6) translateY(6px); }
+  60%  { transform: translateX(-50%) scale(1.08) translateY(-2px); }
+  100% { opacity: 1; transform: translateX(-50%) scale(1) translateY(0); }
+}
+
+/* ── Base mascot ── */
+.mascot {
+  position: absolute;
+  z-index: 20;
+  pointer-events: auto;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-drag: none;
+  filter: drop-shadow(0 10px 28px rgba(0,0,0,0.14));
+  transition: filter 0.2s ease;
+  will-change: transform;
+}
+.mascot img {
+  display: block;
+  width: 100%;
+  height: auto;
+  pointer-events: none;
+  -webkit-user-drag: none;
+}
+.mascot:hover { filter: drop-shadow(0 14px 36px rgba(0,0,0,0.22)); }
+.mascot.clicked { animation: mascot-click-bounce 0.55s cubic-bezier(0.34,1.56,0.64,1) !important; }
+
+/* ── Speech bubble ── */
+.mascot-bubble {
+  position: absolute;
+  bottom: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%) scale(0.7);
+  background: #fff;
+  border-radius: 18px;
+  padding: 7px 14px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #1a1a2e;
+  white-space: nowrap;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.13);
+  opacity: 0;
+  pointer-events: none;
+  z-index: 21;
+  font-family: 'Outfit', sans-serif;
+}
+.mascot-bubble::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 7px solid transparent;
+  border-top-color: #fff;
+  border-bottom: none;
+}
+.mascot:hover .mascot-bubble {
+  animation: bubble-pop 0.3s cubic-bezier(0.34,1.56,0.64,1) forwards;
+}
+
+/* ── 1. Hero Bubu (bottom-right, breaks below hero) ── */
+.hero { overflow: visible; }
+.mascot-hero {
+  bottom: -45px;
+  right: -10px;
+  width: 190px;
+  animation: bubu-float 4.2s ease-in-out infinite;
+  transform-origin: bottom center;
+}
+
+/* ── 2. Products Bubu (love, right side breaks grid) ── */
+.products-section { overflow: visible; }
+.mascot-products {
+  right: -24px;
+  bottom: 80px;
+  width: 155px;
+  opacity: 0;
+  transform: translateX(110%);
+  transition: opacity 0.6s ease, transform 0.7s cubic-bezier(0.34,1.56,0.64,1);
+}
+.mascot-products.visible {
+  opacity: 1;
+  transform: translateX(0);
+  animation: bubu-float 5s ease-in-out infinite 0.3s;
+}
+
+/* ── 3. Why Hiboo Mumu (peeks from left) ── */
+.why-section { overflow: visible; }
+.mascot-why {
+  left: -44px;
+  top: 50%;
+  transform: translateX(-110%) translateY(-50%);
+  width: 148px;
+  opacity: 0;
+  transition: opacity 0.5s ease, transform 0.8s cubic-bezier(0.34,1.56,0.64,1);
+}
+.mascot-why.visible {
+  opacity: 1;
+  transform: translateX(0) translateY(-50%);
+  animation: bubu-float 4.8s ease-in-out infinite 0.8s;
+}
+
+/* ── 4. Proof/Testimonials Bubu (kagum, top-right) ── */
+.proof-section { overflow: visible; }
+.mascot-proof {
+  right: -16px;
+  top: -56px;
+  width: 150px;
+  opacity: 0;
+  transform: translateX(110%);
+  transition: opacity 0.6s ease, transform 0.7s cubic-bezier(0.34,1.56,0.64,1);
+}
+.mascot-proof.visible {
+  opacity: 1;
+  transform: translateX(0);
+  animation: bubu-wiggle 4s ease-in-out infinite 1s;
+}
+
+/* ── 5. CTA Banner Bubu (jumps above banner, breaks top) ── */
+.cta-banner { overflow: visible; }
+.mascot-cta {
+  top: -95px;
+  right: 12%;
+  width: 175px;
+  opacity: 0;
+  transform: translateY(-80px) scale(0.6);
+  transition: opacity 0.5s ease, transform 0.7s cubic-bezier(0.34,1.56,0.64,1);
+}
+.mascot-cta.visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  animation: bubu-bounce 2.8s ease-in-out infinite 0.4s;
+}
+
+/* ── 6. Science Mumu (right side) ── */
+.science-section { overflow: visible; }
+.mascot-science {
+  right: -30px;
+  bottom: 30px;
+  width: 135px;
+  opacity: 0;
+  transform: translateX(110%);
+  transition: opacity 0.5s ease, transform 0.7s cubic-bezier(0.34,1.56,0.64,1);
+}
+.mascot-science.visible {
+  opacity: 1;
+  transform: translateX(0);
+  animation: bubu-float 5.5s ease-in-out infinite 1.2s;
+}
+
+/* ── Responsive ── */
+@media (max-width: 900px) {
+  .mascot-hero     { width: 120px; right: -6px; bottom: -28px; }
+  .mascot-why      { display: none; }
+  .mascot-science  { display: none; }
+  .mascot-products { width: 110px; right: -12px; }
+  .mascot-proof    { width: 110px; right: -10px; top: -42px; }
+  .mascot-cta      { width: 120px; right: 6%; top: -68px; }
+}
+@media (max-width: 600px) {
+  .mascot-hero     { display: none; }
+  .mascot-products { display: none; }
+  .mascot-proof    { display: none; }
+  .mascot-cta      { width: 95px; top: -55px; right: 4%; }
 }

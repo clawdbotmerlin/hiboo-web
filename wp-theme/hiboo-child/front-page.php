@@ -12,7 +12,7 @@ $img = get_stylesheet_directory_uri() . '/assets/images';
 <!-- HERO -->
 <section class="hero">
   <div class="hero-left">
-    <div class="hero-tag">Skincare Bayi #1 Indonesia</div>
+    <div class="hero-tag">Skincare Bayi No.1 di TikTok*</div>
     <h1>
       Kulit Bayi Selembut <em>Mochi</em>
       <span class="jp-text">Hypoallergenic &middot; Natural &middot; Gentle &middot; BPOM Certified</span>
@@ -39,7 +39,7 @@ $img = get_stylesheet_directory_uri() . '/assets/images';
         <div class="trust-icon">
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="#2A7AB5"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 0 1-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 0 1 4.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0 1 12 15a9.065 9.065 0 0 0-6.23.693L5 14.5m14.8.8 1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0 1 12 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5"/></svg>
         </div>
-        <div class="trust-text">Derma-Tested<small>Teruji Klinis</small></div>
+        <div class="trust-text">Derma-Tested<small>Teruji oleh Dokter Kulit</small></div>
       </div>
     </div>
   </div>
@@ -71,12 +71,21 @@ $img = get_stylesheet_directory_uri() . '/assets/images';
         <div style="font-size:11px;color:var(--hb-muted);">50.000+ Reviews</div>
       </div>
     </div>
+
+    <!-- Bubu mascot — Hero (superhero, breaks bottom grid) -->
+    <div class="mascot mascot-hero" id="mascotHero" title="Klik Bubu!">
+      <div class="mascot-bubble">Kulitnya selembut mochi! 🧡</div>
+      <img src="<?php echo $img; ?>/mascots/bubu-hero.png" alt="Bubu, maskot Hiboo">
+    </div>
   </div>
 </section>
 
 <!-- TRUST RIBBON -->
 <div class="trust-ribbon">
-  <div class="ribbon-item"><span class="ri-icon">&#x1F504;</span> <strong>Garansi 30 Hari</strong> Uang Kembali</div>
+  <div class="ribbon-item ribbon-item-award">
+    <img src="<?php echo $img; ?>/brand-choice-award.png" alt="Brand Choice Award" class="ribbon-award-logo">
+    <strong>Brand Choice Award</strong>
+  </div>
   <div class="ribbon-item"><span class="ri-icon">&#x1F33F;</span> <strong>Naturally Derived</strong> Ingredients</div>
   <div class="ribbon-item"><span class="ri-icon">&#x1F476;</span> <strong>Aman Newborn</strong> 0+ Bulan</div>
   <div class="ribbon-item"><span class="ri-icon">&#x2764;</span> <strong>50.000+</strong> Happy Families</div>
@@ -93,11 +102,11 @@ $img = get_stylesheet_directory_uri() . '/assets/images';
     <?php
     $products = array(
       array( 'img' => 'balm-15g.png',           'bg' => 'pc-peach',    'badge' => 'Bestseller', 'badge_class' => 'hot', 'disc' => '-69%', 'cat' => 'Balm &middot; 15g',        'name' => 'All Purpose Baby Balm',      'desc' => '10% Coconut Oil + Vitamin E + Beeswax. Atasi eczema, ruam popok, & gigitan serangga.', 'orig' => 'Rp175.000', 'price' => 'Rp54.500', 'rate' => '4.9', 'reviews' => '18.2K', 'slug' => 'all-purpose-baby-balm',     'shopee' => 'https://shopee.co.id/Hiboo-All-Purpose-Baby-Balm-15g-with-10-Coconut-Oil-Vit-E-Beeswax-Japan-Natural-Nourishing-Moisturizer-Salep-Anak-Bayi-Newborn-Ruam-Popok-Beruntusan-i.731537794.23654877732', 'tiktok' => 'https://www.tiktok.com/view/product/1730467194891502767' ),
-      array( 'img' => 'mochi-serum-100ml.png',   'bg' => 'pc-blue',     'badge' => '10RB+ sold', 'badge_class' => '',    'disc' => '-44%', 'cat' => 'Serum &middot; 100ml',    'name' => 'Mochi Glow Body Serum',      'desc' => 'Japanese White Tomato + 7x Hyaluronic Acid + Ceramide untuk kulit glowing selembut mochi.', 'orig' => 'Rp115.000', 'price' => 'Rp64.400', 'rate' => '4.9', 'reviews' => '8RB+',  'slug' => 'mochi-glow-body-serum',     'shopee' => 'https://shopee.co.id/Hiboo-Mochi-Glow-Body-Serum-with-Japanese-White-Tomato-2-in-1-Face-Cream-Bayi-Body-Lotion-Bayi-100-ml-Skincare-Newborn-Cream-C11-i.731537794.28813480562', 'tiktok' => 'https://www.tiktok.com/view/product/1729669411949020357' ),
-      array( 'img' => 'zzz-cream-30g.png',       'bg' => 'pc-lavender', 'badge' => '10RB+ sold', 'badge_class' => 'new', 'disc' => '-61%', 'cat' => 'Calming Cream &middot; 15g','name' => 'Zzz Deep Sleep Baby Cream', 'desc' => '7x Essential Oils + Shea Butter + Aloe Vera untuk tidur nyenyak si kecil.', 'orig' => 'Rp112.500', 'price' => 'Rp43.500', 'rate' => '4.8', 'reviews' => '10RB+', 'slug' => 'zzz-deep-sleep-baby-cream', 'shopee' => 'https://shopee.co.id/hiboo-Zzz-Deep-Sleep-Baby-Cream-15-gr-7X-Essential-Tidur-Kolik-%E2%80%93-Calming-Baby-Cream-Skincare-Anak-Bayi-Newborn-Body-Lotion-Mama%E2%80%99s-Cream-i.731537794.24421851945', 'tiktok' => 'https://www.tiktok.com/view/product/1730471352733959343' ),
+      array( 'img' => 'mochi-serum-100ml.png',   'bg' => 'pc-blue',     'badge' => '10RB+ sold', 'badge_class' => '',    'disc' => '-44%', 'cat' => 'Serum &middot; 100ml',    'name' => 'Mochi Glow Body Serum',      'desc' => 'Japanese White Tomato + Hyaluronic Acid + Ceramide untuk kulit glowing selembut mochi.', 'orig' => 'Rp115.000', 'price' => 'Rp64.400', 'rate' => '4.9', 'reviews' => '8RB+',  'slug' => 'mochi-glow-body-serum',     'shopee' => 'https://shopee.co.id/Hiboo-Mochi-Glow-Body-Serum-with-Japanese-White-Tomato-2-in-1-Face-Cream-Bayi-Body-Lotion-Bayi-100-ml-Skincare-Newborn-Cream-C11-i.731537794.28813480562', 'tiktok' => 'https://www.tiktok.com/view/product/1729669411949020357' ),
+      array( 'img' => 'zzz-cream-30g.png',       'bg' => 'pc-lavender', 'badge' => '10RB+ sold', 'badge_class' => 'new', 'disc' => '-61%', 'cat' => 'Calming Cream &middot; 15g','name' => 'Zzz Baby Calming Cream', 'desc' => '7x Essential Oils + Shea Butter + Aloe Vera untuk tidur nyenyak si kecil.', 'orig' => 'Rp112.500', 'price' => 'Rp43.500', 'rate' => '4.8', 'reviews' => '10RB+', 'slug' => 'zzz-deep-sleep-baby-cream', 'shopee' => 'https://shopee.co.id/hiboo-Zzz-Deep-Sleep-Baby-Cream-15-gr-7X-Essential-Tidur-Kolik-%E2%80%93-Calming-Baby-Cream-Skincare-Anak-Bayi-Newborn-Body-Lotion-Mama%E2%80%99s-Cream-i.731537794.24421851945', 'tiktok' => 'https://www.tiktok.com/view/product/1730471352733959343' ),
       array( 'img' => 'mochi-sunscreen-30ml.png', 'bg' => 'pc-gold',     'badge' => 'New',        'badge_class' => 'new', 'disc' => '-67%', 'cat' => 'Sunscreen &middot; 30ml',  'name' => 'Double Protection Sunscreen','desc' => 'SPF 50+ PA++++. Physical sunscreen dengan Citronella + Lavender Oil. Water Resistant.', 'orig' => 'Rp225.000', 'price' => 'Rp74.500', 'rate' => '4.9', 'reviews' => '789',   'slug' => 'double-protection-sunscreen','shopee' => 'https://shopee.co.id/Hiboo-Physical-Mochi-Sunscreen-Anak-30-ml-SPF-50-PA-Double-Protection-Skincare-Bayi-Anti-Nyamuk-Perlindungan-UVA-UVB-S11-i.731537794.56101681763', 'tiktok' => 'https://www.tiktok.com/view/product/1730856220718367941' ),
-      array( 'img' => 'balm-5g.png',             'bg' => 'pc-peach',    'badge' => '',            'badge_class' => '',    'disc' => '-69%', 'cat' => 'Balm &middot; 5g',        'name' => 'Baby Balm Mini',             'desc' => 'Ukuran travel untuk tas bayi. Solusi cepat eczema & ruam kapan saja, di mana saja.', 'orig' => 'Rp100.000', 'price' => 'Rp31.500', 'rate' => '4.9', 'reviews' => '10RB+', 'slug' => 'baby-balm-mini',            'shopee' => 'https://shopee.co.id/Hiboo-All-Purpose-Baby-Balm-5g-Travel-Size-with-10-Coconut-Oil-Vit-E-Beeswax-Natural-Nourishing-Moisturizer-Salep-Anak-Ruam-Popok-i.731537794.21093135682', 'tiktok' => 'https://www.tiktok.com/view/product/1729736568807458217' ),
-      array( 'img' => 'mochi-face-15ml.png',     'bg' => 'pc-mint',     'badge' => 'Combo',       'badge_class' => 'hot', 'disc' => '-67%', 'cat' => 'Combo Set',               'name' => 'Protection Combo',           'desc' => 'Sunscreen + Baby Balm dalam satu paket. Perlindungan lengkap untuk aktivitas si kecil.', 'orig' => 'Rp225.000', 'price' => 'Rp74.500', 'rate' => '4.9', 'reviews' => '185',   'slug' => 'protection-combo',          'shopee' => 'https://shopee.co.id/Hiboo-Protection-Combo-Physical-Mochi-Sunscreen-Anak-30-ml-SPF-50-PA-All-Purpose-Baby-Balm-15g-Ruam-Popok-Double-Protection-Skincare-Bayi-Anti-Nyamuk-S22-i.731537794.47951864741', 'tiktok' => 'https://www.tiktok.com/view/product/1731051527830078957' ),
+      array( 'img' => 'balm-5g.png',             'bg' => 'pc-peach',    'badge' => '',            'badge_class' => '',    'disc' => '-69%', 'cat' => 'Balm &middot; 5g',        'name' => 'All Purpose Baby Balm 5g',             'desc' => 'Ukuran travel untuk tas bayi. Solusi cepat eczema & ruam kapan saja, di mana saja.', 'orig' => 'Rp100.000', 'price' => 'Rp31.500', 'rate' => '4.9', 'reviews' => '10RB+', 'slug' => 'baby-balm-mini',            'shopee' => 'https://shopee.co.id/Hiboo-All-Purpose-Baby-Balm-5g-Travel-Size-with-10-Coconut-Oil-Vit-E-Beeswax-Natural-Nourishing-Moisturizer-Salep-Anak-Ruam-Popok-i.731537794.21093135682', 'tiktok' => 'https://www.tiktok.com/view/product/1729736568807458217' ),
+      array( 'imgs' => array('mochi-sunscreen-30ml.png','balm-15g.png'), 'bg' => 'pc-mint', 'badge' => 'Combo', 'badge_class' => 'hot', 'disc' => '-67%', 'cat' => 'Combo Set', 'name' => 'Protection Combo', 'desc' => 'Sunscreen + Baby Balm dalam satu paket. Perlindungan lengkap untuk aktivitas si kecil.', 'orig' => 'Rp225.000', 'price' => 'Rp74.500', 'rate' => '4.9', 'reviews' => '185', 'slug' => 'protection-combo', 'shopee' => 'https://shopee.co.id/Hiboo-Protection-Combo-Physical-Mochi-Sunscreen-Anak-30-ml-SPF-50-PA-All-Purpose-Baby-Balm-15g-Ruam-Popok-Double-Protection-Skincare-Bayi-Anti-Nyamuk-S22-i.731537794.47951864741', 'tiktok' => 'https://www.tiktok.com/view/product/1731051527830078957' ),
     );
     foreach ( $products as $p ) :
     ?>
@@ -107,9 +116,17 @@ $img = get_stylesheet_directory_uri() . '/assets/images';
       <?php endif; ?>
       <span class="product-card-badge disc"><?php echo $p['disc']; ?></span>
       <div class="product-img">
-        <div class="product-img-bg <?php echo esc_attr( $p['bg'] ); ?>">
-          <img src="<?php echo $img; ?>/products/<?php echo esc_attr( $p['img'] ); ?>" alt="Hiboo <?php echo esc_attr( $p['name'] ); ?>" width="200" height="260" loading="lazy">
+        <?php if ( ! empty( $p['imgs'] ) ) : ?>
+        <div class="product-img-bg combo-bg <?php echo esc_attr( $p['bg'] ); ?>">
+          <?php foreach ( $p['imgs'] as $pi ) : ?>
+            <img src="<?php echo $img; ?>/products/<?php echo esc_attr( $pi ); ?>" alt="Hiboo <?php echo esc_attr( $p['name'] ); ?>" loading="lazy">
+          <?php endforeach; ?>
         </div>
+        <?php else : ?>
+        <div class="product-img-bg <?php echo esc_attr( $p['bg'] ); ?>">
+          <img src="<?php echo $img; ?>/products/<?php echo esc_attr( $p['img'] ); ?>" alt="Hiboo <?php echo esc_attr( $p['name'] ); ?>" loading="lazy">
+        </div>
+        <?php endif; ?>
         <div class="product-quick-links">
           <a href="<?php echo esc_url( $p['shopee'] ); ?>" target="_blank" rel="noopener" class="pql-shopee"><svg viewBox="0 0 24 24" fill="white"><path d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007Z"/></svg>Shopee</a>
           <a href="<?php echo esc_url( $p['tiktok'] ); ?>" target="_blank" rel="noopener" class="pql-tiktok"><svg viewBox="0 0 24 24" fill="white"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 0 0-.79-.05A6.34 6.34 0 0 0 3.15 15.2a6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.34-6.34V8.73a8.19 8.19 0 0 0 4.77 1.52V6.8a4.84 4.84 0 0 1-1.01-.11Z"/></svg>TikTok</a>
@@ -133,15 +150,27 @@ $img = get_stylesheet_directory_uri() . '/assets/images';
   <div class="products-more">
     <a href="<?php echo esc_url( home_url( '/produk/' ) ); ?>" class="btn-secondary">Lihat Semua Produk &rarr;</a>
   </div>
+
+  <!-- Bubu mascot — Products (love pose, breaks right) -->
+  <div class="mascot mascot-products" id="mascotProducts" data-scroll title="Klik Bubu!">
+    <div class="mascot-bubble">18.000+ ibu sudah coba! 💕</div>
+    <img src="<?php echo $img; ?>/mascots/bubu-love.png" alt="Bubu Hiboo love">
+  </div>
 </section>
 
 <!-- WHY HIBOO -->
-<section id="tentang" class="why-section section-pad">
+<section id="tentang" class="why-section section-pad" style="position:relative;overflow:visible;">
   <div class="section-header">
     <div class="sh-tag">Kenapa Hiboo?</div>
     <h2>3 Prinsip untuk Kulit Bayi Sehat</h2>
     <p>Setiap produk Hiboo diciptakan dengan standar tertinggi untuk kulit bayi Indonesia.</p>
   </div>
+  <!-- Mumu mascot — Why section (peeks from left) -->
+  <div class="mascot mascot-why" id="mascotWhy" data-scroll title="Mumu suka Hiboo!">
+    <div class="mascot-bubble" style="left:auto;right:-10px;transform:scale(0.7);">Bahan alami pilihan! 🌿</div>
+    <img src="<?php echo $img; ?>/mascots/mumu-sayhi.png" alt="Mumu, maskot Hiboo">
+  </div>
+
   <div class="why-grid">
     <div class="why-card">
       <div class="why-icon">
@@ -171,7 +200,13 @@ $img = get_stylesheet_directory_uri() . '/assets/images';
 </section>
 
 <!-- SOCIAL PROOF -->
-<section class="proof-section section-pad">
+<section class="proof-section section-pad" style="position:relative;overflow:visible;">
+  <!-- Bubu mascot — Social Proof (kagum/amazed, top right) -->
+  <div class="mascot mascot-proof" id="mascotProof" data-scroll title="Klik Bubu!">
+    <div class="mascot-bubble">50K keluarga bahagia! 🎉</div>
+    <img src="<?php echo $img; ?>/mascots/bubu-kagum.png" alt="Bubu Hiboo kagum">
+  </div>
+
   <div class="section-header">
     <div class="sh-tag">Kata Moms Indonesia</div>
     <h2>Dipercaya oleh 50.000+ Keluarga</h2>
@@ -208,7 +243,13 @@ $img = get_stylesheet_directory_uri() . '/assets/images';
 </section>
 
 <!-- INGREDIENTS / SCIENCE -->
-<section id="bahan" class="science-section section-pad">
+<section id="bahan" class="science-section section-pad" style="position:relative;overflow:visible;">
+  <!-- Mumu mascot — Science (percaya diri, peeks from right) -->
+  <div class="mascot mascot-science" id="mascotScience" data-scroll title="Mumu suka bahan alami!">
+    <div class="mascot-bubble">Semua bahan aman! ✅</div>
+    <img src="<?php echo $img; ?>/mascots/mumu-percayadiri.png" alt="Mumu Temoo percaya diri">
+  </div>
+
   <div class="science-grid">
     <div class="science-visual">
       <img src="<?php echo $img; ?>/products/mochi-serum-50ml.png" alt="Hiboo Mochi Skin Serum - Bahan alami pilihan" width="160" height="200" loading="lazy">
@@ -225,7 +266,7 @@ $img = get_stylesheet_directory_uri() . '/assets/images';
     </div>
     <div class="science-content">
       <div class="sc-tag">Bahan & Formula</div>
-      <h2>Transparan. Alami.<br>Teruji Klinis.</h2>
+      <h2>Transparan. Alami.</h2>
       <p>Setiap bahan dalam produk Hiboo dipilih dengan hati-hati oleh tim dokter spesialis anak dan kulit. Tanpa bahan berbahaya, tanpa kompromi.</p>
       <div class="science-features">
         <div class="sci-feat">
@@ -281,7 +322,13 @@ $img = get_stylesheet_directory_uri() . '/assets/images';
 </section>
 
 <!-- CTA BANNER -->
-<section class="cta-banner">
+<section class="cta-banner" style="position:relative;overflow:visible;">
+  <!-- Bubu mascot — CTA (jumps above banner, breaks top grid) -->
+  <div class="mascot mascot-cta" id="mascotCta" data-scroll title="Klik Bubu!">
+    <div class="mascot-bubble">Yuk belanja sekarang! 🛍️</div>
+    <img src="<?php echo $img; ?>/mascots/bubu-jump.png" alt="Bubu Hiboo jumping">
+  </div>
+
   <h2>Mulai Perjalanan <em>Mochi Skin</em> Si Kecil</h2>
   <p>Dapatkan starter kit Hiboo dengan diskon 25% untuk pembelian pertama Anda.</p>
   <a href="<?php echo esc_url( home_url( '/produk/' ) ); ?>" class="btn-primary">Belanja Starter Kit &rarr;</a>
@@ -306,5 +353,9 @@ $img = get_stylesheet_directory_uri() . '/assets/images';
     </div>
   </div>
 </section>
+
+<div class="tiktok-disclaimer">
+  <p><em>*Berdasarkan Top Products High Seller – Baby Skincare di TikTok Indonesia periode May 2024</em></p>
+</div>
 
 <?php get_footer(); ?>

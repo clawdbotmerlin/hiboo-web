@@ -28,6 +28,8 @@ $catalogue = array(
     'seo_desc'    => 'All Purpose Baby Balm Hiboo 15g. 10% Coconut Oil + Vitamin E + Beeswax. Atasi eczema, ruam popok, gigitan serangga. BPOM, Halal MUI, Derma-Tested.',
     'keywords'    => 'baby balm, salep bayi, hiboo baby balm, eczema bayi, ruam popok, gigitan serangga bayi, skincare bayi BPOM',
     'schema_name' => 'All Purpose Baby Balm 15g',
+    'halal_no'    => 'LPPOM-00150088550518',
+    'bpom_no'     => 'NA 18230107642',
     'schema_price'=> '54500',
     'schema_rev'  => '18200',
     'category'    => 'Baby Balm',
@@ -78,20 +80,22 @@ $catalogue = array(
 
   'mochi-glow-body-serum' => array(
     'seo_title'   => 'Mochi Glow Body Serum 100ml | Hiboo — Kulit Bayi Glowing Selembut Mochi',
-    'seo_desc'    => 'Mochi Glow Body Serum Hiboo. Japanese White Tomato + 7x Hyaluronic Acid + Ceramide. Kulit bayi glowing selembut mochi. BPOM Certified, Halal MUI, Derma-Tested.',
+    'seo_desc'    => 'Mochi Glow Body Serum Hiboo. Japanese White Tomato + Hyaluronic Acid + Ceramide. Kulit bayi glowing selembut mochi. BPOM Certified, Halal MUI, Derma-Tested.',
     'keywords'    => 'serum bayi, mochi glow serum, hiboo serum, hyaluronic acid bayi, ceramide bayi, japanese white tomato, serum kulit bayi Indonesia',
     'schema_name' => 'Mochi Glow Body Serum 100ml',
+    'halal_no'    => 'LPPOM-00310021073251124',
+    'bpom_no'     => 'NA18230114601',
     'schema_price'=> '64400',
     'schema_rev'  => '8000',
     'category'    => 'Serum',
     'name'        => 'Mochi Glow Body Serum',
-    'tagline'     => 'Japanese White Tomato · 7x Hyaluronic Acid · Ceramide',
+    'tagline'     => 'Japanese White Tomato · Hyaluronic Acid · Ceramide',
     'rating'      => '4.9',
     'reviews'     => '8RB+ ulasan',
     'price'       => 'Rp64.400',
     'orig'        => 'Rp115.000',
     'disc'        => '-44%',
-    'short_desc'  => 'Serum badan bayi dengan teknologi Jepang. Japanese White Tomato kaya antioksidan, 7x Hyaluronic Acid untuk hidrasi berlapis, dan Ceramide memperkuat skin barrier si kecil. Tekstur ringan, cepat menyerap, non-sticky — ideal untuk iklim tropis Indonesia.',
+    'short_desc'  => 'Serum badan bayi dengan teknologi Jepang. Japanese White Tomato kaya antioksidan, Hyaluronic Acid untuk hidrasi berlapis, dan Ceramide memperkuat skin barrier si kecil. Tekstur ringan, cepat menyerap, non-sticky — ideal untuk iklim tropis Indonesia.',
     'main_img'    => 'mochi-serum-100ml.png',
     'bg'          => '#E8F4FC',
     'thumbs'      => array(
@@ -107,7 +111,7 @@ $catalogue = array(
     ),
     'benefits' => array(
       array( 'icon' => '✨', 'title' => 'Kulit Glowing Selembut Mochi',   'desc' => 'Japanese White Tomato sebagai antioksidan premium untuk kulit cerah dan bercahaya alami.' ),
-      array( 'icon' => '💧', 'title' => 'Hidrasi Berlapis 24 Jam',         'desc' => '7x Hyaluronic Acid dengan berat molekul berbeda mengunci kelembaban dari dalam hingga permukaan kulit.' ),
+      array( 'icon' => '💧', 'title' => 'Hidrasi Berlapis 24 Jam',         'desc' => 'Hyaluronic Acid mengunci kelembaban dari dalam hingga permukaan kulit untuk hidrasi optimal sepanjang hari.' ),
       array( 'icon' => '🛡️', 'title' => 'Perkuat Skin Barrier',           'desc' => 'Ceramide NP, AP, dan EOP memperkuat lapisan pelindung kulit bayi yang masih tipis dan sensitif.' ),
       array( 'icon' => '🌿', 'title' => 'Hypoallergenic',                  'desc' => 'Tanpa pewangi sintetis, paraben, dan alkohol. Aman untuk bayi newborn 0+ bulan.' ),
       array( 'icon' => '☀️', 'title' => 'Formula Tropis',                  'desc' => 'Water-based, ringan, dan cepat menyerap — tidak lengket di cuaca Indonesia yang panas.' ),
@@ -132,14 +136,16 @@ $catalogue = array(
   ),
 
   'zzz-deep-sleep-baby-cream' => array(
-    'seo_title'   => 'Zzz Deep Sleep Baby Cream | Hiboo — Bantu Bayi Tidur Nyenyak',
-    'seo_desc'    => 'Zzz Deep Sleep Baby Cream Hiboo. 7x Essential Oils + Shea Butter + Aloe Vera. Bantu bayi tidur lebih nyenyak, anti-kolik. BPOM, Halal MUI, Derma-Tested.',
+    'seo_title'   => 'Zzz Baby Calming Cream | Hiboo — Bantu Bayi Tidur Nyenyak',
+    'seo_desc'    => 'Zzz Baby Calming Cream Hiboo. 7x Essential Oils + Shea Butter + Aloe Vera. Bantu bayi tidur lebih nyenyak, anti-kolik. BPOM, Halal MUI, Derma-Tested.',
     'keywords'    => 'krim tidur bayi, zzz baby cream, hiboo calming cream, bayi susah tidur, anti kolik bayi, essential oil bayi, skincare bayi Indonesia',
-    'schema_name' => 'Zzz Deep Sleep Baby Cream 15g',
+    'schema_name' => 'Zzz Baby Calming Cream 15g',
+    'halal_no'    => 'LPPOM-00150088550518',
+    'bpom_no'     => 'NA18230114601',
     'schema_price'=> '43500',
     'schema_rev'  => '10000',
     'category'    => 'Calming Cream',
-    'name'        => 'Zzz Deep Sleep Baby Cream',
+    'name'        => 'Zzz Baby Calming Cream',
     'tagline'     => '7x Essential Oils · Shea Butter · Aloe Vera',
     'rating'      => '4.8',
     'reviews'     => '10RB+ ulasan',
@@ -150,8 +156,8 @@ $catalogue = array(
     'main_img'    => 'zzz-cream-30g.png',
     'bg'          => '#EDE7F6',
     'thumbs'      => array(
-      array( 'img' => 'zzz-cream-30g.png',  'alt' => 'Zzz Deep Sleep Baby Cream 30g' ),
-      array( 'img' => 'zzz-cream-15g.png',  'alt' => 'Zzz Deep Sleep Baby Cream 15g' ),
+      array( 'img' => 'zzz-cream-30g.png',  'alt' => 'Zzz Baby Calming Cream 30g' ),
+      array( 'img' => 'zzz-cream-15g.png',  'alt' => 'Zzz Baby Calming Cream 15g' ),
       array( 'img' => 'all-products.png',    'alt' => 'Koleksi lengkap Hiboo' ),
     ),
     'sizes' => array(
@@ -188,6 +194,8 @@ $catalogue = array(
     'seo_desc'    => 'Physical Mochi Sunscreen Hiboo SPF 50+ PA++++. Perlindungan ganda UV + anti-nyamuk. Citronella + Lavender Oil. Water Resistant. BPOM, Halal, Derma-Tested.',
     'keywords'    => 'sunscreen bayi, tabir surya bayi, spf 50 bayi, hiboo sunscreen, physical sunscreen bayi, anti nyamuk bayi, perlindungan uv bayi Indonesia',
     'schema_name' => 'Double Protection Sunscreen SPF 50+ PA++++ 30ml',
+    'halal_no'    => 'LPPOM-00310021073251124',
+    'bpom_no'     => 'NA18241702585',
     'schema_price'=> '74500',
     'schema_rev'  => '789',
     'category'    => 'Sunscreen',
@@ -234,14 +242,16 @@ $catalogue = array(
   ),
 
   'baby-balm-mini' => array(
-    'seo_title'   => 'Baby Balm Mini 5g Travel Size | Hiboo — Solusi Cepat di Mana Saja',
+    'seo_title'   => 'All Purpose Baby Balm 5g Travel Size | Hiboo — Solusi Cepat di Mana Saja',
     'seo_desc'    => 'Hiboo All Purpose Baby Balm 5g Travel Size. 10% Coconut Oil + Vitamin E + Beeswax. Solusi eczema & ruam popok untuk tas bayi. BPOM, Halal, Derma-Tested.',
-    'keywords'    => 'baby balm travel, baby balm mini, hiboo balm 5g, salep bayi kecil, balm bayi tas, ruam popok travel',
+    'keywords'    => 'baby balm travel, baby balm 5g, hiboo balm 5g, salep bayi kecil, balm bayi tas, ruam popok travel',
     'schema_name' => 'All Purpose Baby Balm 5g Travel Size',
+    'halal_no'    => 'LPPOM-00150088550518',
+    'bpom_no'     => 'NA 18230107642',
     'schema_price'=> '31500',
     'schema_rev'  => '10000',
     'category'    => 'Baby Balm',
-    'name'        => 'Baby Balm Mini',
+    'name'        => 'All Purpose Baby Balm 5g',
     'tagline'     => '10% Coconut Oil · Vitamin E · Beeswax',
     'rating'      => '4.9',
     'reviews'     => '10RB+ ulasan',
@@ -252,7 +262,7 @@ $catalogue = array(
     'main_img'    => 'balm-5g.png',
     'bg'          => '#FFF0E8',
     'thumbs'      => array(
-      array( 'img' => 'balm-5g.png',    'alt' => 'Hiboo Baby Balm Mini 5g' ),
+      array( 'img' => 'balm-5g.png',    'alt' => 'Hiboo All Purpose Baby Balm 5g' ),
       array( 'img' => 'balm-15g.png',   'alt' => 'Hiboo Baby Balm 15g' ),
       array( 'img' => 'all-products.png','alt' => 'Koleksi lengkap Hiboo' ),
     ),
@@ -411,6 +421,13 @@ $size_count     = count( $product['sizes'] );
       <div class="pdp-category"><?php echo esc_html( $product['category'] ); ?></div>
       <h1 class="pdp-name"><?php echo esc_html( $product['name'] ); ?></h1>
       <p class="pdp-tagline"><?php echo esc_html( $product['tagline'] ); ?></p>
+      <?php if ( ! empty( $product['halal_no'] ) ) : ?>
+      <div class="pdp-cert-nos">
+        <span class="cert-no"><strong>HALAL</strong> <?php echo esc_html( $product['halal_no'] ); ?></span>
+        <span class="cert-sep">&middot;</span>
+        <span class="cert-no"><strong>BPOM</strong> <?php echo esc_html( $product['bpom_no'] ); ?></span>
+      </div>
+      <?php endif; ?>
 
       <div class="pdp-rating">
         <span class="pdp-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
@@ -474,7 +491,7 @@ $size_count     = count( $product['sizes'] );
           <div class="trust-icon">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="#2A7AB5"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 0 1-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 0 1 4.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0 1 12 15a9.065 9.065 0 0 0-6.23.693L5 14.5m14.8.8 1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0 1 12 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5"/></svg>
           </div>
-          <div class="trust-text">Derma-Tested<small>Teruji Klinis</small></div>
+          <div class="trust-text">Derma-Tested<small>Teruji oleh Dokter Kulit</small></div>
         </div>
       </div>
 
