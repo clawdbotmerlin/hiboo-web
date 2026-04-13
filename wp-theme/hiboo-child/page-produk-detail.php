@@ -147,6 +147,16 @@ $catalogue = array(
     'category'    => 'Calming Cream',
     'name'        => 'Zzz Baby Calming Cream',
     'tagline'     => '7x Essential Oils · Shea Butter · Aloe Vera',
+    'key_ingredients' => array(
+      array( 'name' => 'Peppermint Oil',   'benefit' => 'Membantu melegakan pernapasan bayi agar terasa lebih nyaman.' ),
+      array( 'name' => 'Fennel Oil',       'benefit' => 'Membantu meredakan rasa tidak nyaman pada perut seperti kembung.' ),
+      array( 'name' => 'Lavender Oil',     'benefit' => 'Memberikan efek menenangkan sebelum tidur.' ),
+      array( 'name' => 'Ginger Oil',       'benefit' => 'Memberikan rasa hangat pada tubuh bayi.' ),
+      array( 'name' => 'Jojoba Oil',       'benefit' => 'Membantu menjaga kelembapan kulit bayi.' ),
+      array( 'name' => 'Sunflower Seed Oil','benefit' => 'Menutrisi kulit bayi agar tetap halus dan sehat.' ),
+      array( 'name' => 'Shea Butter',      'benefit' => 'Sebagai moisturizer alami.' ),
+      array( 'name' => 'Aloe Vera',        'benefit' => 'Menenangkan dan menghidrasi kulit bayi.' ),
+    ),
     'rating'      => '4.8',
     'reviews'     => '10RB+ ulasan',
     'price'       => 'Rp43.500',
@@ -526,7 +536,25 @@ $size_count     = count( $product['sizes'] );
   <!-- Tab: Bahan -->
   <div class="tab-panel" id="pdp-tab-bahan">
     <div class="tab-bahan">
-      <h3 class="playfair" style="font-size:22px;font-weight:600;margin-bottom:16px;">Daftar Bahan / Ingredients</h3>
+
+      <?php if ( ! empty( $product['key_ingredients'] ) ) : ?>
+      <h3 class="playfair" style="font-size:22px;font-weight:600;margin-bottom:16px;">Kandungan Utama</h3>
+      <table class="key-ing-table">
+        <thead>
+          <tr><th>Kandungan</th><th>Manfaat</th></tr>
+        </thead>
+        <tbody>
+          <?php foreach ( $product['key_ingredients'] as $ki ) : ?>
+          <tr>
+            <td class="ki-name"><?php echo esc_html( $ki['name'] ); ?></td>
+            <td class="ki-benefit"><?php echo esc_html( $ki['benefit'] ); ?></td>
+          </tr>
+          <?php endforeach; ?>
+        </tbody>
+      </table>
+      <?php endif; ?>
+
+      <h3 class="playfair" style="font-size:22px;font-weight:600;margin:<?php echo ! empty( $product['key_ingredients'] ) ? '32px' : '0'; ?> 0 16px;">Daftar Bahan / Ingredients</h3>
       <p class="ingredients-text"><?php echo esc_html( $product['ingredients'] ); ?></p>
 
       <h3 class="playfair" style="font-size:22px;font-weight:600;margin:32px 0 16px;">Bebas Bahan Berbahaya</h3>
