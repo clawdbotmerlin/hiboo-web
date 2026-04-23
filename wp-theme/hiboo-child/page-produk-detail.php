@@ -44,9 +44,9 @@ $catalogue = array(
     'main_img'    => 'balm-15g.png',
     'bg'          => '#FFF0E8',
     'thumbs'      => array(
-      array( 'img' => 'balm-15g.png',    'alt' => 'Hiboo Baby Balm 15g' ),
+      array( 'img' => 'balm-15g.png',    'alt' => 'Hiboo All Purpose Baby Balm 15g — blue cap tin' ),
       array( 'img' => 'balm-5g.png',     'alt' => 'Hiboo Baby Balm 5g travel size' ),
-      array( 'img' => 'balm-box-15g.png','alt' => 'Hiboo Baby Balm packaging box' ),
+      array( 'img' => 'balm-box-15g.png','alt' => 'Hiboo Baby Balm 15g — kotak packaging' ),
       array( 'img' => 'all-products.png','alt' => 'Koleksi lengkap Hiboo' ),
     ),
     'sizes' => array(
@@ -166,8 +166,8 @@ $catalogue = array(
     'main_img'    => 'zzz-cream-30g.png',
     'bg'          => '#EDE7F6',
     'thumbs'      => array(
-      array( 'img' => 'zzz-cream-30g.png',  'alt' => 'Zzz Baby Calming Cream 30g' ),
-      array( 'img' => 'zzz-cream-15g.png',  'alt' => 'Zzz Baby Calming Cream 15g' ),
+      array( 'img' => 'zzz-cream-30g.png',  'alt' => 'Zzz Baby Calming Cream 30g tube — blue cap' ),
+      array( 'img' => 'zzz-cream-15g.png',  'alt' => 'Zzz Baby Calming Cream 15g — new packaging' ),
       array( 'img' => 'all-products.png',    'alt' => 'Koleksi lengkap Hiboo' ),
     ),
     'sizes' => array(
@@ -221,7 +221,9 @@ $catalogue = array(
     'bg'          => '#E8F5E4',
     'thumbs'      => array(
       array( 'img' => 'mochi-sunscreen-30ml.png', 'alt' => 'Hiboo Physical Mochi Sunscreen 30ml' ),
-      array( 'img' => 'all-products.png',          'alt' => 'Koleksi lengkap Hiboo' ),
+      array( 'img' => 'pdp-sunscreen-1.jpg',      'alt' => 'Double Protection Physical Sunscreen SPF 50+ — No White Cast' ),
+      array( 'img' => 'pdp-sunscreen-2.jpg',      'alt' => 'Hero Ingredients Sunscreen — Zinc Oxide, Japanese White Tomato, Citronella' ),
+      array( 'img' => 'pdp-sunscreen-3.jpg',      'alt' => 'Honest Review Mochi Sunscreen' ),
     ),
     'sizes' => array(
       array( 'label' => '30ml', 'shopee' => 'https://shopee.co.id/Hiboo-Physical-Mochi-Sunscreen-Anak-30-ml-SPF-50-PA-Double-Protection-Skincare-Bayi-Anti-Nyamuk-Perlindungan-UVA-UVB-S11-i.731537794.56101681763', 'tiktok' => 'https://www.tiktok.com/view/product/1730856220718367941' ),
@@ -272,9 +274,11 @@ $catalogue = array(
     'main_img'    => 'balm-5g.png',
     'bg'          => '#FFF0E8',
     'thumbs'      => array(
-      array( 'img' => 'balm-5g.png',    'alt' => 'Hiboo All Purpose Baby Balm 5g' ),
-      array( 'img' => 'balm-15g.png',   'alt' => 'Hiboo Baby Balm 15g' ),
-      array( 'img' => 'all-products.png','alt' => 'Koleksi lengkap Hiboo' ),
+      array( 'img' => 'balm-5g.png',      'alt' => 'Hiboo All Purpose Baby Balm 5g — blue cap tin' ),
+      array( 'img' => 'pdp-balm5g-1.jpg', 'alt' => 'All Purpose Nourishing Balm 5g — No.1 Baby Balm' ),
+      array( 'img' => 'pdp-balm5g-2.jpg', 'alt' => 'Hero Ingredients Baby Balm 5g — Coconut Oil, Vitamin E, Beeswax' ),
+      array( 'img' => 'pdp-balm5g-3.jpg', 'alt' => 'Baby Balm 5g — diformulasikan oleh Dokter Anak dan Kulit' ),
+      array( 'img' => 'pdp-balm5g-4.jpg', 'alt' => 'Honest Review Baby Balm 5g' ),
     ),
     'sizes' => array(
       array( 'label' => '5g Travel', 'shopee' => 'https://shopee.co.id/Hiboo-All-Purpose-Baby-Balm-5g-Travel-Size-with-10-Coconut-Oil-Vit-E-Beeswax-Natural-Nourishing-Moisturizer-Salep-Anak-Ruam-Popok-i.731537794.21093135682', 'tiktok' => 'https://www.tiktok.com/view/product/1729736568807458217' ),
