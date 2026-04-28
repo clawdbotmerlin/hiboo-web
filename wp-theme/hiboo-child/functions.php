@@ -7,6 +7,9 @@
 
 defined('ABSPATH') || exit;
 
+// Central product data — single source of truth for all templates
+require_once get_stylesheet_directory() . '/inc/product-data.php';
+
 /**
  * Helper: return URI to a child theme asset.
  */
@@ -55,6 +58,20 @@ function hiboo_enqueue_scripts() {
         wp_get_theme()->get( 'Version' ),
         true // in footer
     );
+
+    // Mascot JS (front page only)
+    if ( is_front_page() ) {
+        wp_enqueue_script(
+            'hiboo-mascot',
+            hiboo_asset( 'js/mascot.js' ),
+            array(),
+            wp_get_theme()->get( 'Version' ),
+            true
+        );
+        wp_localize_script( 'hiboo-mascot', 'hibooMascotData', array(
+            'imgBase' => get_stylesheet_directory_uri() . '/assets/images/mascots/',
+        ) );
+    }
 }
 add_action( 'wp_enqueue_scripts', 'hiboo_enqueue_scripts' );
 

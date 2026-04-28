@@ -41,13 +41,14 @@ $catalogue = array(
     'orig'        => 'Rp175.000',
     'disc'        => '-69%',
     'short_desc'  => 'Salep serbaguna pertama Indonesia dengan 10% Coconut Oil aktif. Dalam satu balm, atasi eczema, ruam popok, bekas gigitan serangga, dan kulit kering. Tekstur lembut, cepat meresap, aman untuk newborn 0+ bulan.',
-    'main_img'    => 'balm-15g.png',
+    'main_img'    => 'pdp-balm5g-hero.jpg',
     'bg'          => '#FFF0E8',
     'thumbs'      => array(
-      array( 'img' => 'balm-15g.png',    'alt' => 'Hiboo All Purpose Baby Balm 15g — blue cap tin' ),
-      array( 'img' => 'balm-5g.png',     'alt' => 'Hiboo Baby Balm 5g travel size' ),
-      array( 'img' => 'balm-box-15g.png','alt' => 'Hiboo Baby Balm 15g — kotak packaging' ),
-      array( 'img' => 'all-products.png','alt' => 'Koleksi lengkap Hiboo' ),
+      array( 'img' => 'pdp-balm5g-hero.jpg', 'alt' => 'All Purpose Nourishing Balm — Best Seller by Jessica Iskandar' ),
+      array( 'img' => 'pdp-balm5g-4.jpg',    'alt' => 'Honest Review Baby Balm — 10RB+ Testimoni' ),
+      array( 'img' => 'pdp-balm5g-5.jpg',    'alt' => 'Hasil Nyata Setelah Pemakaian Rutin — Ruam Popok, Eczema, Kulit Kering' ),
+      array( 'img' => 'pdp-balm5g-1.jpg',    'alt' => 'All Purpose Baby Balm — Membantu Meredakan Ruam & Bekas Luka' ),
+      array( 'img' => 'pdp-balm5g-2.jpg',    'alt' => 'Hero Ingredients Baby Balm — Coconut Oil, Vitamin E, Beeswax' ),
     ),
     'sizes' => array(
       array( 'label' => '5g Travel', 'shopee' => 'https://shopee.co.id/Hiboo-All-Purpose-Baby-Balm-5g-Travel-Size-with-10-Coconut-Oil-Vit-E-Beeswax-Natural-Nourishing-Moisturizer-Salep-Anak-Ruam-Popok-i.731537794.21093135682', 'tiktok' => 'https://www.tiktok.com/view/product/1729736568807458217' ),
@@ -96,13 +97,13 @@ $catalogue = array(
     'orig'        => 'Rp115.000',
     'disc'        => '-44%',
     'short_desc'  => 'Serum badan bayi dengan teknologi Jepang. Japanese White Tomato kaya antioksidan, Hyaluronic Acid untuk hidrasi berlapis, dan Ceramide memperkuat skin barrier si kecil. Tekstur ringan, cepat menyerap, non-sticky — ideal untuk iklim tropis Indonesia.',
-    'main_img'    => 'mochi-serum-100ml.png',
+    'main_img'    => 'pdp-mochi-serum-1.jpg',
     'bg'          => '#E8F4FC',
     'thumbs'      => array(
-      array( 'img' => 'mochi-serum-100ml.png', 'alt' => 'Mochi Glow Body Serum 100ml' ),
-      array( 'img' => 'mochi-serum-50ml.png',  'alt' => 'Mochi Glow Body Serum 50ml' ),
-      array( 'img' => 'mochi-face-15ml.png',   'alt' => 'Mochi Face Serum 15ml' ),
-      array( 'img' => 'all-products.png',       'alt' => 'Koleksi lengkap Hiboo' ),
+      array( 'img' => 'pdp-mochi-serum-1.jpg',  'alt' => 'Mochi Glow Serum — Glow & Healthy Skin by Jessica Iskandar' ),
+      array( 'img' => 'mochi-serum-100ml.png',   'alt' => 'Mochi Glow Body Serum 100ml' ),
+      array( 'img' => 'mochi-serum-50ml.png',    'alt' => 'Mochi Glow Body Serum 50ml' ),
+      array( 'img' => 'mochi-face-15ml.png',     'alt' => 'Mochi Face Serum 15ml' ),
     ),
     'sizes' => array(
       array( 'label' => '15ml Face', 'shopee' => 'https://shopee.co.id/-DAPAT-COIN-PURSE-Hiboo-Mochi-Face-Serum-with-Japanese-White-Tomato-2-in-1-Face-Cream-Bayi-Lotion-Bayi-15-ml-Skincare-Bayi-Whitening-Glowing-C00-i.731537794.42957155057', 'tiktok' => 'https://www.tiktok.com/view/product/1730227434899997893' ),
@@ -163,12 +164,12 @@ $catalogue = array(
     'orig'        => 'Rp112.500',
     'disc'        => '-61%',
     'short_desc'  => 'Calming cream pertama Indonesia dengan 7 essential oil pilihan — Lavender, Peppermint, Ginger, Eucalyptus, dan lebih. Bantu si kecil tidur lebih nyenyak, melegakan kolik, dan merilekskan otot. Aroma lembut yang menenangkan untuk rutinitas tidur malam.',
-    'main_img'    => 'zzz-cream-30g.png',
+    'main_img'    => 'pdp-zzz-cream-1.jpg',
     'bg'          => '#EDE7F6',
     'thumbs'      => array(
-      array( 'img' => 'zzz-cream-30g.png',  'alt' => 'Zzz Baby Calming Cream 30g tube — blue cap' ),
-      array( 'img' => 'zzz-cream-15g.png',  'alt' => 'Zzz Baby Calming Cream 15g — new packaging' ),
-      array( 'img' => 'all-products.png',    'alt' => 'Koleksi lengkap Hiboo' ),
+      array( 'img' => 'pdp-zzz-cream-1.jpg', 'alt' => 'Zzz Baby Calming Cream — 2X Soothing Combo by Jessica Iskandar' ),
+      array( 'img' => 'zzz-cream-30g.png',    'alt' => 'Zzz Baby Calming Cream 30g Tube — Blue Cap' ),
+      array( 'img' => 'zzz-cream-15g.png',    'alt' => 'Zzz Baby Calming Cream 15g — New Packaging' ),
     ),
     'sizes' => array(
       array( 'label' => '15g', 'shopee' => 'https://shopee.co.id/hiboo-Zzz-Deep-Sleep-Baby-Cream-15-gr-7X-Essential-Tidur-Kolik-%E2%80%93-Calming-Baby-Cream-Skincare-Anak-Bayi-Newborn-Body-Lotion-Mama%E2%80%99s-Cream-i.731537794.24421851945', 'tiktok' => 'https://www.tiktok.com/view/product/1730471352733959343' ),
@@ -217,13 +218,15 @@ $catalogue = array(
     'orig'        => 'Rp225.000',
     'disc'        => '-67%',
     'short_desc'  => 'Sunscreen bayi pertama Indonesia dengan perlindungan ganda — physical UV filter SPF 50+ PA++++ sekaligus anti-nyamuk dengan Citronella dan Lavender Oil. Water resistant, non-greasy, bebas nano-particle. Satu produk untuk dua perlindungan lengkap.',
-    'main_img'    => 'mochi-sunscreen-30ml.png',
+    'main_img'    => 'pdp-sunscreen-1.jpg',
     'bg'          => '#E8F5E4',
     'thumbs'      => array(
+      array( 'img' => 'pdp-sunscreen-1.jpg',  'alt' => 'Double Protection Physical Sunscreen SPF 50+ — No White Cast by Jessica Iskandar' ),
       array( 'img' => 'mochi-sunscreen-30ml.png', 'alt' => 'Hiboo Physical Mochi Sunscreen 30ml' ),
-      array( 'img' => 'pdp-sunscreen-1.jpg',      'alt' => 'Double Protection Physical Sunscreen SPF 50+ — No White Cast' ),
-      array( 'img' => 'pdp-sunscreen-2.jpg',      'alt' => 'Hero Ingredients Sunscreen — Zinc Oxide, Japanese White Tomato, Citronella' ),
-      array( 'img' => 'pdp-sunscreen-3.jpg',      'alt' => 'Honest Review Mochi Sunscreen' ),
+      array( 'img' => 'pdp-sunscreen-2.jpg',  'alt' => 'Hero Ingredients — Zinc Oxide, Japanese White Tomato, Citronella Oil' ),
+      array( 'img' => 'pdp-sunscreen-4.jpg',  'alt' => 'Mochi Sunscreen Telah Teruji SPF 50+ PA++++ Water Resistant' ),
+      array( 'img' => 'pdp-sunscreen-5.jpg',  'alt' => 'Cara Pemakaian Double Protection Sunscreen' ),
+      array( 'img' => 'pdp-sunscreen-3.jpg',  'alt' => 'Honest Review Mochi Sunscreen — Anak Terlindungi dari Nyamuk & UV' ),
     ),
     'sizes' => array(
       array( 'label' => '30ml', 'shopee' => 'https://shopee.co.id/Hiboo-Physical-Mochi-Sunscreen-Anak-30-ml-SPF-50-PA-Double-Protection-Skincare-Bayi-Anti-Nyamuk-Perlindungan-UVA-UVB-S11-i.731537794.56101681763', 'tiktok' => 'https://www.tiktok.com/view/product/1730856220718367941' ),
@@ -271,14 +274,14 @@ $catalogue = array(
     'orig'        => 'Rp100.000',
     'disc'        => '-69%',
     'short_desc'  => 'Versi travel size All Purpose Baby Balm 15g yang sudah viral. Ukuran 5g yang muat di semua tas bayi — untuk perjalanan, ke mall, atau jaga-jaga saat di luar rumah. Formula sama, ukuran lebih praktis.',
-    'main_img'    => 'balm-5g.png',
+    'main_img'    => 'pdp-balm5g-hero.jpg',
     'bg'          => '#FFF0E8',
     'thumbs'      => array(
-      array( 'img' => 'balm-5g.png',      'alt' => 'Hiboo All Purpose Baby Balm 5g — blue cap tin' ),
-      array( 'img' => 'pdp-balm5g-1.jpg', 'alt' => 'All Purpose Nourishing Balm 5g — No.1 Baby Balm' ),
-      array( 'img' => 'pdp-balm5g-2.jpg', 'alt' => 'Hero Ingredients Baby Balm 5g — Coconut Oil, Vitamin E, Beeswax' ),
-      array( 'img' => 'pdp-balm5g-3.jpg', 'alt' => 'Baby Balm 5g — diformulasikan oleh Dokter Anak dan Kulit' ),
-      array( 'img' => 'pdp-balm5g-4.jpg', 'alt' => 'Honest Review Baby Balm 5g' ),
+      array( 'img' => 'pdp-balm5g-hero.jpg', 'alt' => 'All Purpose Nourishing Balm 5g — Best Seller by Jessica Iskandar' ),
+      array( 'img' => 'pdp-balm5g-4.jpg',    'alt' => 'Honest Review Baby Balm 5g — 10RB+ Testimoni' ),
+      array( 'img' => 'pdp-balm5g-5.jpg',    'alt' => 'Hasil Nyata Setelah Pemakaian Rutin — Ruam Popok, Eczema, Kulit Kering' ),
+      array( 'img' => 'pdp-balm5g-1.jpg',    'alt' => 'All Purpose Baby Balm 5g — Membantu Meredakan Ruam & Bekas Luka' ),
+      array( 'img' => 'pdp-balm5g-2.jpg',    'alt' => 'Hero Ingredients Baby Balm 5g — Coconut Oil, Vitamin E, Beeswax' ),
     ),
     'sizes' => array(
       array( 'label' => '5g Travel', 'shopee' => 'https://shopee.co.id/Hiboo-All-Purpose-Baby-Balm-5g-Travel-Size-with-10-Coconut-Oil-Vit-E-Beeswax-Natural-Nourishing-Moisturizer-Salep-Anak-Ruam-Popok-i.731537794.21093135682', 'tiktok' => 'https://www.tiktok.com/view/product/1729736568807458217' ),
@@ -323,12 +326,14 @@ $catalogue = array(
     'orig'        => 'Rp225.000',
     'disc'        => '-67%',
     'short_desc'  => 'Paket perlindungan terlengkap untuk si kecil. Double Protection Sunscreen SPF 50+ PA++++ anti-nyamuk + All Purpose Baby Balm 15g untuk eczema dan ruam popok. Beli paket, hemat lebih banyak daripada beli satuan.',
-    'main_img'    => 'mochi-face-15ml.png',
+    'main_img'    => 'pdp-protection-combo.jpg',
     'bg'          => '#E8F4FC',
     'thumbs'      => array(
-      array( 'img' => 'mochi-face-15ml.png',      'alt' => 'Hiboo Protection Combo' ),
-      array( 'img' => 'mochi-sunscreen-30ml.png',  'alt' => 'Double Protection Sunscreen 30ml' ),
-      array( 'img' => 'balm-15g.png',              'alt' => 'All Purpose Baby Balm 15g' ),
+      array( 'img' => 'pdp-protection-combo.jpg',  'alt' => 'Hiboo Protection Combo — Sunscreen 30ml + Baby Balm 15g by Jessica Iskandar' ),
+      array( 'img' => 'pdp-sunscreen-1.jpg',        'alt' => 'Double Protection Sunscreen SPF 50+ PA++++ Anti-Nyamuk' ),
+      array( 'img' => 'pdp-balm15g-hero.jpg',       'alt' => 'All Purpose Baby Balm 15g — Best Seller' ),
+      array( 'img' => 'mochi-sunscreen-30ml.png',   'alt' => 'Mochi Sunscreen 30ml' ),
+      array( 'img' => 'balm-15g.png',               'alt' => 'All Purpose Baby Balm 15g' ),
     ),
     'sizes' => array(
       array( 'label' => 'Combo Set', 'shopee' => 'https://shopee.co.id/Hiboo-Protection-Combo-Physical-Mochi-Sunscreen-Anak-30-ml-SPF-50-PA-All-Purpose-Baby-Balm-15g-Ruam-Popok-Double-Protection-Skincare-Bayi-Anti-Nyamuk-S22-i.731537794.47951864741', 'tiktok' => 'https://www.tiktok.com/view/product/1731051527830078957' ),
@@ -416,11 +421,20 @@ $size_count     = count( $product['sizes'] );
              src="<?php echo esc_url( $img . '/products/' . $product['main_img'] ); ?>"
              alt="Hiboo <?php echo esc_attr( $product['name'] ); ?>"
              width="380" height="380" loading="eager">
+        <?php if ( count( $product['thumbs'] ) > 1 ) : ?>
+        <button class="pdp-arrow pdp-arrow-prev" onclick="hibooGalleryNav(-1)" aria-label="Gambar sebelumnya">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+        </button>
+        <button class="pdp-arrow pdp-arrow-next" onclick="hibooGalleryNav(1)" aria-label="Gambar berikutnya">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </button>
+        <?php endif; ?>
       </div>
       <?php if ( count( $product['thumbs'] ) > 1 ) : ?>
       <div class="pdp-thumbs">
         <?php foreach ( $product['thumbs'] as $i => $thumb ) : ?>
         <div class="pdp-thumb <?php echo $i === 0 ? 'active' : ''; ?>"
+             data-src="<?php echo esc_url( $img . '/products/' . $thumb['img'] ); ?>"
              onclick="hibooChangeImg(this,'<?php echo esc_url( $img . '/products/' . $thumb['img'] ); ?>')">
           <img src="<?php echo esc_url( $img . '/products/' . $thumb['img'] ); ?>"
                alt="<?php echo esc_attr( $thumb['alt'] ); ?>" width="60" height="60" loading="lazy">
@@ -619,14 +633,8 @@ $size_count     = count( $product['sizes'] );
 
 <!-- RELATED PRODUCTS -->
 <?php
-$related_products = array(
-  'all-purpose-baby-balm'     => array( 'img' => 'balm-15g.png',           'bg' => 'pc-peach',    'badge' => 'Bestseller', 'bc' => 'hot', 'disc' => '-69%', 'cat' => 'Balm &middot; 15g',     'name' => 'All Purpose Baby Balm',    'orig' => 'Rp175.000', 'price' => 'Rp54.500', 'rate' => '4.9', 'rev' => '18.2K', 'shopee' => 'https://shopee.co.id/Hiboo-All-Purpose-Baby-Balm-15g-with-10-Coconut-Oil-Vit-E-Beeswax-Japan-Natural-Nourishing-Moisturizer-Salep-Anak-Bayi-Newborn-Ruam-Popok-Beruntusan-i.731537794.23654877732', 'tiktok' => 'https://www.tiktok.com/view/product/1730467194891502767' ),
-  'mochi-glow-body-serum'     => array( 'img' => 'mochi-serum-100ml.png',   'bg' => 'pc-blue',     'badge' => '',           'bc' => '',    'disc' => '-44%', 'cat' => 'Serum &middot; 100ml',   'name' => 'Mochi Glow Body Serum',    'orig' => 'Rp115.000', 'price' => 'Rp64.400', 'rate' => '4.9', 'rev' => '8RB+',  'shopee' => 'https://shopee.co.id/Hiboo-Mochi-Glow-Body-Serum-with-Japanese-White-Tomato-2-in-1-Face-Cream-Bayi-Body-Lotion-Bayi-100-ml-Skincare-Newborn-Cream-C11-i.731537794.28813480562', 'tiktok' => 'https://www.tiktok.com/view/product/1729669411949020357' ),
-  'zzz-deep-sleep-baby-cream' => array( 'img' => 'zzz-cream-30g.png',       'bg' => 'pc-lavender', 'badge' => '',           'bc' => '',    'disc' => '-61%', 'cat' => 'Calming &middot; 15g',   'name' => 'Zzz Deep Sleep Cream',     'orig' => 'Rp112.500', 'price' => 'Rp43.500', 'rate' => '4.8', 'rev' => '10RB+', 'shopee' => 'https://shopee.co.id/hiboo-Zzz-Deep-Sleep-Baby-Cream-15-gr-7X-Essential-Tidur-Kolik-%E2%80%93-Calming-Baby-Cream-Skincare-Anak-Bayi-Newborn-Body-Lotion-Mama%E2%80%99s-Cream-i.731537794.24421851945', 'tiktok' => 'https://www.tiktok.com/view/product/1730471352733959343' ),
-  'double-protection-sunscreen'=> array( 'img' => 'mochi-sunscreen-30ml.png','bg' => 'pc-gold',     'badge' => 'New',        'bc' => 'new', 'disc' => '-67%', 'cat' => 'Sunscreen &middot; 30ml', 'name' => 'Double Protection Sunscreen','orig' => 'Rp225.000', 'price' => 'Rp74.500', 'rate' => '4.9', 'rev' => '789',   'shopee' => 'https://shopee.co.id/Hiboo-Physical-Mochi-Sunscreen-Anak-30-ml-SPF-50-PA-Double-Protection-Skincare-Bayi-Anti-Nyamuk-Perlindungan-UVA-UVB-S11-i.731537794.56101681763', 'tiktok' => 'https://www.tiktok.com/view/product/1730856220718367941' ),
-  'baby-balm-mini'            => array( 'img' => 'balm-5g.png',             'bg' => 'pc-peach',    'badge' => '',           'bc' => '',    'disc' => '-69%', 'cat' => 'Balm &middot; 5g',       'name' => 'Baby Balm Mini',           'orig' => 'Rp100.000', 'price' => 'Rp31.500', 'rate' => '4.9', 'rev' => '10RB+', 'shopee' => 'https://shopee.co.id/Hiboo-All-Purpose-Baby-Balm-5g-Travel-Size-with-10-Coconut-Oil-Vit-E-Beeswax-Natural-Nourishing-Moisturizer-Salep-Anak-Ruam-Popok-i.731537794.21093135682', 'tiktok' => 'https://www.tiktok.com/view/product/1729736568807458217' ),
-  'protection-combo'          => array( 'img' => 'mochi-face-15ml.png',     'bg' => 'pc-mint',     'badge' => 'Combo',      'bc' => 'hot', 'disc' => '-67%', 'cat' => 'Combo Set',              'name' => 'Protection Combo',         'orig' => 'Rp225.000', 'price' => 'Rp74.500', 'rate' => '4.9', 'rev' => '185',   'shopee' => 'https://shopee.co.id/Hiboo-Protection-Combo-Physical-Mochi-Sunscreen-Anak-30-ml-SPF-50-PA-All-Purpose-Baby-Balm-15g-Ruam-Popok-Double-Protection-Skincare-Bayi-Anti-Nyamuk-S22-i.731537794.47951864741', 'tiktok' => 'https://www.tiktok.com/view/product/1731051527830078957' ),
-);
+// Pull from central product data — single source of truth
+$related_products = hiboo_get_products();
 ?>
 <section class="related-section">
   <div style="max-width:1100px;margin:0 auto;">
@@ -669,7 +677,7 @@ $related_products = array(
               <span class="original"><?php echo $rp['orig']; ?></span>
               <span class="current"><?php echo $rp['price']; ?></span>
             </div>
-            <div class="product-rating">&#9733; <?php echo $rp['rate']; ?> <span>(<?php echo $rp['rev']; ?>)</span></div>
+            <div class="product-rating">&#9733; <?php echo $rp['rate']; ?> <span>(<?php echo $rp['reviews']; ?>)</span></div>
           </div>
         </div>
       </div>
@@ -680,10 +688,27 @@ $related_products = array(
 
 <script>
 /* PDP — Gallery */
+var hibooGalleryIdx = 0;
+
 function hibooChangeImg(thumb, src) {
   document.getElementById('pdpMainImg').src = src;
-  document.querySelectorAll('.pdp-thumb').forEach(function(t){ t.classList.remove('active'); });
+  document.querySelectorAll('.pdp-thumb').forEach(function(t, i) {
+    t.classList.remove('active');
+    if (t === thumb) { hibooGalleryIdx = i; }
+  });
   thumb.classList.add('active');
+}
+
+function hibooGalleryNav(dir) {
+  var thumbs = document.querySelectorAll('.pdp-thumb');
+  if (!thumbs.length) return;
+  hibooGalleryIdx = (hibooGalleryIdx + dir + thumbs.length) % thumbs.length;
+  var target = thumbs[hibooGalleryIdx];
+  var src = target.getAttribute('data-src');
+  if (src) document.getElementById('pdpMainImg').src = src;
+  thumbs.forEach(function(t) { t.classList.remove('active'); });
+  target.classList.add('active');
+  target.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
 }
 
 /* PDP — Size selector updates buy buttons */

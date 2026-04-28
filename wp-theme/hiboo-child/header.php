@@ -13,13 +13,19 @@
 
 <!-- NAV -->
 <nav>
-  <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="nav-logo">
-    <?php if ( has_custom_logo() ) :
-      the_custom_logo();
-    else : ?>
-      <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/logo/hiboo-logo-color.png" alt="<?php bloginfo( 'name' ); ?>" width="160" height="52">
-    <?php endif; ?>
-  </a>
+  <div class="nav-left">
+    <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="nav-logo">
+      <?php if ( has_custom_logo() ) :
+        the_custom_logo();
+      else : ?>
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/logo/hiboo-logo-color.png" alt="<?php bloginfo( 'name' ); ?>" width="180" height="60">
+      <?php endif; ?>
+    </a>
+    <div class="nav-award">
+      <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/brand-choice-award.png" alt="Brand Choice Award" class="nav-award-logo">
+      <span class="nav-award-label">Brand Choice<br>Award 2024</span>
+    </div>
+  </div>
 
   <?php
   wp_nav_menu( array(

@@ -41,6 +41,221 @@
 <!-- Shared CSS -->
 <link rel="stylesheet" href="assets/css/style.css?v=4">
 
+<!-- Mascot CSS -->
+<style>
+/* ── Keyframe animations ── */
+@keyframes bubu-float {
+  0%,100% { transform: translateY(0) rotate(-1deg); }
+  30%     { transform: translateY(-14px) rotate(2deg); }
+  70%     { transform: translateY(-8px) rotate(-2deg); }
+}
+@keyframes bubu-bounce {
+  0%,100% { transform: translateY(0) scaleY(1) rotate(0deg); }
+  20%     { transform: translateY(-28px) scaleY(1.06) rotate(-4deg); }
+  50%     { transform: translateY(-18px) scaleY(1.03) rotate(3deg); }
+  70%     { transform: translateY(-6px) scaleY(0.97) rotate(-1deg); }
+}
+@keyframes bubu-wiggle {
+  0%,100% { transform: rotate(0deg) scale(1); }
+  15%     { transform: rotate(-12deg) scale(1.04); }
+  35%     { transform: rotate(10deg) scale(1.04); }
+  55%     { transform: rotate(-7deg) scale(1.02); }
+  75%     { transform: rotate(7deg) scale(1.02); }
+}
+@keyframes bubu-peek-left {
+  0%   { transform: translateX(-110%) translateY(-50%); opacity: 0; }
+  70%  { transform: translateX(8%) translateY(-50%); opacity: 1; }
+  100% { transform: translateX(0%) translateY(-50%); opacity: 1; }
+}
+@keyframes bubu-peek-right {
+  0%   { transform: translateX(110%); opacity: 0; }
+  70%  { transform: translateX(-8%); opacity: 1; }
+  100% { transform: translateX(0%); opacity: 1; }
+}
+@keyframes bubu-drop-in {
+  0%   { transform: translateY(-120px) rotate(-15deg) scale(0.7); opacity: 0; }
+  55%  { transform: translateY(12px) rotate(5deg) scale(1.07); opacity: 1; }
+  75%  { transform: translateY(-6px) rotate(-2deg) scale(0.98); }
+  100% { transform: translateY(0) rotate(0deg) scale(1); opacity: 1; }
+}
+@keyframes bubu-pop-in {
+  0%   { transform: scale(0) rotate(-25deg); opacity: 0; }
+  60%  { transform: scale(1.18) rotate(6deg); opacity: 1; }
+  80%  { transform: scale(0.93) rotate(-2deg); }
+  100% { transform: scale(1) rotate(0deg); opacity: 1; }
+}
+@keyframes mascot-click-bounce {
+  0%,100% { transform: translateY(0) scale(1); }
+  30%     { transform: translateY(-22px) scale(1.1) rotate(-5deg); }
+  60%     { transform: translateY(-10px) scale(1.05) rotate(3deg); }
+}
+@keyframes bubble-pop {
+  0%   { opacity: 0; transform: scale(0.6) translateY(6px); }
+  60%  { transform: scale(1.08) translateY(-2px); }
+  100% { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+/* ── Base mascot ── */
+.mascot {
+  position: absolute;
+  z-index: 20;
+  pointer-events: auto;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-drag: none;
+  filter: drop-shadow(0 10px 28px rgba(0,0,0,0.14));
+  transition: filter 0.2s ease;
+  will-change: transform;
+}
+.mascot img {
+  display: block;
+  width: 100%;
+  height: auto;
+  pointer-events: none;
+  -webkit-user-drag: none;
+}
+.mascot:hover { filter: drop-shadow(0 14px 36px rgba(0,0,0,0.22)); }
+.mascot.clicked { animation: mascot-click-bounce 0.55s cubic-bezier(0.34,1.56,0.64,1) !important; }
+
+/* ── Speech bubble ── */
+.mascot-bubble {
+  position: absolute;
+  bottom: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%) scale(0.7);
+  background: #fff;
+  border-radius: 18px;
+  padding: 7px 14px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #1a1a2e;
+  white-space: nowrap;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.13);
+  opacity: 0;
+  pointer-events: none;
+  transition: none;
+  z-index: 21;
+  font-family: 'Outfit', sans-serif;
+}
+.mascot-bubble::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 7px solid transparent;
+  border-top-color: #fff;
+  border-bottom: none;
+}
+.mascot:hover .mascot-bubble { animation: bubble-pop 0.3s cubic-bezier(0.34,1.56,0.64,1) forwards; }
+
+/* ── 1. Hero Bubu (bottom-right of hero, breaks down) ── */
+.hero { position: relative; overflow: visible; }
+.mascot-hero {
+  bottom: -40px;
+  right: -10px;
+  width: 190px;
+  animation: bubu-float 4.2s ease-in-out infinite;
+  transform-origin: bottom center;
+}
+
+/* ── 2. Products Bubu (love pose, right side, breaks grid) ── */
+.products-section { position: relative; overflow: visible; }
+.mascot-products {
+  right: -24px;
+  bottom: 80px;
+  width: 155px;
+  opacity: 0;
+  transform: translateX(110%);
+  transition: opacity 0.6s ease, transform 0.7s cubic-bezier(0.34,1.56,0.64,1);
+}
+.mascot-products.visible {
+  opacity: 1;
+  transform: translateX(0);
+  animation: bubu-float 5s ease-in-out infinite 0.3s;
+}
+
+/* ── 3. Why Hiboo Mumu (left side, peeks in) ── */
+.why-section { position: relative; overflow: visible; }
+.mascot-why {
+  left: -44px;
+  top: 50%;
+  transform: translateX(-110%) translateY(-50%);
+  width: 148px;
+  opacity: 0;
+  transition: opacity 0.5s ease, transform 0.8s cubic-bezier(0.34,1.56,0.64,1);
+}
+.mascot-why.visible {
+  opacity: 1;
+  transform: translateX(0) translateY(-50%);
+  animation: bubu-float 4.8s ease-in-out infinite 0.8s;
+}
+
+/* ── 4. Proof/Testimonials Bubu (kagum, floats top-right) ── */
+.proof-section { position: relative; overflow: visible; }
+.mascot-proof {
+  right: -16px;
+  top: -56px;
+  width: 150px;
+  opacity: 0;
+  transform: translateX(110%);
+  transition: opacity 0.6s ease, transform 0.7s cubic-bezier(0.34,1.56,0.64,1);
+}
+.mascot-proof.visible {
+  opacity: 1;
+  transform: translateX(0);
+  animation: bubu-wiggle 4s ease-in-out infinite 1s;
+}
+
+/* ── 5. CTA Banner Bubu (jumps above banner, breaks top) ── */
+.cta-banner { position: relative; overflow: visible; }
+.mascot-cta {
+  top: -95px;
+  right: 12%;
+  width: 175px;
+  opacity: 0;
+  transform: translateY(-80px) scale(0.6);
+  transition: opacity 0.5s ease, transform 0.7s cubic-bezier(0.34,1.56,0.64,1);
+}
+.mascot-cta.visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  animation: bubu-bounce 2.8s ease-in-out infinite 0.4s;
+}
+
+/* ── 6. Science section Mumu (right side, peeks in) ── */
+.science-section { position: relative; overflow: visible; }
+.mascot-science {
+  right: -30px;
+  bottom: 30px;
+  width: 135px;
+  opacity: 0;
+  transform: translateX(110%);
+  transition: opacity 0.5s ease, transform 0.7s cubic-bezier(0.34,1.56,0.64,1);
+}
+.mascot-science.visible {
+  opacity: 1;
+  transform: translateX(0);
+  animation: bubu-float 5.5s ease-in-out infinite 1.2s;
+}
+
+/* ── Mobile ── */
+@media (max-width: 900px) {
+  .mascot-hero  { width: 120px; right: -6px; bottom: -25px; }
+  .mascot-why   { display: none; }
+  .mascot-science { display: none; }
+  .mascot-products { width: 110px; right: -12px; }
+  .mascot-proof { width: 110px; right: -10px; top: -42px; }
+  .mascot-cta   { width: 120px; right: 6%; top: -68px; }
+}
+@media (max-width: 600px) {
+  .mascot-hero     { display: none; }
+  .mascot-products { display: none; }
+  .mascot-proof    { display: none; }
+  .mascot-cta      { width: 95px; top: -55px; right: 4%; }
+}
+</style>
+
 <!-- JSON-LD Structured Data -->
 <script type="application/ld+json">
 {
@@ -253,6 +468,12 @@
         <div style="font-size:11px;color:var(--hb-muted);">50.000+ Reviews</div>
       </div>
     </div>
+
+    <!-- 🦛 Bubu mascot — Hero (superhero, breaks bottom grid) -->
+    <div class="mascot mascot-hero" id="mascotHero" title="Klik Bubu!">
+      <div class="mascot-bubble">Kulitnya selembut mochi! 🧡</div>
+      <img src="assets/images/mascots/bubu-hero.png" alt="Bubu, maskot Hiboo" width="190" height="280">
+    </div>
   </div>
 </section>
 
@@ -431,15 +652,27 @@
   <div class="products-more">
     <a href="produk.html" class="btn-secondary">Lihat Semua Produk &rarr;</a>
   </div>
+
+  <!-- 🦛 Bubu mascot — Products (love pose, breaks right) -->
+  <div class="mascot mascot-products" id="mascotProducts" data-scroll title="Klik Bubu!">
+    <div class="mascot-bubble">18.000+ ibu sudah coba! 💕</div>
+    <img src="assets/images/mascots/bubu-love.png" alt="Bubu Hiboo love" width="155" height="210">
+  </div>
 </section>
 
 <!-- WHY HIBOO -->
-<section id="tentang" class="why-section section-pad">
+<section id="tentang" class="why-section section-pad" style="position:relative;overflow:visible;">
   <div class="section-header">
     <div class="sh-tag">Kenapa Hiboo?</div>
     <h2>3 Prinsip untuk Kulit Bayi Sehat</h2>
     <p>Setiap produk Hiboo diciptakan dengan standar tertinggi untuk kulit bayi Indonesia.</p>
   </div>
+  <!-- 🥕 Mumu mascot — Why section (peeks from left) -->
+  <div class="mascot mascot-why" id="mascotWhy" data-scroll title="Mumu suka Hiboo!">
+    <div class="mascot-bubble" style="left:auto;right:0;transform:translateX(20%) scale(0.7);">Bahan alami pilihan! 🌿</div>
+    <img src="assets/images/mascots/mumu-sayhi.png" alt="Mumu, maskot Temoo by Hiboo" width="148" height="200">
+  </div>
+
   <div class="why-grid">
     <div class="why-card">
       <div class="why-icon">
@@ -469,12 +702,18 @@
 </section>
 
 <!-- SOCIAL PROOF -->
-<section class="proof-section section-pad">
+<section class="proof-section section-pad" style="position:relative;overflow:visible;">
   <div class="section-header">
     <div class="sh-tag">Kata Moms Indonesia</div>
     <h2>Dipercaya oleh 50.000+ Keluarga</h2>
     <p>Hiboo meraih Brand Choice Awards 2024 untuk kategori Baby Balm.</p>
   </div>
+  <!-- 🦛 Bubu mascot — Social Proof (kagum/amazed, top right) -->
+  <div class="mascot mascot-proof" id="mascotProof" data-scroll title="Klik Bubu!">
+    <div class="mascot-bubble">50K keluarga bahagia! 🎉</div>
+    <img src="assets/images/mascots/bubu-kagum.png" alt="Bubu Hiboo kagum" width="150" height="210">
+  </div>
+
   <div class="proof-stats">
     <div class="proof-stat">
       <div class="proof-stat-num">50K+</div>
@@ -531,7 +770,13 @@
 </section>
 
 <!-- INGREDIENTS / SCIENCE -->
-<section id="bahan" class="science-section section-pad">
+<section id="bahan" class="science-section section-pad" style="position:relative;overflow:visible;">
+  <!-- 🥕 Mumu mascot — Science (percaya diri, peeks from right) -->
+  <div class="mascot mascot-science" id="mascotScience" data-scroll title="Mumu suka bahan alami!">
+    <div class="mascot-bubble" style="right:0;left:auto;transform:translateX(0) scale(0.7);">Semua bahan aman! ✅</div>
+    <img src="assets/images/mascots/mumu-percayadiri.png" alt="Mumu Temoo percaya diri" width="135" height="185">
+  </div>
+
   <div class="science-grid">
     <div class="science-visual">
       <img src="assets/images/products/mochi-serum-50ml.png" alt="Hiboo Mochi Skin Serum - Bahan alami pilihan" width="160" height="200" loading="lazy">
@@ -652,7 +897,13 @@
 </section>
 
 <!-- CTA BANNER -->
-<section class="cta-banner">
+<section class="cta-banner" style="position:relative;overflow:visible;">
+  <!-- 🦛 Bubu mascot — CTA (jumps above banner, breaks top grid) -->
+  <div class="mascot mascot-cta" id="mascotCta" data-scroll title="Klik Bubu!">
+    <div class="mascot-bubble">Yuk belanja sekarang! 🛍️</div>
+    <img src="assets/images/mascots/bubu-jump.png" alt="Bubu Hiboo jumping" width="175" height="240">
+  </div>
+
   <h2>Mulai Perjalanan <em>Mochi Skin</em> Si Kecil</h2>
   <p>Dapatkan starter kit Hiboo dengan diskon 25% untuk pembelian pertama Anda.</p>
   <a href="produk.html" class="btn-primary">Belanja Starter Kit &rarr;</a>
@@ -769,6 +1020,76 @@ document.querySelectorAll('.product-card, .why-card, .testi-card, .concern-card,
   el.style.transform = 'translateY(20px)';
   el.style.transition = `opacity 0.6s ease ${i * 0.06}s, transform 0.6s ease ${i * 0.06}s`;
   observer.observe(el);
+});
+
+/* ── Mascot scroll reveal ── */
+const mascotObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      mascotObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.15 });
+
+document.querySelectorAll('.mascot[data-scroll]').forEach(el => mascotObserver.observe(el));
+
+/* ── Mascot click interactions ── */
+const bubbleMessages = {
+  mascotHero:     ['Aku Bubu! 🦛', 'Kulit mochi untuk si kecil! 🧡', 'Powered by love! 💙'],
+  mascotProducts: ['Ini produk favorit aku! 🥰', '18K+ moms sudah coba! 💕', 'Bebas paraben & SLS! 🌿'],
+  mascotProof:    ['50K keluarga bahagia! 🎉', 'Rating 4.9 bintang! ⭐', 'Terpercaya #1 Indonesia!'],
+  mascotCta:      ['Yuk belanja sekarang! 🛍️', 'Diskon 25% starter kit! 🎁', 'Gratis ongkir! 🚀'],
+  mascotWhy:      ['Bahan alami pilihan! 🌿', 'Aku Mumu si bahan aktif! 🥕', 'Zero harmful ingredients! ✅'],
+  mascotScience:  ['Semua bahan aman! ✅', 'Teruji dermatologis! 🔬', 'BPOM certified! 🏅'],
+};
+
+const swapImages = {
+  mascotHero:     ['bubu-hero.png', 'bubu-setuju.png', 'bubu-hero.png'],
+  mascotProducts: ['bubu-love.png', 'bubu-hello.png', 'bubu-love.png'],
+  mascotProof:    ['bubu-kagum.png', 'bubu-setuju.png', 'bubu-kagum.png'],
+  mascotCta:      ['bubu-jump.png', 'bubu-ayo.png', 'bubu-jump.png'],
+};
+
+let clickCounts = {};
+
+document.querySelectorAll('.mascot').forEach(mascot => {
+  const id = mascot.id;
+  clickCounts[id] = 0;
+
+  mascot.addEventListener('click', () => {
+    const count = clickCounts[id] || 0;
+    clickCounts[id] = count + 1;
+
+    // Bounce animation
+    mascot.classList.remove('clicked');
+    void mascot.offsetWidth; // reflow
+    mascot.classList.add('clicked');
+    setTimeout(() => mascot.classList.remove('clicked'), 600);
+
+    // Swap image if available
+    const imgs = swapImages[id];
+    if (imgs) {
+      const img = mascot.querySelector('img');
+      const nextImg = imgs[count % imgs.length];
+      img.src = 'assets/images/mascots/' + nextImg;
+    }
+
+    // Change bubble text
+    const msgs = bubbleMessages[id];
+    if (msgs) {
+      const bubble = mascot.querySelector('.mascot-bubble');
+      if (bubble) bubble.textContent = msgs[count % msgs.length];
+    }
+  });
+
+  // Extra hover wobble
+  mascot.addEventListener('mouseenter', () => {
+    mascot.style.animationPlayState = 'paused';
+  });
+  mascot.addEventListener('mouseleave', () => {
+    mascot.style.animationPlayState = 'running';
+  });
 });
 
 /* ── Instagram Feed via profilepageimages (public proxy) ── */
