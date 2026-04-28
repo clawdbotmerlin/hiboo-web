@@ -431,15 +431,25 @@ $size_count     = count( $product['sizes'] );
         <?php endif; ?>
       </div>
       <?php if ( count( $product['thumbs'] ) > 1 ) : ?>
-      <div class="pdp-thumbs">
-        <?php foreach ( $product['thumbs'] as $i => $thumb ) : ?>
-        <div class="pdp-thumb <?php echo $i === 0 ? 'active' : ''; ?>"
-             data-src="<?php echo esc_url( $img . '/products/' . $thumb['img'] ); ?>"
-             onclick="hibooChangeImg(this,'<?php echo esc_url( $img . '/products/' . $thumb['img'] ); ?>')">
-          <img src="<?php echo esc_url( $img . '/products/' . $thumb['img'] ); ?>"
-               alt="<?php echo esc_attr( $thumb['alt'] ); ?>" width="60" height="60" loading="lazy">
+      <div class="pdp-thumbs-wrap">
+        <button type="button" class="pdp-thumb-arrow" onclick="hibooThumbScroll(-1)" aria-label="Scroll kiri">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+        </button>
+        <div class="pdp-thumbs" id="pdpThumbStrip">
+          <div class="pdp-thumbs-inner" id="pdpThumbInner">
+            <?php foreach ( $product['thumbs'] as $i => $thumb ) : ?>
+            <div class="pdp-thumb <?php echo $i === 0 ? 'active' : ''; ?>"
+                 data-src="<?php echo esc_url( $img . '/products/' . $thumb['img'] ); ?>"
+                 onclick="hibooChangeImg(this,'<?php echo esc_url( $img . '/products/' . $thumb['img'] ); ?>')">
+              <img src="<?php echo esc_url( $img . '/products/' . $thumb['img'] ); ?>"
+                   alt="<?php echo esc_attr( $thumb['alt'] ); ?>" width="60" height="60" loading="lazy">
+            </div>
+            <?php endforeach; ?>
+          </div>
         </div>
-        <?php endforeach; ?>
+        <button type="button" class="pdp-thumb-arrow" onclick="hibooThumbScroll(1)" aria-label="Scroll kanan">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </button>
       </div>
       <?php endif; ?>
     </div>
@@ -699,6 +709,9 @@ function hibooChangeImg(thumb, src) {
   thumb.classList.add('active');
 }
 
+/* Thumb strip state */
+var hibooThumbPage = 0;
+
 function hibooGalleryNav(dir) {
   var thumbs = document.querySelectorAll('.pdp-thumb');
   if (!thumbs.length) return;
@@ -708,7 +721,15 @@ function hibooGalleryNav(dir) {
   if (src) document.getElementById('pdpMainImg').src = src;
   thumbs.forEach(function(t) { t.classList.remove('active'); });
   target.classList.add('active');
-  target.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+}
+
+function hibooThumbScroll(dir) {
+  var inner = document.getElementById('pdpThumbInner');
+  if (!inner) return;
+  var total = inner.querySelectorAll('.pdp-thumb').length;
+  hibooThumbPage = Math.max(0, Math.min(total - 1, hibooThumbPage + dir));
+  var step = window.innerWidth < 640 ? 70 : 82; /* (60 or 72) + 10px gap */
+  inner.style.transform = 'translateX(-' + (hibooThumbPage * step) + 'px)';
 }
 
 /* PDP — Size selector updates buy buttons */

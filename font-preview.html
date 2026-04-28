@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hiboo Font Preview</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Nunito:wght@700;800;900&family=Fredoka:wght@400;500;600;700&family=Quicksand:wght@500;600;700&family=Baloo+2:wght@500;600;700;800&family=Sora:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --hb-deep: #1B4D6E;
+    --hb-sky: #A8D8EA;
+    --hb-peach: #FFD6C0;
+    --hb-text: #2D3748;
+    --hb-muted: #718096;
+    --body: 'Outfit', sans-serif;
+  }
+
+  body { background: #f7f4f0; font-family: var(--body); padding: 0; }
+
+  .page-title {
+    text-align: center;
+    padding: 32px 20px 16px;
+    font-family: var(--body);
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--hb-muted);
+  }
+  .page-title span { color: var(--hb-deep); }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .card {
+    background: white;
+    border: 1px solid #e8e4e0;
+    padding: 36px 32px 32px;
+    position: relative;
+  }
+  .card:not(:last-child) { border-right: none; }
+
+  .font-label {
+    font-family: var(--body);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--hb-muted);
+    margin-bottom: 6px;
+  }
+
+  .font-name {
+    font-family: var(--body);
+    font-size: 13px;
+    color: var(--hb-deep);
+    font-weight: 600;
+    margin-bottom: 28px;
+    padding-bottom: 16px;
+    border-bottom: 2px solid var(--hb-sky);
+  }
+
+  .badge {
+    display: inline-block;
+    background: var(--hb-peach);
+    color: var(--hb-deep);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-family: var(--body);
+    margin-bottom: 12px;
+  }
+
+  .headline { color: var(--hb-deep); line-height: 1.15; margin-bottom: 14px; }
+  .sub { color: var(--hb-text); font-family: var(--body); font-size: 14px; line-height: 1.6; margin-bottom: 24px; }
+
+  .btn {
+    display: inline-block;
+    background: var(--hb-deep);
+    color: white;
+    border-radius: 50px;
+    padding: 10px 22px;
+    font-size: 13px;
+    font-weight: 600;
+    font-family: var(--body);
+    margin-right: 8px;
+    margin-bottom: 8px;
+  }
+  .btn-ghost {
+    background: transparent;
+    border: 2px solid var(--hb-deep);
+    color: var(--hb-deep);
+  }
+
+  .product-name { color: var(--hb-deep); margin-bottom: 4px; }
+  .product-cat { font-family: var(--body); font-size: 12px; color: var(--hb-muted); margin-bottom: 12px; }
+  .price { font-family: var(--body); color: var(--hb-deep); font-weight: 700; font-size: 16px; margin-bottom: 16px; }
+
+  .divider { height: 1px; background: #eee; margin: 24px 0; }
+
+  /* ── FONT VARIANTS ── */
+
+  /* Option A: Nunito (current) */
+  .opt-a .headline { font-family: 'Nunito', sans-serif; font-weight: 800; font-size: 28px; }
+  .opt-a .product-name { font-family: 'Nunito', sans-serif; font-weight: 700; font-size: 15px; }
+
+  /* Option B: Fredoka */
+  .opt-b .headline { font-family: 'Fredoka', sans-serif; font-weight: 600; font-size: 28px; }
+  .opt-b .product-name { font-family: 'Fredoka', sans-serif; font-weight: 500; font-size: 16px; }
+
+  /* Option C: Quicksand */
+  .opt-c .headline { font-family: 'Quicksand', sans-serif; font-weight: 700; font-size: 28px; }
+  .opt-c .product-name { font-family: 'Quicksand', sans-serif; font-weight: 600; font-size: 15px; }
+
+  /* Option D: Baloo 2 */
+  .opt-d .headline { font-family: 'Baloo 2', sans-serif; font-weight: 700; font-size: 27px; }
+  .opt-d .product-name { font-family: 'Baloo 2', sans-serif; font-weight: 600; font-size: 15px; }
+
+  /* Option E: Sora */
+  .opt-e .headline { font-family: 'Sora', sans-serif; font-weight: 800; font-size: 26px; }
+  .opt-e .product-name { font-family: 'Sora', sans-serif; font-weight: 600; font-size: 14px; }
+
+  /* Option F: Plus Jakarta Sans */
+  .opt-f .headline { font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 800; font-size: 27px; }
+  .opt-f .product-name { font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 700; font-size: 14px; }
+
+  .current-tag {
+    position: absolute;
+    top: 12px; right: 12px;
+    background: #1B4D6E;
+    color: white;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-family: var(--body);
+  }
+  .row2 { border-top: none; }
+</style>
+</head>
+<body>
+
+<p class="page-title">Hiboo Font Exploration — <span>Body text stays as Outfit throughout</span></p>
+
+<div class="grid">
+
+  <!-- A: Nunito (current) -->
+  <div class="card opt-a">
+    <div class="current-tag">Current</div>
+    <div class="font-label">Option A</div>
+    <div class="font-name">Nunito — Rounded Sans</div>
+    <div class="badge">@hiboo.baby</div>
+    <h2 class="headline">Kulit Mochi<br>Si Kecil Dimulai<br>dari Sini</h2>
+    <p class="sub">Formulasi Jepang dengan bahan alami pilihan. Lembut untuk newborn 0+ bulan.</p>
+    <span class="btn">Belanja Sekarang</span>
+    <span class="btn btn-ghost">Lihat Produk</span>
+    <div class="divider"></div>
+    <p class="product-name">All Purpose Baby Balm</p>
+    <p class="product-cat">Balm · 15g</p>
+    <p class="price">Rp54.500</p>
+  </div>
+
+  <!-- B: Fredoka -->
+  <div class="card opt-b">
+    <div class="font-label">Option B</div>
+    <div class="font-name">Fredoka — Bubbly Display</div>
+    <div class="badge">@hiboo.baby</div>
+    <h2 class="headline">Kulit Mochi<br>Si Kecil Dimulai<br>dari Sini</h2>
+    <p class="sub">Formulasi Jepang dengan bahan alami pilihan. Lembut untuk newborn 0+ bulan.</p>
+    <span class="btn">Belanja Sekarang</span>
+    <span class="btn btn-ghost">Lihat Produk</span>
+    <div class="divider"></div>
+    <p class="product-name">All Purpose Baby Balm</p>
+    <p class="product-cat">Balm · 15g</p>
+    <p class="price">Rp54.500</p>
+  </div>
+
+  <!-- C: Quicksand -->
+  <div class="card opt-c">
+    <div class="font-label">Option C</div>
+    <div class="font-name">Quicksand — Soft Geometric</div>
+    <div class="badge">@hiboo.baby</div>
+    <h2 class="headline">Kulit Mochi<br>Si Kecil Dimulai<br>dari Sini</h2>
+    <p class="sub">Formulasi Jepang dengan bahan alami pilihan. Lembut untuk newborn 0+ bulan.</p>
+    <span class="btn">Belanja Sekarang</span>
+    <span class="btn btn-ghost">Lihat Produk</span>
+    <div class="divider"></div>
+    <p class="product-name">All Purpose Baby Balm</p>
+    <p class="product-cat">Balm · 15g</p>
+    <p class="price">Rp54.500</p>
+  </div>
+
+  <!-- D: Baloo 2 -->
+  <div class="card opt-d row2" style="border-top:none;">
+    <div class="font-label">Option D</div>
+    <div class="font-name">Baloo 2 — Warm & Expressive</div>
+    <div class="badge">@hiboo.baby</div>
+    <h2 class="headline">Kulit Mochi<br>Si Kecil Dimulai<br>dari Sini</h2>
+    <p class="sub">Formulasi Jepang dengan bahan alami pilihan. Lembut untuk newborn 0+ bulan.</p>
+    <span class="btn">Belanja Sekarang</span>
+    <span class="btn btn-ghost">Lihat Produk</span>
+    <div class="divider"></div>
+    <p class="product-name">All Purpose Baby Balm</p>
+    <p class="product-cat">Balm · 15g</p>
+    <p class="price">Rp54.500</p>
+  </div>
+
+  <!-- E: Sora -->
+  <div class="card opt-e row2" style="border-top:none;">
+    <div class="font-label">Option E</div>
+    <div class="font-name">Sora — Modern J-Beauty</div>
+    <div class="badge">@hiboo.baby</div>
+    <h2 class="headline">Kulit Mochi<br>Si Kecil Dimulai<br>dari Sini</h2>
+    <p class="sub">Formulasi Jepang dengan bahan alami pilihan. Lembut untuk newborn 0+ bulan.</p>
+    <span class="btn">Belanja Sekarang</span>
+    <span class="btn btn-ghost">Lihat Produk</span>
+    <div class="divider"></div>
+    <p class="product-name">All Purpose Baby Balm</p>
+    <p class="product-cat">Balm · 15g</p>
+    <p class="price">Rp54.500</p>
+  </div>
+
+  <!-- F: Plus Jakarta Sans -->
+  <div class="card opt-f row2" style="border-top:none;">
+    <div class="font-label">Option F</div>
+    <div class="font-name">Plus Jakarta Sans — Bold & Friendly</div>
+    <div class="badge">@hiboo.baby</div>
+    <h2 class="headline">Kulit Mochi<br>Si Kecil Dimulai<br>dari Sini</h2>
+    <p class="sub">Formulasi Jepang dengan bahan alami pilihan. Lembut untuk newborn 0+ bulan.</p>
+    <span class="btn">Belanja Sekarang</span>
+    <span class="btn btn-ghost">Lihat Produk</span>
+    <div class="divider"></div>
+    <p class="product-name">All Purpose Baby Balm</p>
+    <p class="product-cat">Balm · 15g</p>
+    <p class="price">Rp54.500</p>
+  </div>
+
+</div>
+
+</body>
+</html>
