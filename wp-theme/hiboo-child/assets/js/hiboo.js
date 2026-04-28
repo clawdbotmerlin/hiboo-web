@@ -88,20 +88,20 @@
     });
   });
 
-  /* ── Filter Pills (Products Page — sectioned layout) ── */
+  /* ── Filter Pills (Products Page) ── */
   document.querySelectorAll('.filter-pill').forEach(function (pill) {
     pill.addEventListener('click', function () {
       document.querySelectorAll('.filter-pill').forEach(function (p) { p.classList.remove('active'); });
       pill.classList.add('active');
       var filter = pill.dataset.filter;
-      var sections = document.querySelectorAll('.product-cat-section');
+      var cards = document.querySelectorAll('.products-listing .product-card');
       var visible = 0;
-      sections.forEach(function (section) {
-        if (filter === 'all' || section.dataset.cat === filter) {
-          section.style.display = '';
-          visible += section.querySelectorAll('.product-card').length;
+      cards.forEach(function (card) {
+        if (filter === 'all' || card.dataset.category === filter) {
+          card.style.display = '';
+          visible++;
         } else {
-          section.style.display = 'none';
+          card.style.display = 'none';
         }
       });
       var countEl = document.querySelector('.result-count strong');
@@ -109,28 +109,25 @@
     });
   });
 
-  /* ── Sort Pills (Products Page — sorts within each visible section) ── */
+  /* ── Sort Pills (Products Page) ── */
   document.querySelectorAll('.sort-pill').forEach(function (pill) {
     pill.addEventListener('click', function () {
       document.querySelectorAll('.sort-pill').forEach(function (p) { p.classList.remove('active'); });
       pill.classList.add('active');
       var sort = pill.dataset.sort;
-      document.querySelectorAll('.product-cat-section').forEach(function (section) {
-        if (section.style.display === 'none') return;
-        var grid = section.querySelector('.products-grid');
-        if (!grid) return;
-        var cards = Array.from(grid.querySelectorAll('.product-card'));
-        cards.sort(function (a, b) {
-          switch (sort) {
-            case 'popular':    return parseInt(b.dataset.sold  || 0) - parseInt(a.dataset.sold  || 0);
-            case 'newest':     return (b.dataset.date || '').localeCompare(a.dataset.date || '');
-            case 'price-low':  return parseInt(a.dataset.price || 0) - parseInt(b.dataset.price || 0);
-            case 'price-high': return parseInt(b.dataset.price || 0) - parseInt(a.dataset.price || 0);
-            default: return 0;
-          }
-        });
-        cards.forEach(function (card) { grid.appendChild(card); });
+      var grid = document.querySelector('.products-listing .products-grid');
+      if (!grid) return;
+      var cards = Array.from(grid.querySelectorAll('.product-card'));
+      cards.sort(function (a, b) {
+        switch (sort) {
+          case 'popular': return parseInt(b.dataset.sold || 0) - parseInt(a.dataset.sold || 0);
+          case 'newest': return (b.dataset.date || '').localeCompare(a.dataset.date || '');
+          case 'price-low': return parseInt(a.dataset.price || 0) - parseInt(b.dataset.price || 0);
+          case 'price-high': return parseInt(b.dataset.price || 0) - parseInt(a.dataset.price || 0);
+          default: return 0;
+        }
       });
+      cards.forEach(function (card) { grid.appendChild(card); });
     });
   });
 

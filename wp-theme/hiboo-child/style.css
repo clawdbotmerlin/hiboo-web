@@ -4998,6 +4998,10 @@ a.product-card {
 .pdp-gallery {
   position: sticky;
   top: 110px;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
 }
 
 .pdp-main-img {
@@ -5066,11 +5070,30 @@ a.product-card {
 }
 .pdp-thumb-arrow:hover { background: #f5f5f5; transform: scale(1.08); }
 
+.pdp-thumbs {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 12px;
+  width: 100%;
+  padding: 5px 2px;
+
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  flex: 0 0 auto;
+  cursor: pointer;
+}
+
+.pdp-thumbs::-webkit-scrollbar {
+  display: none;
+}
+
 .pdp-thumb {
   width: 72px;
   height: 72px;
   border-radius: var(--hb-radius);
-  background: linear-gradient(160deg, #F0F6FA, #E4EFF7);
+  background: linear-gradient(160deg, #f0f6fa, #e4eff7);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -5088,7 +5111,7 @@ a.product-card {
 
 .pdp-thumb.active {
   border-color: var(--hb-deep);
-  box-shadow: 0 4px 12px rgba(42,122,181,0.15);
+  box-shadow: 0 4px 12px rgba(42, 122, 181, 0.15);
 }
 
 .pdp-thumb img {

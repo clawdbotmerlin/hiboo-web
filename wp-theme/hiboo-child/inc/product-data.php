@@ -27,7 +27,7 @@ function hiboo_get_products() {
 
     /* ── ALL PURPOSE BABY BALM 15g ─────────────────────────────────────── */
     'all-purpose-baby-balm' => array(
-      'img'              => 'pdp-balm5g-hero.jpg',
+      'img'              => 'pdp-balm15g.jpg',
       'bg'               => 'pc-peach',
       'badge'            => 'Bestseller',
       'bc'               => 'hot',
@@ -37,7 +37,7 @@ function hiboo_get_products() {
       'cat_group_title'  => 'All Purpose Baby Balm',
       'cat_group_sub'    => 'Mengatasi ruam dan biang keringat',
       'cat_group_accent' => '#FF7A4A',
-      'name'             => 'All Purpose Baby Balm',
+      'name'             => 'All Purpose Baby Balm 15g',
       'desc'             => '10% Coconut Oil + Vitamin E + Beeswax. Atasi eczema, ruam popok, & gigitan serangga.',
       'orig'             => 'Rp175.000',
       'price'            => 'Rp54.500',
@@ -56,7 +56,7 @@ function hiboo_get_products() {
       'bg'               => 'pc-peach',
       'badge'            => '',
       'bc'               => '',
-      'disc'             => '-69%',
+      'disc'             => '-68%',
       'cat'              => 'Balm &middot; 5g',
       'cat_key'          => 'balm',
       'cat_group_title'  => 'All Purpose Baby Balm',
@@ -77,12 +77,12 @@ function hiboo_get_products() {
 
     /* ── MOCHI GLOW BODY SERUM 100ml ───────────────────────────────────── */
     'mochi-glow-body-serum' => array(
-      'img'              => 'pdp-mochi-serum-1.jpg',
+      'img'              => 'pdp-mochi-serum-8.jpg',
       'bg'               => 'pc-blue',
       'badge'            => '10RB+ sold',
       'bc'               => '',
       'disc'             => '-44%',
-      'cat'              => 'Serum &middot; 100ml',
+      'cat'              => 'Serum &middot; 50ml',
       'cat_key'          => 'serum',
       'cat_group_title'  => 'Mochi Skin Serum',
       'cat_group_sub'    => 'Mencerahkan serta membuat kulit kenyal dan lembut',
@@ -90,45 +90,70 @@ function hiboo_get_products() {
       'name'             => 'Mochi Glow Body Serum',
       'desc'             => 'Japanese White Tomato + Hyaluronic Acid + Ceramide untuk kulit glowing selembut mochi.',
       'orig'             => 'Rp115.000',
-      'price'            => 'Rp64.400',
+      'price'            => 'Rp64.500',
       'rate'             => '4.9',
       'reviews'          => '8RB+',
-      'data_price'       => '64400',
+      'data_price'       => '64500',
       'data_sold'        => '8000',
       'data_date'        => '2024-02',
       'shopee'           => 'https://shopee.co.id/Hiboo-Mochi-Glow-Body-Serum-with-Japanese-White-Tomato-2-in-1-Face-Cream-Bayi-Body-Lotion-Bayi-100-ml-Skincare-Newborn-Cream-C11-i.731537794.28813480562',
       'tiktok'           => 'https://www.tiktok.com/view/product/1729669411949020357',
     ),
 
-    /* ── MOCHI GLOW SERUM 50ml (listing-only variant) ──────────────────── */
-    'mochi-glow-serum-50ml' => array(
-      'img'              => 'pdp-mochi-serum-1.jpg',
+     /* ── MOCHI GLOW FACE SERUM 100ml ───────────────────────────────────── */
+    'mochi-glow-face-serum' => array(
+      'img'              => 'pdp-mochi-face.jpg',
       'bg'               => 'pc-blue',
-      'badge'            => 'BUY 1 GET 1',
-      'bc'               => 'new',
-      'disc'             => '-47%',
-      'cat'              => 'Serum &middot; 50ml',
+      'badge'            => '10RB+ sold',
+      'bc'               => '',
+      'disc'             => '-64%',
+      'cat'              => 'Serum &middot; 15ml',
       'cat_key'          => 'serum',
       'cat_group_title'  => 'Mochi Skin Serum',
       'cat_group_sub'    => 'Mencerahkan serta membuat kulit kenyal dan lembut',
       'cat_group_accent' => '#2A7AB5',
-      'name'             => 'Mochi Glow Serum',
-      'desc'             => 'Japanese White Tomato + Hyaluronic Acid + Ceramide. Ukuran travel-friendly.',
-      'orig'             => 'Rp180.000',
-      'price'            => 'Rp95.900',
+      'name'             => 'Mochi Glow Face Serum',
+      'desc'             => 'Japanese White Tomato + Hyaluronic Acid + Ceramide untuk kulit glowing selembut mochi.',
+      'orig'             => 'Rp135.000',
+      'price'            => 'Rp48.500',
       'rate'             => '4.9',
-      'reviews'          => '893',
-      'data_price'       => '95900',
-      'data_sold'        => '893',
-      'data_date'        => '2025-09',
-      'shopee'           => 'https://shopee.co.id/Hiboo-Mochi-Skin-Serum-with-Japanese-White-Tomato-for-Baby-Face-Body-50-ml-C22-i.731537794.29763475776',
-      'tiktok'           => 'https://www.tiktok.com/view/product/1730227434899997893',
-      'pdp_slug'         => 'mochi-glow-body-serum', // shares PDP with parent
+      'reviews'          => '8RB+',
+      'data_price'       => '48500',
+      'data_sold'        => '8000',
+      'data_date'        => '2024-02',
+      'shopee'           => 'https://shopee.co.id/-DAPAT-COIN-PURSE-Hiboo-Mochi-Face-Serum-with-Japanese-White-Tomato-2-in-1-Face-Cream-Bayi-Lotion-Bayi-15-ml-Skincare-Bayi-Whitening-Glowing-C00-i.731537794.42957155057',
+      'tiktok'           => 'https://www.tiktok.com/view/product/1729669411949020357',
     ),
+
+    /* ── MOCHI GLOW SERUM 50ml (listing-only variant) ──────────────────── */
+    // 'mochi-glow-serum-50ml' => array(
+    //   'img'              => 'pdp-mochi-serum-1.jpg',
+    //   'bg'               => 'pc-blue',
+    //   'badge'            => 'BUY 1 GET 1',
+    //   'bc'               => 'new',
+    //   'disc'             => '-47%',
+    //   'cat'              => 'Serum &middot; 50ml',
+    //   'cat_key'          => 'serum',
+    //   'cat_group_title'  => 'Mochi Skin Serum',
+    //   'cat_group_sub'    => 'Mencerahkan serta membuat kulit kenyal dan lembut',
+    //   'cat_group_accent' => '#2A7AB5',
+    //   'name'             => 'Mochi Glow Serum',
+    //   'desc'             => 'Japanese White Tomato + Hyaluronic Acid + Ceramide. Ukuran travel-friendly.',
+    //   'orig'             => 'Rp180.000',
+    //   'price'            => 'Rp95.900',
+    //   'rate'             => '4.9',
+    //   'reviews'          => '893',
+    //   'data_price'       => '95900',
+    //   'data_sold'        => '893',
+    //   'data_date'        => '2025-09',
+    //   'shopee'           => 'https://shopee.co.id/Hiboo-Mochi-Skin-Serum-with-Japanese-White-Tomato-for-Baby-Face-Body-50-ml-C22-i.731537794.29763475776',
+    //   'tiktok'           => 'https://www.tiktok.com/view/product/1730227434899997893',
+    //   'pdp_slug'         => 'mochi-glow-body-serum', // shares PDP with parent
+    // ),
 
     /* ── ZZZ BABY CALMING CREAM ─────────────────────────────────────────── */
     'zzz-deep-sleep-baby-cream' => array(
-      'img'              => 'pdp-zzz-cream-1.jpg',
+      'img'              => 'pdp-zzz-cream-5.jpg',
       'bg'               => 'pc-lavender',
       'badge'            => '10RB+ sold',
       'bc'               => 'new',
@@ -163,7 +188,7 @@ function hiboo_get_products() {
       'cat_group_title'  => 'Physical Mochi Sunscreen',
       'cat_group_sub'    => 'Melindungi kulit dari paparan sinar matahari',
       'cat_group_accent' => '#10B981',
-      'name'             => 'Double Protection Sunscreen',
+      'name'             => 'Mochi Physical Sunscreen SPF 50+ PA++++',
       'desc'             => 'SPF 50+ PA++++. Physical sunscreen dengan Citronella + Lavender Oil. Water Resistant.',
       'orig'             => 'Rp225.000',
       'price'            => 'Rp74.500',
@@ -190,11 +215,11 @@ function hiboo_get_products() {
       'cat_group_accent' => '#FF7A4A',
       'name'             => 'Protection Combo',
       'desc'             => 'Sunscreen + Baby Balm dalam satu paket. Perlindungan lengkap untuk aktivitas si kecil.',
-      'orig'             => 'Rp225.000',
-      'price'            => 'Rp74.500',
+      'orig'             => 'Rp360.000',
+      'price'            => 'Rp118.900',
       'rate'             => '4.9',
       'reviews'          => '185',
-      'data_price'       => '74500',
+      'data_price'       => '118900',
       'data_sold'        => '185',
       'data_date'        => '2025-11',
       'shopee'           => 'https://shopee.co.id/Hiboo-Protection-Combo-Physical-Mochi-Sunscreen-Anak-30-ml-SPF-50-PA-All-Purpose-Baby-Balm-15g-Ruam-Popok-Double-Protection-Skincare-Bayi-Anti-Nyamuk-S22-i.731537794.47951864741',
@@ -224,7 +249,7 @@ function hiboo_get_products() {
       'data_date'        => '2024-06',
       'shopee'           => 'https://shopee.co.id/-DAPAT-POUCH-Hiboo-Bye-Ruam-Combo-Big-Size-All-Purpose-Baby-Balm-Set-2x-15g-10-Coconut-Oil-Vit-E-Beeswax-Natural-Nourishing-Calming-Moisturizer-Salep-Anak-Ruam-Popok-Skincare-A33-i.731537794.25020961735',
       'tiktok'           => 'https://www.tiktok.com/view/product/1729607482327073989',
-      'pdp_slug'         => 'all-purpose-baby-balm', // shares PDP with parent
+      'pdp_slug'         => 'bye-ruam-combo', // shares PDP with parent
     ),
 
   );
@@ -238,6 +263,7 @@ function hiboo_get_featured_products() {
   $featured_slugs = array(
     'all-purpose-baby-balm',
     'mochi-glow-body-serum',
+    'mochi-glow-face-serum',
     'zzz-deep-sleep-baby-cream',
     'double-protection-sunscreen',
     'baby-balm-mini',
@@ -261,7 +287,7 @@ function hiboo_get_products_by_category() {
   // Define display order per category
   $order = array(
     'balm'      => array( 'all-purpose-baby-balm', 'baby-balm-mini' ),
-    'serum'     => array( 'mochi-glow-body-serum', 'mochi-glow-serum-50ml' ),
+    'serum'     => array( 'mochi-glow-body-serum', 'mochi-glow-face-serum' ),
     'calming'   => array( 'zzz-deep-sleep-baby-cream' ),
     'sunscreen' => array( 'double-protection-sunscreen' ),
     'bundle'    => array( 'protection-combo', 'bye-ruam-combo' ),
